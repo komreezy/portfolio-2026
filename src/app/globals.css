@@ -1,26 +1,172 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Wordstone Color Palette */
+  --background: #FAF5EF;
+  --foreground: #5E4740;
+  --primary: #A8463F;
+  --primary-dark: #502223;
+  --secondary: #C9B398;
+  --accent: #A8463F;
+  --muted: #5E4740;
+  --muted-foreground: #C9B398;
+  --border: rgba(201, 179, 152, 0.5);
+  --border-solid: #C9B398;
+  --card: #FFFFFF;
+  --card-foreground: #5E4740;
+  --footer-bg: #502223;
+  --footer-text: #FAF5EF;
+  --footer-accent: #C9B398;
+
+  /* Spacing */
+  --section-spacing: 5.4rem;
+  --side-padding: 2.56rem;
+  --header-height: 5.12rem;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-border-solid: var(--border-solid);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-footer-bg: var(--footer-bg);
+  --color-footer-text: var(--footer-text);
+  --color-footer-accent: var(--footer-accent);
+  --font-sans: var(--font-sans-primary);
+  --font-serif: var(--font-serif);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans-primary), system-ui, sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  transition: background-color 0.8s cubic-bezier(0.35, 0, 0, 1),
+              color 0.15s ease;
+}
+
+/* Custom Wordstone Easings */
+.ease-smooth {
+  transition-timing-function: cubic-bezier(0.35, 0, 0, 1);
+}
+
+.ease-out-quart {
+  transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.ease-in-out-quad {
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.ease-out-expo {
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Text reveal animation */
+@keyframes textReveal {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-reveal {
+  animation: textReveal 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+.animate-reveal-delay-1 {
+  animation: textReveal 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) 0.18s forwards;
+  opacity: 0;
+}
+
+.animate-reveal-delay-2 {
+  animation: textReveal 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) 0.36s forwards;
+  opacity: 0;
+}
+
+.animate-reveal-delay-3 {
+  animation: textReveal 0.7s cubic-bezier(0.165, 0.84, 0.44, 1) 0.54s forwards;
+  opacity: 0;
+}
+
+/* Wordstone button styles */
+.btn-outlined {
+  background: transparent;
+  color: var(--foreground);
+  border: 1px solid var(--foreground);
+  padding: 12px 24px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background-color 0.3s ease, color 0.15s ease;
+}
+
+.btn-outlined:hover {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+  padding: 0 19px;
+  transition: background-color 0.3s ease, color 0.15s ease;
+}
+
+.btn-ghost:hover {
+  background: var(--secondary);
+  color: var(--primary-dark);
+}
+
+/* Underline input style */
+.input-underline {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border);
+  padding: 12px 0;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--foreground);
+  transition: border-color 0.3s ease;
+}
+
+.input-underline:focus {
+  outline: none;
+  border-bottom-color: var(--primary);
+}
+
+.input-underline::placeholder {
+  color: var(--muted-foreground);
+}
+
+/* Serif accent headings */
+.heading-serif {
+  font-family: var(--font-serif), serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+/* Large display text */
+.display-text {
+  font-size: clamp(3rem, 8vw, 6.8rem);
+  font-weight: 300;
+  color: var(--primary);
+  line-height: 1.1;
 }
