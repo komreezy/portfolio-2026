@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const services = [
   {
@@ -25,6 +25,38 @@ const services = [
   },
 ];
 
+function ScrollRevealItem({ children, delay = 0 }: { children: React.ReactNode; delay?: number }) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const element = ref.current;
+    if (!element) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.add("visible");
+            }, delay * 1000);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+    );
+
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, [delay]);
+
+  return (
+    <div ref={ref} className="scroll-reveal">
+      {children}
+    </div>
+  );
+}
+
 export default function ServicesAccordion() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -35,34 +67,36 @@ export default function ServicesAccordion() {
   return (
     <section className="px-[var(--side-padding)] py-[var(--section-spacing)]">
       <div className="grid md:grid-cols-[30%_70%] gap-12 mb-12">
-        <div>
+        <ScrollRevealItem>
           <span className="heading-serif">Services</span>
-        </div>
-        <div>
+        </ScrollRevealItem>
+        <ScrollRevealItem delay={0.18}>
           <p className="text-[var(--muted-foreground)] text-sm font-light max-w-md">
             We offer a comprehensive range of digital services to help bring your vision to life.
           </p>
-        </div>
+        </ScrollRevealItem>
       </div>
 
       <div className="border-b border-[var(--border)]">
         {services.map((service, index) => (
-          <div key={index} className="accordion-item">
-            <div
-              className="accordion-header"
-              onClick={() => toggleAccordion(index)}
-            >
-              <h3 className="accordion-title">{service.title}</h3>
-              <span className={`accordion-icon ${openIndex === index ? "open" : ""}`}>
-                +
-              </span>
-            </div>
-            <div className={`accordion-content ${openIndex === index ? "open" : ""}`}>
-              <div className="accordion-inner">
-                <p className="accordion-body">{service.description}</p>
+          <ScrollRevealItem key={index} delay={0.1 * index}>
+            <div className="accordion-item">
+              <div
+                className="accordion-header"
+                onClick={() => toggleAccordion(index)}
+              >
+                <h3 className="accordion-title">{service.title}</h3>
+                <span className={`accordion-icon ${openIndex === index ? "open" : ""}`}>
+                  +
+                </span>
+              </div>
+              <div className={`accordion-content ${openIndex === index ? "open" : ""}`}>
+                <div className="accordion-inner">
+                  <p className="accordion-body">{service.description}</p>
+                </div>
               </div>
             </div>
-          </div>
+          </ScrollRevealItem>
         ))}
       </div>
     </section>
