@@ -170,3 +170,147 @@ body {
   color: var(--primary);
   line-height: 1.1;
 }
+
+/* Hero display text (light on dark) */
+.display-text-light {
+  font-size: clamp(3rem, 8vw, 6.8rem);
+  font-weight: 300;
+  color: var(--footer-text);
+  line-height: 1.1;
+}
+
+/* Marquee styles */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 40px 0;
+}
+
+.marquee-content {
+  display: inline-flex;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-text {
+  font-size: clamp(3rem, 10vw, 6.8rem);
+  font-weight: 300;
+  color: var(--primary);
+  padding-right: 80px;
+}
+
+.marquee-text em {
+  font-family: var(--font-serif), serif;
+  font-style: italic;
+}
+
+/* Accordion styles */
+.accordion-item {
+  border-top: 1px solid var(--border);
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.accordion-header:hover {
+  opacity: 0.7;
+}
+
+.accordion-title {
+  font-size: clamp(1.5rem, 4vw, 2.75rem);
+  font-weight: 300;
+  color: var(--foreground);
+}
+
+.accordion-icon {
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--foreground);
+  transition: transform 0.25s ease;
+}
+
+.accordion-icon.open {
+  transform: rotate(45deg);
+}
+
+.accordion-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.25s ease;
+}
+
+.accordion-content.open {
+  grid-template-rows: 1fr;
+}
+
+.accordion-inner {
+  overflow: hidden;
+}
+
+.accordion-body {
+  padding-bottom: 24px;
+  color: var(--muted-foreground);
+  font-weight: 300;
+  max-width: 600px;
+}
+
+/* Alternating content image placeholder */
+.image-placeholder {
+  background: var(--border);
+  aspect-ratio: 4/3;
+  width: 100%;
+}
+
+/* Scroll reveal animation */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.7s cubic-bezier(0.165, 0.84, 0.44, 1),
+              transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.scroll-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Clip path reveal for images */
+.clip-reveal {
+  clip-path: inset(100% 0 0 0);
+  transition: clip-path 1.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.clip-reveal.visible {
+  clip-path: inset(0 0 0 0);
+}
+
+/* CTA section button variant */
+.btn-outlined-light {
+  background: transparent;
+  color: var(--footer-text);
+  border: 1px solid var(--footer-text);
+  padding: 12px 24px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background-color 0.3s ease, color 0.15s ease;
+}
+
+.btn-outlined-light:hover {
+  background: var(--footer-text);
+  color: var(--primary-dark);
+}
