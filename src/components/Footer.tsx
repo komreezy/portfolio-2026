@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div>
             <h3 className="text-[var(--footer-accent)] font-serif text-lg mb-4">
-              James Mitchell
+              Arash Jafari
             </h3>
             <p className="text-[var(--footer-text)] text-sm font-light opacity-80">
               Attorney at Law
@@ -97,7 +97,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-[var(--footer-accent)] border-opacity-30">
           <p className="text-[var(--footer-text)] text-xs font-light opacity-60 text-center">
-            &copy; {currentYear} James Mitchell, Attorney at Law. All rights reserved.
+            &copy; {currentYear} Arash Jafari, Attorney at Law. All rights reserved.
           </p>
         </div>
       </div>

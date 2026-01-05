@@ -45,7 +45,7 @@ export default function About() {
             {/* Bio Content */}
             <div className="space-y-8">
               <p className="text-lg font-light text-[var(--foreground)] leading-relaxed">
-                I&apos;m James Mitchell, a business and corporate attorney
+                I&apos;m Arash Jafari, a business and corporate attorney
                 dedicated to helping clients navigate complex legal challenges
                 with confidence and clarity.
               </p>

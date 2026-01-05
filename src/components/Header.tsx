@@ -17,11 +17,8 @@ export default function Header() {
     <header className="bg-[var(--background)] h-[var(--header-height)] flex items-center">
       <div className="w-full px-[var(--side-padding)]">
         <div className="flex items-center justify-between">
-          <Link
-            href="/"
-            className="text-[var(--primary)] text-sm font-medium tracking-wide uppercase"
-          >
-            James Mitchell
+          <Link href="/" className="flex items-center">
+            <img src="/logo.svg" alt="Assured Justice" className="h-10" />
           </Link>
 
           {/* Desktop Navigation */}
