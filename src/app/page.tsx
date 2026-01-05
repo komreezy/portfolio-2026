@@ -6,14 +6,14 @@ import ScrollReveal from "@/components/ScrollReveal";
 export default function Home() {
   return (
     <main className="flex-1">
-      {/* Hero Section - Dark Background */}
-      <section className="min-h-screen flex items-center justify-center bg-[var(--primary-dark)]">
+      {/* Hero Section */}
+      <section className="min-h-screen flex items-center justify-center bg-[var(--background)]">
         <div className="text-center px-[var(--side-padding)] animate-reveal">
-          <h1 className="display-text-light">
-            Strategic Legal
-            <br />
-            <span className="font-serif italic">Counsel</span>
-          </h1>
+          <img
+            src="/logo.svg"
+            alt="Assured Justice"
+            className="h-48 md:h-64 lg:h-80 mx-auto"
+          />
         </div>
       </section>
 

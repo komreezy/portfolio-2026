@@ -17,8 +17,11 @@ export default function Header() {
     <header className="bg-[var(--background)] h-[var(--header-height)] flex items-center">
       <div className="w-full px-[var(--side-padding)]">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center">
-            <img src="/logo.svg" alt="Assured Justice" className="h-10" />
+          <Link
+            href="/"
+            className="text-[var(--foreground)] text-sm font-medium tracking-wide uppercase"
+          >
+            Arash Jafari Law
           </Link>
 
           {/* Desktop Navigation */}
