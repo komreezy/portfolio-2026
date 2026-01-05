@@ -4,24 +4,24 @@ import { useState, useEffect, useRef } from "react";
 
 const services = [
   {
-    title: "Web Development",
+    title: "Business Formation",
     description:
-      "Custom websites and applications built with modern technologies. From responsive marketing sites to complex web applications, we craft solutions that perform beautifully across all devices.",
+      "Strategic guidance for entrepreneurs and business owners on entity selection, formation, and structuring. From LLCs to corporations, we help you establish the right legal foundation for long-term success.",
   },
   {
-    title: "UI/UX Design",
+    title: "Contract Law",
     description:
-      "User-centered design that balances aesthetics with functionality. We create intuitive interfaces and seamless experiences that delight users and drive engagement.",
+      "Comprehensive contract drafting, review, and negotiation services. We protect your interests in employment agreements, vendor contracts, partnership agreements, and complex commercial transactions.",
   },
   {
-    title: "Brand Strategy",
+    title: "Mergers & Acquisitions",
     description:
-      "Strategic brand development that tells your unique story. We help define your voice, visual identity, and positioning to create lasting connections with your audience.",
+      "End-to-end legal support for buying, selling, or merging businesses. We conduct thorough due diligence, structure deals, and navigate negotiations to maximize value and minimize risk.",
   },
   {
-    title: "Digital Marketing",
+    title: "Corporate Governance",
     description:
-      "Data-driven campaigns that connect with your audience. From content strategy to performance marketing, we help you reach the right people at the right time.",
+      "Ongoing counsel for boards, executives, and shareholders on governance matters, compliance, fiduciary duties, and corporate policy development to ensure sound business practices.",
   },
 ];
 
@@ -68,11 +68,11 @@ export default function ServicesAccordion() {
     <section className="px-[var(--side-padding)] py-[var(--section-spacing)]">
       <div className="grid md:grid-cols-[30%_70%] gap-12 mb-12">
         <ScrollRevealItem>
-          <span className="heading-serif">Services</span>
+          <span className="heading-serif">Practice Areas</span>
         </ScrollRevealItem>
         <ScrollRevealItem delay={0.18}>
           <p className="text-[var(--muted-foreground)] text-sm font-light max-w-md">
-            We offer a comprehensive range of digital services to help bring your vision to life.
+            Focused legal expertise to help businesses navigate complex challenges and seize opportunities.
           </p>
         </ScrollRevealItem>
       </div>

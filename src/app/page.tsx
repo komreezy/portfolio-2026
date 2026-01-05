@@ -10,9 +10,9 @@ export default function Home() {
       <section className="min-h-screen flex items-center justify-center bg-[var(--primary-dark)]">
         <div className="text-center px-[var(--side-padding)] animate-reveal">
           <h1 className="display-text-light">
-            Crafting Digital
+            Strategic Legal
             <br />
-            <span className="font-serif italic">Experiences</span>
+            <span className="font-serif italic">Counsel</span>
           </h1>
         </div>
       </section>
@@ -29,17 +29,17 @@ export default function Home() {
           <div className="space-y-6">
             <ScrollReveal delay={0.18}>
               <p className="text-lg font-light text-[var(--foreground)] leading-relaxed max-w-2xl">
-                We believe in the power of thoughtful design to transform brands and create
-                lasting connections. Our approach combines strategic thinking with creative
-                execution to deliver digital experiences that resonate.
+                With over 15 years of experience in corporate and business law, I provide
+                strategic counsel to entrepreneurs, growing companies, and established businesses
+                navigating complex legal challenges.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.36}>
               <p className="text-lg font-light text-[var(--muted-foreground)] leading-relaxed max-w-2xl">
-                Every project begins with understanding — your goals, your audience, your vision.
-                From there, we craft solutions that are not just beautiful, but purposeful.
-                Clean code, elegant design, and meaningful user experiences are at the heart
-                of everything we do.
+                Every client relationship begins with listening — understanding your business,
+                your goals, and the challenges you face. From there, I craft practical legal
+                solutions that protect your interests while enabling your success. Clear communication,
+                sound judgment, and unwavering advocacy are at the heart of my practice.
               </p>
             </ScrollReveal>
           </div>
@@ -56,19 +56,19 @@ export default function Home() {
           <div className="grid md:grid-cols-[70%_30%] gap-10 items-center">
             <div>
               <ScrollReveal>
-                <span className="heading-serif mb-6 block">Our Philosophy</span>
+                <span className="heading-serif mb-6 block">My Philosophy</span>
               </ScrollReveal>
               <ScrollReveal delay={0.18}>
                 <h2 className="text-3xl md:text-4xl font-light text-[var(--foreground)] mb-6 leading-tight">
-                  Design with <span className="font-serif italic">intention</span>,
-                  <br />build with purpose
+                  Counsel with <span className="font-serif italic">clarity</span>,
+                  <br />advocate with conviction
                 </h2>
               </ScrollReveal>
               <ScrollReveal delay={0.36}>
                 <p className="text-[var(--muted-foreground)] font-light max-w-xl leading-relaxed">
-                  We don&apos;t just create websites — we craft digital experiences that tell your story.
-                  Every element is considered, every interaction is meaningful, and every pixel
-                  serves a purpose.
+                  I don&apos;t just review contracts — I help you understand the implications and
+                  make informed decisions. Every legal strategy is tailored to your specific
+                  situation, every recommendation grounded in practical business reality.
                 </p>
               </ScrollReveal>
             </div>
@@ -86,19 +86,19 @@ export default function Home() {
             </ScrollReveal>
             <div>
               <ScrollReveal>
-                <span className="heading-serif mb-6 block">Our Process</span>
+                <span className="heading-serif mb-6 block">My Approach</span>
               </ScrollReveal>
               <ScrollReveal delay={0.18}>
                 <h2 className="text-3xl md:text-4xl font-light text-[var(--foreground)] mb-6 leading-tight">
-                  Collaborative by <span className="font-serif italic">nature</span>,
-                  <br />iterative by design
+                  Responsive by <span className="font-serif italic">commitment</span>,
+                  <br />thorough by practice
                 </h2>
               </ScrollReveal>
               <ScrollReveal delay={0.36}>
                 <p className="text-[var(--muted-foreground)] font-light max-w-xl leading-relaxed">
-                  Great work happens through partnership. We work closely with you at every stage,
-                  from initial concept to final launch, ensuring the end result exceeds expectations
-                  while staying true to your vision.
+                  Effective legal representation requires partnership. I work closely with you
+                  throughout every matter, from initial consultation to final resolution, ensuring
+                  you&apos;re informed and confident at every step of the process.
                 </p>
               </ScrollReveal>
             </div>
@@ -111,7 +111,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center text-center px-[var(--side-padding)]">
           <ScrollReveal>
             <h2 className="text-4xl md:text-5xl font-light text-[var(--footer-text)] mb-8">
-              Let&apos;s work <span className="font-serif italic">together</span>
+              Schedule a <span className="font-serif italic">consultation</span>
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.18}>

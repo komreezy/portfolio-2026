@@ -9,7 +9,7 @@ export default function Header() {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/portfolio", label: "Work" },
+    { href: "/portfolio", label: "Practice Areas" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -21,7 +21,7 @@ export default function Header() {
             href="/"
             className="text-[var(--primary)] text-sm font-medium tracking-wide uppercase"
           >
-            Komran Ghahremani
+            James Mitchell
           </Link>
 
           {/* Desktop Navigation */}

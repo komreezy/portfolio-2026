@@ -1,11 +1,11 @@
 export default function About() {
-  const skills = [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Node.js",
-    "Tailwind CSS",
-    "Git",
+  const credentials = [
+    "J.D., Harvard Law School",
+    "B.A., Yale University",
+    "California State Bar",
+    "AV Preeminent Rating",
+    "Super Lawyers",
+    "Best Lawyers in America",
   ];
 
   return (
@@ -18,9 +18,9 @@ export default function About() {
           </div>
           <div>
             <h1 className="text-4xl md:text-5xl font-light text-[var(--primary)] leading-tight">
-              Creating with
+              Advocating with
               <br />
-              <span className="font-serif italic">intention</span>
+              <span className="font-serif italic">purpose</span>
             </h1>
           </div>
         </div>
@@ -45,42 +45,44 @@ export default function About() {
             {/* Bio Content */}
             <div className="space-y-8">
               <p className="text-lg font-light text-[var(--foreground)] leading-relaxed">
-                Hello! I&apos;m a developer and designer passionate about
-                creating digital experiences that are both beautiful and
-                functional.
+                I&apos;m James Mitchell, a business and corporate attorney
+                dedicated to helping clients navigate complex legal challenges
+                with confidence and clarity.
               </p>
 
               <p className="text-base font-light text-[var(--foreground)] leading-relaxed opacity-80">
-                With a focus on clean code and thoughtful design, I build
-                websites and applications that serve their purpose elegantly.
-                I believe in the power of simplicity and attention to detail.
+                With over 15 years of experience advising startups, growth-stage
+                companies, and established businesses, I bring a pragmatic approach
+                to legal counsel. I believe in building lasting relationships and
+                truly understanding each client&apos;s unique goals.
               </p>
 
               <p className="text-base font-light text-[var(--foreground)] leading-relaxed opacity-80">
-                When I&apos;m not coding, you can find me exploring new
-                technologies, contributing to open source, or enjoying a
-                good cup of coffee.
+                Prior to establishing my practice, I served as General Counsel
+                at a Fortune 500 company and worked at a leading international
+                law firm. This experience gives me valuable perspective on both
+                sides of complex business transactions.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Skills Section */}
+      {/* Credentials Section */}
       <section className="border-t border-[var(--border)] py-[var(--section-spacing)] px-[var(--side-padding)]">
         <div className="grid md:grid-cols-[30%_70%] gap-12">
           <div>
-            <span className="heading-serif">Expertise</span>
+            <span className="heading-serif">Credentials</span>
           </div>
 
           <div>
             <div className="flex flex-wrap gap-3">
-              {skills.map((skill) => (
+              {credentials.map((credential) => (
                 <span
-                  key={skill}
+                  key={credential}
                   className="border border-[var(--border-solid)] text-[var(--foreground)] px-4 py-2 text-sm font-light"
                 >
-                  {skill}
+                  {credential}
                 </span>
               ))}
             </div>
@@ -89,29 +91,29 @@ export default function About() {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h3 className="text-[var(--primary)] text-sm uppercase tracking-wider mb-2">
-                    Development
+                    Transactional
                   </h3>
                   <p className="text-sm font-light text-[var(--foreground)] opacity-80">
-                    Frontend & backend development with modern frameworks
-                    and best practices.
+                    Complex deal structuring, M&A transactions, and
+                    contract negotiations for businesses of all sizes.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-[var(--primary)] text-sm uppercase tracking-wider mb-2">
-                    Design
+                    Advisory
                   </h3>
                   <p className="text-sm font-light text-[var(--foreground)] opacity-80">
-                    UI/UX design focused on clarity, usability, and
-                    visual harmony.
+                    Strategic counsel on corporate governance, compliance,
+                    and risk management.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-[var(--primary)] text-sm uppercase tracking-wider mb-2">
-                    Strategy
+                    Litigation
                   </h3>
                   <p className="text-sm font-light text-[var(--foreground)] opacity-80">
-                    Thoughtful approach to problem-solving and
-                    product development.
+                    Business dispute resolution through negotiation,
+                    mediation, and courtroom advocacy.
                   </p>
                 </div>
               </div>

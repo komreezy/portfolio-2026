@@ -10,10 +10,10 @@ export default function Footer() {
           {/* Brand Column */}
           <div>
             <h3 className="text-[var(--footer-accent)] font-serif text-lg mb-4">
-              Komran Ghahremani
+              James Mitchell
             </h3>
             <p className="text-[var(--footer-text)] text-sm font-light opacity-80">
-              Creating thoughtful digital experiences.
+              Attorney at Law
             </p>
           </div>
 
@@ -39,7 +39,7 @@ export default function Footer() {
                 href="/portfolio"
                 className="text-[var(--footer-text)] text-sm font-light opacity-80 hover:opacity-100 transition-opacity duration-150"
               >
-                Work
+                Practice Areas
               </Link>
               <Link
                 href="/contact"
@@ -57,14 +57,6 @@ export default function Footer() {
             </h4>
             <nav className="flex flex-col gap-3">
               <Link
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--footer-text)] text-sm font-light opacity-80 hover:opacity-100 transition-opacity duration-150"
-              >
-                GitHub
-              </Link>
-              <Link
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -73,12 +65,20 @@ export default function Footer() {
                 LinkedIn
               </Link>
               <Link
-                href="https://twitter.com"
+                href="https://martindale.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[var(--footer-text)] text-sm font-light opacity-80 hover:opacity-100 transition-opacity duration-150"
               >
-                Twitter
+                Martindale-Hubbell
+              </Link>
+              <Link
+                href="https://avvo.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--footer-text)] text-sm font-light opacity-80 hover:opacity-100 transition-opacity duration-150"
+              >
+                Avvo
               </Link>
             </nav>
           </div>
@@ -89,7 +89,7 @@ export default function Footer() {
               Get in Touch
             </h4>
             <p className="text-[var(--footer-text)] text-sm font-light opacity-80">
-              hello@example.com
+              james@mitchelllaw.com
             </p>
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-[var(--footer-accent)] border-opacity-30">
           <p className="text-[var(--footer-text)] text-xs font-light opacity-60 text-center">
-            &copy; {currentYear} Komran Ghahremani. All rights reserved.
+            &copy; {currentYear} James Mitchell, Attorney at Law. All rights reserved.
           </p>
         </div>
       </div>

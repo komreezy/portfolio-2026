@@ -17,8 +17,8 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Komran Ghahremani",
-  description: "Personal portfolio",
+  title: "James Mitchell | Attorney at Law",
+  description: "Experienced business and corporate attorney providing strategic legal counsel to entrepreneurs, startups, and established businesses.",
 };
 
 export default function RootLayout({

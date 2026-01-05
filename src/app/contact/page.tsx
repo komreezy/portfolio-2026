@@ -9,14 +9,14 @@ export default function Contact() {
           </div>
           <div>
             <h1 className="text-4xl md:text-5xl font-light text-[var(--primary)] leading-tight">
-              Let&apos;s start a
+              Schedule a
               <br />
-              <span className="font-serif italic">conversation</span>
+              <span className="font-serif italic">consultation</span>
             </h1>
             <p className="mt-8 text-base font-light text-[var(--foreground)] opacity-80 max-w-lg">
-              I&apos;m always interested in hearing about new projects and
-              opportunities. Whether you have a question or just want to
-              say hello, feel free to reach out.
+              I offer complimentary initial consultations to discuss your legal
+              needs and explore how I can help. Whether you&apos;re facing an
+              immediate challenge or planning ahead, I&apos;m here to assist.
             </p>
           </div>
         </div>
@@ -30,77 +30,30 @@ export default function Contact() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-16">
-            {/* Contact Form */}
-            <div>
-              <form className="space-y-8">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-xs font-light text-[var(--muted-foreground)] uppercase tracking-widest mb-2"
-                  >
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="input-underline w-full"
-                    placeholder="Your name"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-xs font-light text-[var(--muted-foreground)] uppercase tracking-widest mb-2"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="input-underline w-full"
-                    placeholder="your@email.com"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="subject"
-                    className="block text-xs font-light text-[var(--muted-foreground)] uppercase tracking-widest mb-2"
-                  >
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    className="input-underline w-full"
-                    placeholder="What is this regarding?"
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="message"
-                    className="block text-xs font-light text-[var(--muted-foreground)] uppercase tracking-widest mb-2"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    className="input-underline w-full resize-none"
-                    placeholder="Tell me about your project..."
-                  />
-                </div>
-
-                <button type="submit" className="btn-outlined mt-4">
-                  Send Message
-                </button>
-              </form>
+            {/* Email CTA */}
+            <div className="flex flex-col justify-center">
+              <p className="text-lg font-light text-[var(--foreground)] mb-8">
+                The best way to reach me is via email. I typically respond within one business day.
+              </p>
+              <a
+                href="mailto:james@mitchelllaw.com"
+                className="btn-outlined inline-flex items-center gap-2 w-fit"
+              >
+                <span>Send an Email</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M7 17L17 7M17 7H7M17 7V17" />
+                </svg>
+              </a>
             </div>
 
             {/* Contact Info */}
@@ -110,52 +63,51 @@ export default function Contact() {
                   Email
                 </h3>
                 <a
-                  href="mailto:hello@example.com"
+                  href="mailto:james@mitchelllaw.com"
                   className="text-[var(--foreground)] font-light hover:text-[var(--primary)] transition-colors duration-150"
                 >
-                  hello@example.com
+                  james@mitchelllaw.com
                 </a>
               </div>
 
               <div>
                 <h3 className="text-[var(--primary)] text-xs uppercase tracking-widest mb-3">
-                  Location
+                  Phone
+                </h3>
+                <a
+                  href="tel:+14155551234"
+                  className="text-[var(--foreground)] font-light hover:text-[var(--primary)] transition-colors duration-150"
+                >
+                  (415) 555-1234
+                </a>
+              </div>
+
+              <div>
+                <h3 className="text-[var(--primary)] text-xs uppercase tracking-widest mb-3">
+                  Office
                 </h3>
                 <p className="text-[var(--foreground)] font-light">
-                  San Francisco, California
+                  555 Market Street, Suite 1200
+                  <br />
+                  San Francisco, CA 94105
                 </p>
               </div>
 
               <div>
                 <h3 className="text-[var(--primary)] text-xs uppercase tracking-widest mb-3">
-                  Connect
+                  Office Hours
                 </h3>
-                <div className="flex flex-col gap-2">
-                  <a
-                    href="#"
-                    className="text-[var(--foreground)] font-light hover:text-[var(--primary)] transition-colors duration-150"
-                  >
-                    GitHub
-                  </a>
-                  <a
-                    href="#"
-                    className="text-[var(--foreground)] font-light hover:text-[var(--primary)] transition-colors duration-150"
-                  >
-                    LinkedIn
-                  </a>
-                  <a
-                    href="#"
-                    className="text-[var(--foreground)] font-light hover:text-[var(--primary)] transition-colors duration-150"
-                  >
-                    Twitter
-                  </a>
-                </div>
+                <p className="text-[var(--foreground)] font-light">
+                  Monday – Friday: 9:00 AM – 6:00 PM
+                  <br />
+                  Evenings & weekends by appointment
+                </p>
               </div>
 
               <div className="pt-8 border-t border-[var(--border)]">
                 <p className="text-sm font-light text-[var(--foreground)] opacity-70">
-                  I typically respond within 24-48 hours. Looking forward
-                  to hearing from you.
+                  I respond to all inquiries within one business day.
+                  Consultations available in person, by phone, or via video conference.
                 </p>
               </div>
             </div>
