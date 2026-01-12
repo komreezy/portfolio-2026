@@ -4,13 +4,13 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const practiceAreas = [
-    { href: "/practice-areas/dui", label: "DUI Lawyer" },
-    { href: "/practice-areas/domestic-violence", label: "Domestic Violence" },
-    { href: "/practice-areas/juvenile-defense", label: "Juvenile Defense" },
-    { href: "/practice-areas/mental-health", label: "Mental Health" },
-    { href: "/practice-areas/probation-violation", label: "Probation Violation" },
-    { href: "/practice-areas/self-defense", label: "Self Defense" },
-    { href: "/practice-areas/traffic-violations", label: "Traffic Violations" },
+    { href: "/practice-areas/car-accidents", label: "Car Accidents" },
+    { href: "/practice-areas/truck-accidents", label: "Truck Accidents" },
+    { href: "/practice-areas/motorcycle-accidents", label: "Motorcycle Accidents" },
+    { href: "/practice-areas/slip-and-fall", label: "Slip & Fall" },
+    { href: "/practice-areas/medical-malpractice", label: "Medical Malpractice" },
+    { href: "/practice-areas/wrongful-death", label: "Wrongful Death" },
+    { href: "/practice-areas/workers-compensation", label: "Workers' Comp" },
   ];
 
   const quickLinks = [
@@ -77,10 +77,10 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Criminal Defense Column */}
+          {/* Practice Areas Column */}
           <div>
             <h4 className="text-[var(--footer-accent)] text-xs uppercase tracking-widest mb-6">
-              Criminal Defense
+              Practice Areas
             </h4>
             <nav className="flex flex-col gap-3">
               {practiceAreas.map((link) => (

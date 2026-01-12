@@ -17,8 +17,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Arash Jafari | Attorney at Law",
-  description: "Experienced business and corporate attorney providing strategic legal counsel to entrepreneurs, startups, and established businesses.",
+  title: "Arash Jafari | Personal Injury Attorney",
+  description: "Experienced personal injury attorney in Georgia. We fight for maximum compensation for car accidents, truck accidents, slip & fall, medical malpractice, and wrongful death cases.",
 };
 
 export default function RootLayout({

@@ -15,7 +15,7 @@ export default function FirmOverview() {
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
             <h3 className="text-xl font-medium text-[var(--primary)] mb-2">
-              Criminal Defense Attorney in Georgia
+              Personal Injury Attorney in Georgia
             </h3>
           </ScrollReveal>
           <ScrollReveal delay={0.25}>
@@ -42,12 +42,12 @@ export default function FirmOverview() {
             </ScrollReveal>
             <ScrollReveal delay={0.15}>
               <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-6">
-                The Law Office of Arash Jafari is a family-run criminal defense firm dedicated to helping people in our community during one of life&apos;s toughest moments.
+                The Law Office of Arash Jafari is a dedicated personal injury firm committed to helping accident victims throughout Georgia get the compensation they deserve.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.25}>
               <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed">
-                Whether it is a one-time mistake, you are struggling with addiction, or this is not your first brush with the law, we can help you find a resolution that protects your interests and helps you move on with your life.
+                Whether you were injured in a car accident, slip and fall, or due to medical negligence, we fight tirelessly against insurance companies to maximize your recovery and help you move forward with your life.
               </p>
             </ScrollReveal>
           </div>
@@ -76,17 +76,17 @@ export default function FirmOverview() {
             </ScrollReveal>
             <ScrollReveal delay={0.25}>
               <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-6">
-                We pride ourselves on and are known for our skills at trial. For you, this means you will have an attorney in your corner who understands the finer points of crafting compelling arguments for judges and juries, how to present evidence and how to cross-examine witnesses to cast doubt.
+                We pride ourselves on our trial skills, which gives us leverage in every negotiation. Insurance companies know that we&apos;re prepared to take your case to court if they don&apos;t offer fair compensation — and that makes all the difference.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.35}>
               <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-6">
-                This does not mean that your case will go to trial. However, it does mean that we are well-positioned to evaluate the prosecution&apos;s case against you and help you determine whether a trial is the best path forward for asserting your rights.
+                Most personal injury cases settle before trial, but having an attorney with courtroom experience ensures the insurance company takes your claim seriously. We know how to present evidence, question witnesses, and argue persuasively before a jury.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.45}>
               <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed">
-                We place a premium on communication with our clients to help them get a better grasp of their options and potential outcomes. We will always work with you to help you make informed choices that work best for you.
+                We place a premium on communication with our clients. You&apos;ll always know the status of your case and understand your options. We work with you to make informed decisions about settlements and, when necessary, trial.
               </p>
             </ScrollReveal>
           </div>
@@ -103,7 +103,7 @@ export default function FirmOverview() {
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
             <p className="text-base font-light text-[var(--footer-text)] opacity-80 mb-8">
-              If you or a loved one is facing criminal charges, I invite you to contact my law firm to learn about the high-quality representation that I can offer. To schedule a consultation, fill out my online contact form or call my office at <strong className="font-medium">(678) 362-3176</strong>.
+              If you or a loved one has been injured due to someone else&apos;s negligence, I invite you to contact my law firm for a free consultation. To get started, fill out my online contact form or call my office at <strong className="font-medium">(678) 362-3176</strong>.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={0.25}>

@@ -24,17 +24,17 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight mb-6">
-                Fighting for What&apos;s Right
+                Injured? We Fight for You
               </h1>
             </ScrollReveal>
             <ScrollReveal delay={0.15}>
               <p className="text-xl md:text-2xl font-light text-white/80 mb-8">
-                Put a Former Prosecutor to Work for You
+                Experienced Personal Injury Attorneys in Georgia
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.25}>
               <Link href="/contact" className="btn-primary-light">
-                Schedule a Consultation Today
+                Get Your Free Case Review
               </Link>
             </ScrollReveal>
           </div>
@@ -46,7 +46,7 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <ScrollReveal>
             <blockquote className="text-xl md:text-2xl font-light text-[var(--foreground)] leading-relaxed mb-4">
-              &ldquo;Whether this was your first and only brush with the law or a repeat offense, I&apos;ll help you find a resolution that protects your interests and helps you move on to a better, brighter life.&rdquo;
+              &ldquo;When you&apos;re injured due to someone else&apos;s negligence, you deserve an attorney who will fight tirelessly to get you the compensation you need to recover and move forward with your life.&rdquo;
             </blockquote>
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
@@ -59,7 +59,7 @@ export default function Home() {
       <section className="py-[var(--section-spacing)] px-[var(--side-padding)]">
         <ScrollReveal>
           <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] text-center mb-12">
-            Criminal Defense Attorney Serving Georgia
+            Personal Injury Attorney Serving Georgia
           </h2>
         </ScrollReveal>
         <div className="grid md:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
@@ -75,17 +75,17 @@ export default function Home() {
             </ScrollReveal>
             <ScrollReveal delay={0.25}>
               <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-4">
-                After graduating cum laude from law school, I was a practicing prosecutor for almost a decade. In that decade, I became well-equipped with the knowledge and resources to curate strategies against a defendant&apos;s case.
+                With over a decade of experience representing injured victims throughout Georgia, I have recovered millions of dollars for my clients. I understand the tactics insurance companies use to minimize your claim, and I know how to fight back.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.3}>
               <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-4">
-                Now, as a criminal defense attorney, I remember many of those strategies and tactics I used as a criminal prosecutor to stay one step ahead of the opposition that I now fight against.
+                From car accidents and slip-and-fall injuries to medical malpractice and wrongful death, I handle all types of personal injury cases. My approach is simple: treat every client like family and fight for every dollar they deserve.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.35}>
               <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-8">
-                My experience as a prosecutor provides me with a unique advantage because I know how the other side operates — and I intend to use that advantage to benefit your case.
+                I work on a contingency fee basis, which means you pay nothing unless we win your case. Your focus should be on healing — let me handle the legal fight.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.4}>
@@ -105,31 +105,31 @@ export default function Home() {
         <div className="max-w-5xl mx-auto">
           <ScrollReveal>
             <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] text-center mb-12">
-              A Strong Defense You Can Count On
+              Maximum Compensation for Your Injuries
             </h2>
           </ScrollReveal>
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <ScrollReveal delay={0.1}>
                 <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-4">
-                  So you have been charged with a crime; what now? You may think that choosing a public defender in court may be your best option, especially if you have a tight budget. The reality is that your future is at risk if you&apos;re convicted. At our firm, we work hard to protect your rights.
+                  After an accident, you&apos;re dealing with medical bills, lost wages, and pain that affects every aspect of your life. Insurance companies will try to settle your claim quickly and cheaply. You deserve an attorney who will fight for the full value of your case.
                 </p>
               </ScrollReveal>
               <ScrollReveal delay={0.2}>
                 <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed">
-                  After working as a criminal prosecutor for ten years, I learned many different legal strategies that can be used to punish those charged with crimes such as domestic violence, drunk driving (DUI), or drug crimes. Now, it&apos;s my job to use the knowledge and mind of a prosecutor to my client&apos;s advantage.
+                  I investigate every case thoroughly, working with medical experts, accident reconstructionists, and economists to build the strongest possible claim. Whether through negotiation or trial, I pursue every avenue to maximize your recovery.
                 </p>
               </ScrollReveal>
             </div>
             <div>
               <ScrollReveal delay={0.15}>
                 <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-4">
-                  While representing you after you have been accused, I will build a thorough argument to ensure you are fought for honestly, justly, and efficiently. I&apos;ve built a reputation in the legal community as a skilled defense litigator because of my ability to think outside the box.
+                  You may be entitled to compensation for medical expenses, lost income, pain and suffering, and more. I help clients understand all of their options and fight to recover damages for both current and future needs.
                 </p>
               </ScrollReveal>
               <ScrollReveal delay={0.25}>
                 <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed">
-                  Don&apos;t risk your future with just any attorney. I have dealt with cases involving anything from self-defense to juvenile offenses and traffic violations. Call my office today to put an accomplished criminal defense attorney on your side.
+                  Don&apos;t let the insurance company take advantage of you. Whether you were injured in a car accident, slip and fall, or due to medical negligence, call my office today for a free consultation.
                 </p>
               </ScrollReveal>
             </div>
@@ -142,12 +142,12 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center text-center px-[var(--side-padding)]">
           <ScrollReveal>
             <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--footer-text)] mb-6">
-              Trouble With The Law?
+              Injured in an Accident?
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
             <Link href="/contact" className="btn-outlined-light">
-              Just Call Today
+              Free Consultation
             </Link>
           </ScrollReveal>
         </div>

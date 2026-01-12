@@ -4,43 +4,43 @@ import ScrollReveal from "@/components/ScrollReveal";
 const testimonials = [
   {
     quote:
-      "We are forever grateful for the help of the Law Office. I would recommend their services to anyone.",
-    author: "Gina S.",
+      "After my car accident, I didn't know where to turn. The team at Arash Jafari Law fought the insurance company and got me a settlement that covered all my medical bills and then some.",
+    author: "Sarah M.",
   },
   {
     quote:
-      "I have worked with this firm since 2008 and I would recommend them to anybody who needs an attorney. They work harder than anybody I know and genuinely care about achieving the best result in your case.",
-    author: "Ryan D.",
+      "When I slipped and fell at a grocery store, I didn't think I had a case. Arash proved me wrong and got me compensation for my injuries, lost wages, and pain and suffering.",
+    author: "James T.",
   },
   {
     quote:
-      "An aggressive trial lawyer who will not shy away from a fight in the courtroom and cares a whole lot about making sure the right thing gets done.",
-    author: "Eric B.",
+      "The insurance company offered me a lowball settlement after my truck accident. Arash took my case to trial and won me three times what they originally offered.",
+    author: "Michael R.",
   },
   {
     quote:
-      "I cannot say enough about this attorney. From the moment I walked into the office, they took the time to look into my case and continued to strive to give me the best outcome for my case. They aren't an attorney who is about trying to make money off your case or your hardship. They are genuine in their efforts to ensure the best optimal results.",
-    author: "Christine M.",
+      "When my husband was killed by a drunk driver, the team helped our family through the worst time of our lives. They were compassionate, professional, and relentless in pursuing justice.",
+    author: "Maria G.",
   },
   {
     quote:
-      "An attorney who truly cares about the best interest of their client. They have a calm demeanor, are an excellent communicator, and understand the system and what needs to be done to get the best possible outcome. Another incredible thing is their honesty. If you are asking for legal counsel they are not an expert on, they are not afraid to tell you the truth and refer you to someone more experienced.",
-    author: "Nicole M.",
+      "I was injured due to a defective product and had no idea how to proceed. Arash handled everything and got me a great settlement. I couldn't have done it without him.",
+    author: "Lisa K.",
   },
   {
     quote:
-      "Don't go to court alone! Very professional, has a deep knowledge of the law, has the negotiation skills, connections and has the respect of the prosecutors inside the courtroom. It was pretty awesome to observe them in action as they worked to reduce my violation, reduce fines and avoid higher insurance costs!",
-    author: "Tonya O.",
+      "After my motorcycle accident, the other driver's insurance tried to blame me. Arash fought back with evidence and expert witnesses. They got me the compensation I deserved.",
+    author: "David W.",
   },
   {
     quote:
-      "The Law Office has been exceptional at going above and beyond for their clients. Especially when there is an evident need for substance abuse treatment. I would HIGHLY recommend them. They go way above and beyond the call of duty. They care. And in today's world, that's hard to find.",
-    author: "Acceptance Recovery Center",
+      "The medical malpractice case was complex, but Arash and his team never gave up. They worked with medical experts and built a strong case. I'm grateful for their dedication.",
+    author: "Patricia H.",
   },
   {
     quote:
-      "Very rarely do you meet a lawyer that truly cares about their clients and LISTENS to what they have to say. They go far beyond what is typically expected, and the world desperately needs more people like them. So grateful to have crossed paths with them.",
-    author: "Kristina M.",
+      "I was hesitant to hire a lawyer, but after my workplace injury, I realized I needed help. Arash got me workers' comp benefits AND a personal injury settlement. Highly recommend!",
+    author: "Robert C.",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function Testimonials() {
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
             <h3 className="text-xl font-medium text-[var(--primary)] mb-2">
-              Criminal Defense Attorney in Georgia
+              Personal Injury Attorney in Georgia
             </h3>
           </ScrollReveal>
           <ScrollReveal delay={0.25}>

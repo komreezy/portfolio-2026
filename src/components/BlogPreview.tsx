@@ -3,22 +3,22 @@ import ScrollReveal from "./ScrollReveal";
 
 const blogPosts = [
   {
-    title: "Collateral Consequences of a DUI Conviction",
+    title: "What to Do After a Car Accident in Georgia",
     excerpt:
-      "Beyond criminal penalties, a DUI conviction affects many aspects of life: insurance premiums rise, employment opportunities may decline, and professional licenses can be affected...",
-    slug: "collateral-consequences-dui",
+      "The moments after a car accident can be overwhelming. Learn the essential steps you should take to protect yourself, your health, and your legal rights...",
+    slug: "what-to-do-after-car-accident-georgia",
   },
   {
-    title: "Why You Need a DUI Lawyer in Georgia",
+    title: "How Insurance Companies Try to Minimize Your Claim",
     excerpt:
-      "DUI law is complex, and penalties can include jail, fines, license suspension, and a permanent criminal record. An experienced DUI lawyer understands the legal system...",
-    slug: "why-you-need-dui-lawyer",
+      "Insurance adjusters may seem friendly, but their goal is to pay as little as possible. Learn the tactics they use and how to protect yourself...",
+    slug: "insurance-company-tactics",
   },
   {
-    title: "How Long a DUI Stays on Your Record in Georgia",
+    title: "Types of Damages You Can Recover",
     excerpt:
-      "Georgia treats DUI convictions very seriously; they remain on your criminal record forever and cannot be restricted or expunged...",
-    slug: "dui-record-georgia",
+      "From medical expenses and lost wages to pain and suffering, there are many types of compensation available in a personal injury case...",
+    slug: "types-of-damages-personal-injury",
   },
 ];
 

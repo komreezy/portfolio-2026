@@ -4,52 +4,52 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const practiceAreas = [
   {
-    title: "Criminal Defense",
+    title: "Car Accidents",
     description:
-      "If you have been arrested, it is almost certain that you need a criminal defense attorney. There are decisions you face that will have a big effect on the outcome of your case. Our firm aggressively defends against all types of criminal offenses.",
-    link: "/practice-areas/criminal-defense",
+      "Car accidents can result in devastating injuries and significant financial burdens. We fight to hold negligent drivers accountable and recover compensation for medical bills, lost wages, pain and suffering, and more.",
+    link: "/practice-areas/car-accidents",
   },
   {
-    title: "DUI",
+    title: "Truck Accidents",
     description:
-      "We specialize in providing exceptional legal representation for individuals facing DUI charges. We are committed to protecting your rights and fighting for your freedom. Don't face the challenges of a DUI charge alone.",
-    link: "/practice-areas/dui",
+      "Collisions with commercial trucks often cause catastrophic injuries. We have experience taking on trucking companies and their insurers to secure the maximum compensation our clients deserve.",
+    link: "/practice-areas/truck-accidents",
   },
   {
-    title: "Probation Violation",
+    title: "Motorcycle Accidents",
     description:
-      "Violating any conditions of probation may cause the judge to revoke, change, or terminate the probation—or impose additional penalties. Trust us to navigate the complexities of probation violation laws and advocate for the best possible outcome.",
-    link: "/practice-areas/probation-violation",
+      "Motorcycle riders face unique dangers on Georgia roads. When negligent drivers cause accidents, we help injured riders recover damages for their injuries, bike damage, and other losses.",
+    link: "/practice-areas/motorcycle-accidents",
   },
   {
-    title: "Traffic Violations",
+    title: "Slip & Fall",
     description:
-      "Exceptional legal representation for individuals facing traffic violations and traffic tickets in Georgia. Don't let a traffic violation jeopardize your future—let us give you the support you need.",
-    link: "/practice-areas/traffic-violations",
+      "Property owners have a duty to maintain safe premises. If you were injured due to hazardous conditions like wet floors, uneven surfaces, or poor lighting, we can help you pursue a premises liability claim.",
+    link: "/practice-areas/slip-and-fall",
   },
   {
-    title: "Domestic Violence",
+    title: "Medical Malpractice",
     description:
-      "Whether you need guidance on restraining orders, assault charges, or any other domestic violence-related matters, we are here to navigate the intricacies of your case with professionalism and discretion.",
-    link: "/practice-areas/domestic-violence",
+      "When healthcare providers fail to meet the standard of care, patients suffer. We handle cases involving surgical errors, misdiagnosis, medication mistakes, and other forms of medical negligence.",
+    link: "/practice-areas/medical-malpractice",
   },
   {
-    title: "Juvenile Delinquency",
+    title: "Wrongful Death",
     description:
-      "Our unwavering commitment lies in advocating for the rights of juveniles facing delinquency charges. Entrust us to be your advocate throughout the legal process for juvenile defense.",
-    link: "/practice-areas/juvenile-defense",
+      "Losing a loved one due to someone else's negligence is devastating. We help families seek justice and compensation for funeral expenses, lost income, and the emotional toll of their loss.",
+    link: "/practice-areas/wrongful-death",
   },
   {
-    title: "Self Defense",
+    title: "Workers' Compensation",
     description:
-      "Everyone wants to feel safe, and when a person feels threatened by another, they may use self-defense actions. With an emphasis on self-defense representation, we are committed to safeguarding your rights.",
-    link: "/practice-areas/self-defense",
+      "Injured on the job? You may be entitled to workers' compensation benefits. We help injured workers navigate the claims process and fight for the benefits they deserve.",
+    link: "/practice-areas/workers-compensation",
   },
   {
-    title: "Mental Health",
+    title: "Product Liability",
     description:
-      "Mental health is a vital component of overall well-being. With a focus on mental health representation, we are committed to upholding your rights, ensuring your concerns are addressed with care.",
-    link: "/practice-areas/mental-health",
+      "Defective products can cause serious injuries. Whether it's a faulty vehicle part, dangerous medication, or unsafe consumer product, we hold manufacturers accountable for their negligence.",
+    link: "/practice-areas/product-liability",
   },
 ];
 
@@ -66,7 +66,7 @@ export default function PracticeAreas() {
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
             <p className="text-[var(--muted-foreground)] font-light">
-              Criminal Defense Attorney in Georgia
+              Personal Injury Attorney in Georgia
             </p>
           </ScrollReveal>
         </div>

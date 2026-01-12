@@ -6,22 +6,22 @@ import ScrollReveal from "./ScrollReveal";
 
 const testimonials = [
   {
-    title: "AMAZING!",
+    title: "LIFE-CHANGING SETTLEMENT!",
     quote:
-      "An aggressive trial lawyer who will not shy away from a fight in the courtroom and cares a whole lot about making sure the right thing gets done.",
-    author: "Tonya O.",
+      "After my car accident, I didn't know where to turn. Arash fought the insurance company and got me a settlement that covered all my medical bills and more.",
+    author: "Sarah M.",
   },
   {
-    title: "DRIVEN AND PASSIONATE!",
+    title: "FOUGHT FOR EVERY DOLLAR!",
     quote:
-      "I have worked with this firm since 2008. They work harder than anybody I know and they will genuinely care about achieving the best result in your case.",
-    author: "Ryan D.",
+      "The insurance company offered me a lowball settlement. Arash took my case to trial and won me three times what they originally offered. Incredible results!",
+    author: "Michael R.",
   },
   {
-    title: "A FIGHTER",
+    title: "COMPASSIONATE & RELENTLESS!",
     quote:
-      "An aggressive trial lawyer who will not shy away from a fight in the courtroom and cares a whole lot about making sure the right thing gets done.",
-    author: "Eric B.",
+      "When my husband was killed by a drunk driver, the team helped our family through the worst time. They were compassionate yet relentless in pursuing justice.",
+    author: "Maria G.",
   },
 ];
 

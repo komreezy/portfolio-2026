@@ -6,34 +6,34 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const faqs = [
   {
-    question: "Should I accept a plea bargain?",
+    question: "How much is my personal injury case worth?",
     answer:
-      "A plea bargain is an agreement between you and the prosecutor where you plead guilty to a lesser charge in exchange for a reduced sentence. Whether to accept depends on the strength of the evidence against you, the potential penalties if convicted at trial, and your personal circumstances. I will thoroughly analyze your case and provide honest advice about your options, but the decision is always yours.",
+      "The value of your case depends on several factors, including the severity of your injuries, medical expenses, lost wages, pain and suffering, and the impact on your quality of life. During your free consultation, I will review the details of your case and provide an honest assessment of what you may be entitled to recover.",
   },
   {
-    question: "What will happen to my record?",
+    question: "How long will my case take?",
     answer:
-      "Criminal convictions in Georgia remain on your record permanently and can affect employment, housing, and other opportunities. However, depending on the outcome of your case, there may be options for record restriction or expungement. We work to achieve outcomes that minimize long-term consequences for your record.",
+      "Every case is different. Some cases settle within a few months, while complex cases may take a year or more. Factors that affect the timeline include the severity of your injuries, whether liability is disputed, and whether the case goes to trial. I will keep you informed throughout the process and work to resolve your case as efficiently as possible.",
   },
   {
-    question: "Will I go to jail?",
+    question: "What if I can't afford a lawyer?",
     answer:
-      "Whether you face jail time depends on many factors including the nature of the offense, your prior criminal history, and the circumstances of your case. Many criminal cases are resolved without jail time through alternatives like probation, diversion programs, or community service. I will fight to keep you out of jail and explore every available option.",
+      "I work on a contingency fee basis, which means you pay nothing upfront and no attorney fees unless we win your case. My fee is a percentage of the recovery we obtain for you. This allows you to get experienced legal representation without any financial risk.",
   },
   {
-    question: "Should I talk to police when questioned?",
+    question: "Should I talk to the insurance company?",
     answer:
-      "You have the constitutional right to remain silent and the right to an attorney. Generally, it is advisable to politely decline to answer questions without a lawyer present. Anything you say can be used against you, and even innocent statements can be misinterpreted. Contact an attorney before speaking with law enforcement.",
+      "I strongly advise against giving recorded statements to insurance adjusters without speaking to an attorney first. Insurance companies are looking to minimize their payouts, and anything you say can be used to reduce or deny your claim. Let me handle all communications with the insurance company on your behalf.",
   },
   {
-    question: "The police say they can seize my assets — is that true?",
+    question: "What if the accident was partly my fault?",
     answer:
-      "Georgia law does allow for asset forfeiture in certain criminal cases, particularly those involving drugs or other serious offenses. However, there are legal protections and processes that must be followed. If you are facing asset seizure, it is critical to have an attorney who understands forfeiture law and can protect your property rights.",
+      "Georgia follows a modified comparative negligence rule. You can still recover damages as long as you are less than 50% at fault. Your recovery will be reduced by your percentage of fault. For example, if you are 20% at fault and your damages are $100,000, you would recover $80,000.",
   },
   {
-    question: "How much will this cost?",
+    question: "What compensation can I recover?",
     answer:
-      "Legal fees vary depending on the complexity of your case, the charges you face, and the amount of work required. During our initial consultation, I will provide you with a clear explanation of my fee structure and what to expect. I believe in transparency and will work with you to find a solution that fits your budget.",
+      "Depending on your case, you may be entitled to compensation for medical expenses (past and future), lost wages and earning capacity, pain and suffering, emotional distress, loss of enjoyment of life, and in some cases, punitive damages. I will work to maximize your total recovery.",
   },
 ];
 
@@ -56,7 +56,7 @@ export default function FAQ() {
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
             <h3 className="text-xl font-medium text-[var(--primary)] mb-2">
-              Attorney in Georgia
+              Personal Injury Attorney in Georgia
             </h3>
           </ScrollReveal>
           <ScrollReveal delay={0.25}>
@@ -75,7 +75,7 @@ export default function FAQ() {
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
             <p className="text-base font-light text-[var(--muted-foreground)] mb-8">
-              During an initial consultation, I&apos;m often asked similar questions relating to a criminal charge. While each case is different, I provided the information below to help you understand the basics of the criminal justice system.
+              If you&apos;ve been injured in an accident, you probably have a lot of questions. Here are answers to some of the most common questions I receive from potential clients.
             </p>
           </ScrollReveal>
 

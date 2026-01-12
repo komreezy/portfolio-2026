@@ -4,24 +4,24 @@ import { useState, useEffect, useRef } from "react";
 
 const services = [
   {
-    title: "Business Formation",
+    title: "Car Accidents",
     description:
-      "Strategic guidance for entrepreneurs and business owners on entity selection, formation, and structuring. From LLCs to corporations, we help you establish the right legal foundation for long-term success.",
+      "Car accidents are the leading cause of personal injury claims. We handle all types of auto accidents, from rear-end collisions to multi-vehicle pileups, fighting to get you compensation for medical bills, lost wages, and pain and suffering.",
   },
   {
-    title: "Contract Law",
+    title: "Truck Accidents",
     description:
-      "Comprehensive contract drafting, review, and negotiation services. We protect your interests in employment agreements, vendor contracts, partnership agreements, and complex commercial transactions.",
+      "Accidents involving commercial trucks often result in catastrophic injuries. We have experience taking on trucking companies and their insurers to secure maximum compensation for victims of truck accidents.",
   },
   {
-    title: "Mergers & Acquisitions",
+    title: "Medical Malpractice",
     description:
-      "End-to-end legal support for buying, selling, or merging businesses. We conduct thorough due diligence, structure deals, and navigate negotiations to maximize value and minimize risk.",
+      "When healthcare providers fail to meet the standard of care, patients suffer. We handle cases involving surgical errors, misdiagnosis, medication mistakes, birth injuries, and other forms of medical negligence.",
   },
   {
-    title: "Corporate Governance",
+    title: "Wrongful Death",
     description:
-      "Ongoing counsel for boards, executives, and shareholders on governance matters, compliance, fiduciary duties, and corporate policy development to ensure sound business practices.",
+      "Losing a loved one due to someone else's negligence is devastating. We help families seek justice and compensation for funeral expenses, lost income, loss of companionship, and the emotional toll of their loss.",
   },
 ];
 
@@ -72,7 +72,7 @@ export default function ServicesAccordion() {
         </ScrollRevealItem>
         <ScrollRevealItem delay={0.18}>
           <p className="text-[var(--muted-foreground)] text-sm font-light max-w-md">
-            Focused legal expertise to help businesses navigate complex challenges and seize opportunities.
+            Dedicated legal representation for accident victims throughout Georgia. We fight to maximize your compensation.
           </p>
         </ScrollRevealItem>
       </div>

@@ -4,51 +4,51 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const blogPosts = [
   {
-    title: "Collateral Consequences of a DUI Conviction",
+    title: "What to Do After a Car Accident in Georgia",
     excerpt:
-      "Beyond criminal penalties, a DUI conviction affects many aspects of life: insurance premiums rise, employment opportunities may decline, and professional licenses can be affected...",
-    category: "DUI Lawyer",
-    slug: "collateral-consequences-dui",
+      "The moments after a car accident can be overwhelming. Learn the essential steps you should take to protect yourself, your health, and your legal rights after a collision in Georgia...",
+    category: "Car Accidents",
+    slug: "what-to-do-after-car-accident-georgia",
     image: null,
   },
   {
-    title: "Why You Need a DUI Lawyer in Georgia",
+    title: "How Insurance Companies Try to Minimize Your Claim",
     excerpt:
-      "DUI law is complex, and penalties can include jail, fines, license suspension, and a permanent criminal record. An experienced DUI lawyer understands the legal system, evaluates evidence, and negotiates...",
-    category: "DUI Lawyer",
-    slug: "why-you-need-dui-lawyer",
+      "Insurance adjusters may seem friendly, but their goal is to pay as little as possible. Learn the tactics they use and how to protect yourself from lowball settlement offers...",
+    category: "Insurance Claims",
+    slug: "insurance-company-tactics",
     image: null,
   },
   {
-    title: "How Long a DUI Stays on Your Record in Georgia",
+    title: "Understanding Georgia's Statute of Limitations for Personal Injury",
     excerpt:
-      "Georgia treats DUI convictions very seriously; they remain on your criminal record forever and cannot be restricted or expunged. This permanence can affect employment, education, and insurance for years...",
-    category: "DUI Lawyer",
-    slug: "dui-record-georgia",
+      "In Georgia, you generally have two years from the date of your injury to file a personal injury lawsuit. Learn about exceptions and why acting quickly matters...",
+    category: "Personal Injury",
+    slug: "georgia-statute-of-limitations",
     image: null,
   },
   {
-    title: "Refusing a Breathalyzer or Field Sobriety Test",
+    title: "Types of Damages You Can Recover in a Personal Injury Case",
     excerpt:
-      "Georgia's implied consent law requires drivers to submit to state-administered chemical tests. Refusing a breath, blood, or urine test can result in a one-year license suspension...",
-    category: "DUI Lawyer",
-    slug: "refusing-breathalyzer-test",
+      "From medical expenses and lost wages to pain and suffering, there are many types of compensation available. Learn what damages you may be entitled to recover...",
+    category: "Personal Injury",
+    slug: "types-of-damages-personal-injury",
     image: null,
   },
   {
-    title: "Alternative Sentencing & DUI Court",
+    title: "When to Hire a Personal Injury Lawyer",
     excerpt:
-      "Individuals charged with driving under the influence face the possibility of jail time, significant fines, and lasting consequences. While Georgia enforces strict penalties, alternative sentencing programs exist...",
-    category: "DUI Lawyer",
-    slug: "alternative-sentencing-dui-court",
+      "Not every accident requires an attorney, but serious injuries often do. Learn when it makes sense to hire a personal injury lawyer and how they can help maximize your recovery...",
+    category: "Personal Injury",
+    slug: "when-to-hire-personal-injury-lawyer",
     image: null,
   },
   {
-    title: "Why It's Worth It to Fight a Traffic Violation",
+    title: "Common Causes of Truck Accidents in Georgia",
     excerpt:
-      "Nearly everyone has been pulled over by the police at least once. Whether it's for exceeding the speed limit or another violation, it is always frustrating to receive a traffic ticket...",
-    category: "Traffic Violations",
-    slug: "fight-traffic-violation",
+      "Truck accidents often result in catastrophic injuries due to the size and weight of commercial vehicles. Learn about the most common causes and who may be held liable...",
+    category: "Truck Accidents",
+    slug: "common-causes-truck-accidents-georgia",
     image: null,
   },
 ];
@@ -66,7 +66,7 @@ export default function Blog() {
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
             <h3 className="text-xl font-medium text-[var(--primary)] mb-2">
-              Criminal Defense Attorney in Georgia
+              Personal Injury Attorney in Georgia
             </h3>
           </ScrollReveal>
           <ScrollReveal delay={0.25}>

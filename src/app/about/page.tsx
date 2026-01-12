@@ -1,11 +1,11 @@
 export default function About() {
   const credentials = [
-    "J.D., Harvard Law School",
-    "B.A., Yale University",
-    "California State Bar",
-    "AV Preeminent Rating",
-    "Super Lawyers",
-    "Best Lawyers in America",
+    "J.D., Georgia State University",
+    "Georgia State Bar",
+    "Million Dollar Advocates Forum",
+    "Super Lawyers Rising Star",
+    "AVVO 10.0 Rating",
+    "Georgia Trial Lawyers Association",
   ];
 
   return (
@@ -18,9 +18,9 @@ export default function About() {
           </div>
           <div>
             <h1 className="font-display text-4xl md:text-5xl font-light text-[var(--primary)] leading-tight">
-              Advocating with
+              Fighting for the
               <br />
-              purpose
+              injured
             </h1>
           </div>
         </div>
@@ -45,23 +45,23 @@ export default function About() {
             {/* Bio Content */}
             <div className="space-y-8">
               <p className="text-lg font-light text-[var(--foreground)] leading-relaxed">
-                I&apos;m Arash Jafari, a business and corporate attorney
-                dedicated to helping clients navigate complex legal challenges
-                with confidence and clarity.
+                I&apos;m Arash Jafari, a personal injury attorney
+                dedicated to helping accident victims get the compensation
+                they deserve.
               </p>
 
               <p className="text-base font-light text-[var(--foreground)] leading-relaxed opacity-80">
-                With over 15 years of experience advising startups, growth-stage
-                companies, and established businesses, I bring a pragmatic approach
-                to legal counsel. I believe in building lasting relationships and
-                truly understanding each client&apos;s unique goals.
+                With over a decade of experience representing injured clients
+                throughout Georgia, I have recovered millions of dollars in
+                settlements and verdicts. I understand the physical, emotional,
+                and financial toll an injury takes on you and your family.
               </p>
 
               <p className="text-base font-light text-[var(--foreground)] leading-relaxed opacity-80">
-                Prior to establishing my practice, I served as General Counsel
-                at a Fortune 500 company and worked at a leading international
-                law firm. This experience gives me valuable perspective on both
-                sides of complex business transactions.
+                I started my career working for insurance companies, so I know
+                exactly how they operate — the tactics they use to minimize
+                claims and deny coverage. Now I use that knowledge to fight
+                for my clients and hold insurers accountable.
               </p>
             </div>
           </div>
@@ -91,29 +91,29 @@ export default function About() {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h3 className="text-[var(--primary)] text-sm uppercase tracking-wider mb-2">
-                    Transactional
+                    Car Accidents
                   </h3>
                   <p className="text-sm font-light text-[var(--foreground)] opacity-80">
-                    Complex deal structuring, M&A transactions, and
-                    contract negotiations for businesses of all sizes.
+                    Extensive experience handling auto accident cases,
+                    from fender benders to catastrophic collisions.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-[var(--primary)] text-sm uppercase tracking-wider mb-2">
-                    Advisory
+                    Medical Malpractice
                   </h3>
                   <p className="text-sm font-light text-[var(--foreground)] opacity-80">
-                    Strategic counsel on corporate governance, compliance,
-                    and risk management.
+                    Holding healthcare providers accountable for negligence
+                    that causes patient harm.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-[var(--primary)] text-sm uppercase tracking-wider mb-2">
-                    Litigation
+                    Wrongful Death
                   </h3>
                   <p className="text-sm font-light text-[var(--foreground)] opacity-80">
-                    Business dispute resolution through negotiation,
-                    mediation, and courtroom advocacy.
+                    Compassionate representation for families who have lost
+                    loved ones due to negligence.
                   </p>
                 </div>
               </div>
