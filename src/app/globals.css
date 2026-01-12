@@ -4,10 +4,10 @@
   /* Assured Justice Color Palette - Gold & Charcoal */
   --background: #FAF8F4;
   --foreground: #2A2725;
-  --primary: #B8934A;
+  --primary: #D5A021;
   --primary-dark: #1A1918;
   --secondary: #D4C4A0;
-  --accent: #B8934A;
+  --accent: #D5A021;
   --muted: #2A2725;
   --muted-foreground: #7A7270;
   --border: rgba(196, 160, 82, 0.35);
@@ -16,7 +16,7 @@
   --card-foreground: #2A2725;
   --footer-bg: #1A1918;
   --footer-text: #FAF8F4;
-  --footer-accent: #B8934A;
+  --footer-accent: #D5A021;
 
   /* Spacing */
   --section-spacing: 5.4rem;
