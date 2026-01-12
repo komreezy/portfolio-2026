@@ -41,7 +41,7 @@
   --color-footer-text: var(--footer-text);
   --color-footer-accent: var(--footer-accent);
   --font-sans: var(--font-sans-primary);
-  --font-serif: var(--font-serif);
+  --font-display: var(--font-display);
 }
 
 body {
@@ -153,9 +153,9 @@ body {
   color: var(--muted-foreground);
 }
 
-/* Serif accent headings */
+/* Display accent headings */
 .heading-serif {
-  font-family: var(--font-serif), serif;
+  font-family: var(--font-display), serif;
   font-weight: 600;
   font-size: 16px;
   color: var(--primary);
@@ -201,6 +201,7 @@ body {
 }
 
 .marquee-text {
+  font-family: var(--font-display), serif;
   font-size: clamp(3rem, 10vw, 6.8rem);
   font-weight: 300;
   color: var(--primary);
@@ -208,8 +209,8 @@ body {
 }
 
 .marquee-text em {
-  font-family: var(--font-serif), serif;
-  font-style: italic;
+  font-family: var(--font-display), serif;
+  font-style: normal;
 }
 
 /* Accordion styles */
@@ -231,6 +232,7 @@ body {
 }
 
 .accordion-title {
+  font-family: var(--font-display), serif;
   font-size: clamp(1.5rem, 4vw, 2.75rem);
   font-weight: 300;
   color: var(--foreground);
@@ -313,4 +315,43 @@ body {
 .btn-outlined-light:hover {
   background: var(--footer-text);
   color: var(--primary-dark);
+}
+
+/* Primary filled button */
+.btn-primary {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  border: 1px solid var(--primary);
+  padding: 14px 28px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* Primary button for dark backgrounds */
+.btn-primary-light {
+  display: inline-block;
+  background: var(--primary);
+  color: white;
+  border: 1px solid var(--primary);
+  padding: 14px 28px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary-light:hover {
+  background: transparent;
+  border-color: white;
+  transform: translateY(-2px);
 }

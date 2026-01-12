@@ -8,10 +8,10 @@ export default function Contact() {
             <span className="heading-serif">Contact</span>
           </div>
           <div>
-            <h1 className="text-4xl md:text-5xl font-light text-[var(--primary)] leading-tight">
+            <h1 className="font-display text-4xl md:text-5xl font-light text-[var(--primary)] leading-tight">
               Schedule a
               <br />
-              <span className="font-serif italic">consultation</span>
+              consultation
             </h1>
             <p className="mt-8 text-base font-light text-[var(--foreground)] opacity-80 max-w-lg">
               I offer complimentary initial consultations to discuss your legal

@@ -41,10 +41,10 @@ export default function Portfolio() {
             <span className="heading-serif">Practice</span>
           </div>
           <div>
-            <h1 className="text-4xl md:text-5xl font-light text-[var(--primary)] leading-tight">
+            <h1 className="font-display text-4xl md:text-5xl font-light text-[var(--primary)] leading-tight">
               Areas of
               <br />
-              <span className="font-serif italic">expertise</span>
+              expertise
             </h1>
             <p className="mt-8 text-base font-light text-[var(--foreground)] opacity-80 max-w-lg">
               Focused legal services for businesses at every stage of growth.
@@ -72,7 +72,7 @@ export default function Portfolio() {
 
                 <div className="flex items-center justify-between">
                   <div>
-                    <h2 className="text-2xl md:text-3xl font-light text-[var(--foreground)] group-hover:text-[var(--primary)] transition-colors duration-150">
+                    <h2 className="font-display text-2xl md:text-3xl font-light text-[var(--foreground)] group-hover:text-[var(--primary)] transition-colors duration-150">
                       {area.title}
                     </h2>
                     <p className="mt-3 text-sm font-light text-[var(--foreground)] opacity-70 max-w-lg">

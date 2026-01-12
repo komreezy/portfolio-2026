@@ -17,10 +17,10 @@ export default function About() {
             <span className="heading-serif">About</span>
           </div>
           <div>
-            <h1 className="text-4xl md:text-5xl font-light text-[var(--primary)] leading-tight">
+            <h1 className="font-display text-4xl md:text-5xl font-light text-[var(--primary)] leading-tight">
               Advocating with
               <br />
-              <span className="font-serif italic">purpose</span>
+              purpose
             </h1>
           </div>
         </div>

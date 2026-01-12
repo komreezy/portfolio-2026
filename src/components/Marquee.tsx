@@ -4,16 +4,16 @@ export default function Marquee() {
       <div className="marquee-content">
         {/* Duplicate text for seamless loop */}
         <span className="marquee-text">
-          Strategic <em>counsel</em> — Trusted <em>advocacy</em> —{" "}
+          Strategic counsel — Trusted advocacy —{" "}
         </span>
         <span className="marquee-text">
-          Strategic <em>counsel</em> — Trusted <em>advocacy</em> —{" "}
+          Strategic counsel — Trusted advocacy —{" "}
         </span>
         <span className="marquee-text">
-          Strategic <em>counsel</em> — Trusted <em>advocacy</em> —{" "}
+          Strategic counsel — Trusted advocacy —{" "}
         </span>
         <span className="marquee-text">
-          Strategic <em>counsel</em> — Trusted <em>advocacy</em> —{" "}
+          Strategic counsel — Trusted advocacy —{" "}
         </span>
       </div>
     </div>
