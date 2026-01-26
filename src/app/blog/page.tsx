@@ -71,7 +71,7 @@ export default function Blog() {
           </ScrollReveal>
           <ScrollReveal delay={0.25}>
             <p className="text-[var(--muted-foreground)] font-light">
-              Arash Jafari Law
+              Assured Justice Firm
             </p>
           </ScrollReveal>
         </div>

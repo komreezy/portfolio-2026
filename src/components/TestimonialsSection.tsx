@@ -6,22 +6,22 @@ import ScrollReveal from "./ScrollReveal";
 
 const testimonials = [
   {
-    title: "LIFE-CHANGING SETTLEMENT!",
+    title: "HIGHLY RECOMMENDED!",
     quote:
-      "After my car accident, I didn't know where to turn. Arash fought the insurance company and got me a settlement that covered all my medical bills and more.",
-    author: "Sarah M.",
+      "Arash is someone who makes sure to get all facts and analyzes them well. He is responsive, thorough, and genuinely cares about his clients. I highly recommend him for anyone seeking legal representation.",
+    author: "Babak K.",
   },
   {
     title: "FOUGHT FOR EVERY DOLLAR!",
     quote:
-      "The insurance company offered me a lowball settlement. Arash took my case to trial and won me three times what they originally offered. Incredible results!",
+      "The insurance company offered me a lowball settlement. Arash took my case seriously, investigated thoroughly, and got me the compensation I deserved. His engineering background really made a difference in understanding my accident.",
     author: "Michael R.",
   },
   {
-    title: "COMPASSIONATE & RELENTLESS!",
+    title: "HONEST & DIRECT!",
     quote:
-      "When my husband was killed by a drunk driver, the team helped our family through the worst time. They were compassionate yet relentless in pursuing justice.",
-    author: "Maria G.",
+      "What I appreciated most was Arash's honesty. He gave me straight answers about my case, explained everything in plain language, and always returned my calls. You work with him directly, not a case manager.",
+    author: "Sarah M.",
   },
 ];
 

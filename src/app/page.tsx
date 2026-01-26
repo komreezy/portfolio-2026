@@ -46,11 +46,11 @@ export default function Home() {
         <div className="max-w-3xl mx-auto text-center">
           <ScrollReveal>
             <blockquote className="text-xl md:text-2xl font-light text-[var(--foreground)] leading-relaxed mb-4">
-              &ldquo;When you&apos;re injured due to someone else&apos;s negligence, you deserve an attorney who will fight tirelessly to get you the compensation you need to recover and move forward with your life.&rdquo;
+              &ldquo;Every client deserves to be treated with dignity, fought for relentlessly, and advised with integrity—even when the answers aren&apos;t easy.&rdquo;
             </blockquote>
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
-            <p className="text-sm font-medium text-[var(--primary)]">&mdash; Arash Jafari</p>
+            <p className="text-sm font-medium text-[var(--primary)]">&mdash; Arash Jafary</p>
           </ScrollReveal>
         </div>
       </section>
@@ -68,24 +68,24 @@ export default function Home() {
           </ScrollReveal>
           <div>
             <ScrollReveal delay={0.15}>
-              <h3 className="font-display text-2xl font-light text-[var(--foreground)] mb-2">Arash Jafari</h3>
+              <h3 className="font-display text-2xl font-light text-[var(--foreground)] mb-2">Arash Jafary</h3>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
-              <p className="text-sm uppercase tracking-wider text-[var(--primary)] mb-6">Attorney at Law</p>
+              <p className="text-sm uppercase tracking-wider text-[var(--primary)] mb-6">Attorney at Law • Former Prosecutor • Licensed Engineer</p>
             </ScrollReveal>
             <ScrollReveal delay={0.25}>
               <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-4">
-                With over a decade of experience representing injured victims throughout Georgia, I have recovered millions of dollars for my clients. I understand the tactics insurance companies use to minimize your claim, and I know how to fight back.
+                I bring a unique combination of skills to every case: experience as a former prosecutor understanding how cases are built and tried, and a background as a licensed engineer understanding crash evidence, investigations, and technical details that others miss.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.3}>
               <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-4">
-                From car accidents and slip-and-fall injuries to medical malpractice and wrongful death, I handle all types of personal injury cases. My approach is simple: treat every client like family and fight for every dollar they deserve.
+                With over 500 cases handled, including a $250,000 car accident settlement, I know how to fight for maximum compensation. When you work with me, you work directly with me—not a case manager. I handle every aspect of your case personally.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.35}>
               <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-8">
-                I work on a contingency fee basis, which means you pay nothing unless we win your case. Your focus should be on healing — let me handle the legal fight.
+                I work on a contingency fee basis for personal injury cases, which means you pay nothing unless we win. Your focus should be on healing — let me handle the legal fight.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.4}>
@@ -167,13 +167,13 @@ export default function Home() {
               </ScrollReveal>
               <ScrollReveal delay={0.18}>
                 <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] mb-6 leading-tight">
-                  Counsel with clarity,
-                  <br />advocate with conviction
+                  Stand up for people
+                  <br />when the system feels overwhelming
                 </h2>
               </ScrollReveal>
               <ScrollReveal delay={0.36}>
                 <p className="text-[var(--muted-foreground)] font-light max-w-xl leading-relaxed">
-                  I don&apos;t just review your case — I help you understand the implications and make informed decisions. Every legal strategy is tailored to your specific situation, every recommendation grounded in practical reality.
+                  I believe in honesty, preparation, and accountability. I&apos;ll give you straight answers—even when they&apos;re not what you want to hear. My goal is to make a real difference in your life, not just collect a fee. I treat every client&apos;s case as if the roles were reversed.
                 </p>
               </ScrollReveal>
             </div>
@@ -195,13 +195,13 @@ export default function Home() {
               </ScrollReveal>
               <ScrollReveal delay={0.18}>
                 <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] mb-6 leading-tight">
-                  Responsive by commitment,
-                  <br />thorough by practice
+                  Direct relationship,
+                  <br />personal attention
                 </h2>
               </ScrollReveal>
               <ScrollReveal delay={0.36}>
                 <p className="text-[var(--muted-foreground)] font-light max-w-xl leading-relaxed">
-                  Effective legal representation requires partnership. I work closely with you throughout every matter, from initial consultation to final resolution, ensuring you&apos;re informed and confident at every step of the process.
+                  When you hire me, you get me—not a case manager or paralegal handling your calls. I explain things in plain language, return calls promptly, and keep you informed at every step. You deserve an attorney who treats your case with the same care and urgency as if it were their own family.
                 </p>
               </ScrollReveal>
             </div>

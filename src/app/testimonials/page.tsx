@@ -4,43 +4,33 @@ import ScrollReveal from "@/components/ScrollReveal";
 const testimonials = [
   {
     quote:
-      "After my car accident, I didn't know where to turn. The team at Arash Jafari Law fought the insurance company and got me a settlement that covered all my medical bills and then some.",
+      "Arash is someone who makes sure to get all facts and analyzes them well. He is responsive, thorough, and genuinely cares about his clients. I highly recommend him for anyone seeking legal representation.",
+    author: "Babak K.",
+  },
+  {
+    quote:
+      "After my car accident, I didn't know where to turn. Arash at Assured Justice Firm fought the insurance company and got me a settlement that covered all my medical bills and then some. His engineering background really helped explain what happened.",
     author: "Sarah M.",
   },
   {
     quote:
-      "When I slipped and fell at a grocery store, I didn't think I had a case. Arash proved me wrong and got me compensation for my injuries, lost wages, and pain and suffering.",
-    author: "James T.",
-  },
-  {
-    quote:
-      "The insurance company offered me a lowball settlement after my truck accident. Arash took my case to trial and won me three times what they originally offered.",
+      "The insurance company offered me a lowball settlement after my truck accident. Arash took my case seriously, investigated everything, and got me what I deserved. He was always available to answer my questions.",
     author: "Michael R.",
   },
   {
     quote:
-      "When my husband was killed by a drunk driver, the team helped our family through the worst time of our lives. They were compassionate, professional, and relentless in pursuing justice.",
-    author: "Maria G.",
-  },
-  {
-    quote:
-      "I was injured due to a defective product and had no idea how to proceed. Arash handled everything and got me a great settlement. I couldn't have done it without him.",
-    author: "Lisa K.",
-  },
-  {
-    quote:
-      "After my motorcycle accident, the other driver's insurance tried to blame me. Arash fought back with evidence and expert witnesses. They got me the compensation I deserved.",
+      "After my motorcycle accident, the other driver's insurance tried to blame me. Arash fought back with evidence and his technical expertise. He got me the compensation I deserved and kept me informed every step of the way.",
     author: "David W.",
   },
   {
     quote:
-      "The medical malpractice case was complex, but Arash and his team never gave up. They worked with medical experts and built a strong case. I'm grateful for their dedication.",
-    author: "Patricia H.",
+      "What I appreciated most was Arash's honesty. He gave me straight answers about my DUI case, explained everything in plain language, and fought hard for the best outcome. His prosecutor experience really showed.",
+    author: "James T.",
   },
   {
     quote:
-      "I was hesitant to hire a lawyer, but after my workplace injury, I realized I needed help. Arash got me workers' comp benefits AND a personal injury settlement. Highly recommend!",
-    author: "Robert C.",
+      "When you work with Arash, you work directly with him—not a case manager. He returned my calls, explained my options clearly, and treated my case like it was his own. That personal attention made all the difference.",
+    author: "Lisa K.",
   },
 ];
 
@@ -62,7 +52,7 @@ export default function Testimonials() {
           </ScrollReveal>
           <ScrollReveal delay={0.25}>
             <p className="text-[var(--muted-foreground)] font-light">
-              Arash Jafari Law
+              Assured Justice Firm
             </p>
           </ScrollReveal>
         </div>

@@ -42,7 +42,7 @@ export default function Header() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const phoneNumber = "(678) 362-3176";
+  const phoneNumber = "(678) 522-6273";
 
   return (
     <header className="bg-[var(--background)] h-[var(--header-height)] flex items-center sticky top-0 z-50 border-b border-[var(--border)]">
@@ -52,7 +52,7 @@ export default function Header() {
             href="/"
             className="text-[var(--foreground)] text-sm font-medium tracking-wide uppercase"
           >
-            Arash Jafari Law
+            Assured Justice Firm
           </Link>
 
           {/* Desktop Navigation */}

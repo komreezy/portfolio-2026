@@ -15,7 +15,7 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
     message: "",
   });
 
-  const phoneNumber = "(678) 362-3176";
+  const phoneNumber = "(678) 522-6273";
   const maxChars = 600;
 
   const handleSubmit = (e: React.FormEvent) => {

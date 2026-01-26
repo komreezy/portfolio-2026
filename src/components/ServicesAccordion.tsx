@@ -6,22 +6,27 @@ const services = [
   {
     title: "Car Accidents",
     description:
-      "Car accidents are the leading cause of personal injury claims. We handle all types of auto accidents, from rear-end collisions to multi-vehicle pileups, fighting to get you compensation for medical bills, lost wages, and pain and suffering.",
+      "Car accidents are the leading cause of personal injury claims in Georgia. As a licensed engineer and former prosecutor, I understand how to analyze crash evidence and build the strongest possible case. I fight to get you compensation for medical bills, lost wages, and pain and suffering.",
   },
   {
     title: "Truck Accidents",
     description:
-      "Accidents involving commercial trucks often result in catastrophic injuries. We have experience taking on trucking companies and their insurers to secure maximum compensation for victims of truck accidents.",
+      "Accidents involving commercial trucks often result in catastrophic injuries. My engineering background gives me a unique ability to understand the technical aspects of these complex cases. I have experience taking on trucking companies and their insurers to secure maximum compensation.",
   },
   {
-    title: "Medical Malpractice",
+    title: "Motorcycle Accidents",
     description:
-      "When healthcare providers fail to meet the standard of care, patients suffer. We handle cases involving surgical errors, misdiagnosis, medication mistakes, birth injuries, and other forms of medical negligence.",
+      "Motorcycle riders face unique dangers on Georgia roads. When negligent drivers cause accidents, I help injured riders recover damages for their injuries, bike damage, and other losses. I fight to ensure riders aren't unfairly blamed for accidents they didn't cause.",
   },
   {
-    title: "Wrongful Death",
+    title: "Pedestrian Accidents",
     description:
-      "Losing a loved one due to someone else's negligence is devastating. We help families seek justice and compensation for funeral expenses, lost income, loss of companionship, and the emotional toll of their loss.",
+      "Pedestrians have virtually no protection when struck by vehicles. These accidents often result in severe injuries requiring extensive medical treatment. I work to hold negligent drivers accountable and recover full compensation for your injuries and suffering.",
+  },
+  {
+    title: "DUI Defense",
+    description:
+      "Facing DUI charges can be overwhelming, but you have rights. As a former prosecutor, I've seen these cases from both sides and know how to build an effective defense. I provide honest assessments and fight to protect your license, your record, and your future.",
   },
 ];
 

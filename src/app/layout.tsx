@@ -17,8 +17,8 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Arash Jafari | Personal Injury Attorney",
-  description: "Experienced personal injury attorney in Georgia. We fight for maximum compensation for car accidents, truck accidents, slip & fall, medical malpractice, and wrongful death cases.",
+  title: "Assured Justice Firm | Personal Injury & DUI Defense Attorney",
+  description: "Arash Jafary - Former prosecutor and licensed engineer providing personal injury and DUI defense representation in Georgia. Car accidents, truck accidents, motorcycle accidents, pedestrian accidents, and DUI defense.",
 };
 
 export default function RootLayout({

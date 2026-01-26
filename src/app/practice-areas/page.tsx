@@ -6,50 +6,32 @@ const practiceAreas = [
   {
     title: "Car Accidents",
     description:
-      "Car accidents can result in devastating injuries and significant financial burdens. We fight to hold negligent drivers accountable and recover compensation for medical bills, lost wages, pain and suffering, and more.",
+      "Car accidents are the leading cause of personal injury claims in Georgia. As a licensed engineer and former prosecutor, I understand how to analyze crash evidence, investigate the scene, and build the strongest possible case to recover compensation for your medical bills, lost wages, and pain and suffering.",
     link: "/practice-areas/car-accidents",
   },
   {
     title: "Truck Accidents",
     description:
-      "Collisions with commercial trucks often cause catastrophic injuries. We have experience taking on trucking companies and their insurers to secure the maximum compensation our clients deserve.",
+      "Collisions with commercial trucks often cause catastrophic injuries. My engineering background allows me to understand the technical complexities of these cases, from black box data to maintenance records. I have experience taking on trucking companies and their insurers to secure maximum compensation.",
     link: "/practice-areas/truck-accidents",
   },
   {
     title: "Motorcycle Accidents",
     description:
-      "Motorcycle riders face unique dangers on Georgia roads. When negligent drivers cause accidents, we help injured riders recover damages for their injuries, bike damage, and other losses.",
+      "Motorcycle riders face unique dangers on Georgia roads, and they're often unfairly blamed for accidents. When negligent drivers cause accidents, I fight to ensure riders aren't held responsible for crashes they didn't cause and recover full damages for their injuries and losses.",
     link: "/practice-areas/motorcycle-accidents",
   },
   {
-    title: "Slip & Fall",
+    title: "Pedestrian Accidents",
     description:
-      "Property owners have a duty to maintain safe premises. If you were injured due to hazardous conditions like wet floors, uneven surfaces, or poor lighting, we can help you pursue a premises liability claim.",
-    link: "/practice-areas/slip-and-fall",
+      "Pedestrians have virtually no protection when struck by vehicles, often resulting in severe or catastrophic injuries. I work to hold negligent drivers accountable and recover full compensation for medical expenses, lost income, and the pain and suffering you've endured.",
+    link: "/practice-areas/pedestrian-accidents",
   },
   {
-    title: "Medical Malpractice",
+    title: "DUI Defense",
     description:
-      "When healthcare providers fail to meet the standard of care, patients suffer. We handle cases involving surgical errors, misdiagnosis, medication mistakes, and other forms of medical negligence.",
-    link: "/practice-areas/medical-malpractice",
-  },
-  {
-    title: "Wrongful Death",
-    description:
-      "Losing a loved one due to someone else's negligence is devastating. We help families seek justice and compensation for funeral expenses, lost income, and the emotional toll of their loss.",
-    link: "/practice-areas/wrongful-death",
-  },
-  {
-    title: "Workers' Compensation",
-    description:
-      "Injured on the job? You may be entitled to workers' compensation benefits. We help injured workers navigate the claims process and fight for the benefits they deserve.",
-    link: "/practice-areas/workers-compensation",
-  },
-  {
-    title: "Product Liability",
-    description:
-      "Defective products can cause serious injuries. Whether it's a faulty vehicle part, dangerous medication, or unsafe consumer product, we hold manufacturers accountable for their negligence.",
-    link: "/practice-areas/product-liability",
+      "Facing DUI charges can be overwhelming and frightening, but you have rights. As a former prosecutor, I've handled hundreds of these cases and know how to build an effective defense. I provide honest assessments of your situation and fight to protect your license, your record, and your future.",
+    link: "/practice-areas/dui-defense",
   },
 ];
 

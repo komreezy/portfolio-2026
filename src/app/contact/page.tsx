@@ -33,10 +33,10 @@ export default function Contact() {
             {/* Email CTA */}
             <div className="flex flex-col justify-center">
               <p className="text-lg font-light text-[var(--foreground)] mb-8">
-                The best way to reach me is via email. I typically respond within one business day.
+                The best way to reach me is via the contact form or email. I typically respond within one business day.
               </p>
               <a
-                href="mailto:james@mitchelllaw.com"
+                href="mailto:Info@assuredjusticefirm.com"
                 className="btn-outlined inline-flex items-center gap-2 w-fit"
               >
                 <span>Send an Email</span>
@@ -63,10 +63,10 @@ export default function Contact() {
                   Email
                 </h3>
                 <a
-                  href="mailto:james@mitchelllaw.com"
+                  href="mailto:Info@assuredjusticefirm.com"
                   className="text-[var(--foreground)] font-light hover:text-[var(--primary)] transition-colors duration-150"
                 >
-                  james@mitchelllaw.com
+                  Info@assuredjusticefirm.com
                 </a>
               </div>
 
@@ -75,10 +75,10 @@ export default function Contact() {
                   Phone
                 </h3>
                 <a
-                  href="tel:+14155551234"
+                  href="tel:+16785226273"
                   className="text-[var(--foreground)] font-light hover:text-[var(--primary)] transition-colors duration-150"
                 >
-                  (415) 555-1234
+                  (678) 522-6273
                 </a>
               </div>
 
@@ -87,9 +87,9 @@ export default function Contact() {
                   Office
                 </h3>
                 <p className="text-[var(--foreground)] font-light">
-                  555 Market Street, Suite 1200
+                  4575 Webb Bridge Road, #2361
                   <br />
-                  San Francisco, CA 94105
+                  Alpharetta, GA 30023
                 </p>
               </div>
 
@@ -98,9 +98,9 @@ export default function Contact() {
                   Office Hours
                 </h3>
                 <p className="text-[var(--foreground)] font-light">
-                  Monday – Friday: 9:00 AM – 6:00 PM
+                  Monday – Friday: 9:00 AM – 5:00 PM
                   <br />
-                  Evenings & weekends by appointment
+                  By appointment only
                 </p>
               </div>
 

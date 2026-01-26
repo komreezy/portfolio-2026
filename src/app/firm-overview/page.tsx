@@ -20,7 +20,7 @@ export default function FirmOverview() {
           </ScrollReveal>
           <ScrollReveal delay={0.25}>
             <p className="text-[var(--muted-foreground)] font-light mb-8">
-              Arash Jafari Law
+              Assured Justice Firm
             </p>
           </ScrollReveal>
           <ScrollReveal delay={0.35}>
@@ -42,12 +42,12 @@ export default function FirmOverview() {
             </ScrollReveal>
             <ScrollReveal delay={0.15}>
               <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-6">
-                The Law Office of Arash Jafari is a dedicated personal injury firm committed to helping accident victims throughout Georgia get the compensation they deserve.
+                Assured Justice Firm is led by Arash Jafary, a former prosecutor and licensed engineer dedicated to personal injury and DUI defense throughout Georgia. This unique combination of backgrounds means a deeper understanding of both how cases are built and the technical evidence that can make or break them.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.25}>
               <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed">
-                Whether you were injured in a car accident, slip and fall, or due to medical negligence, we fight tirelessly against insurance companies to maximize your recovery and help you move forward with your life.
+                Whether you were injured in a car, truck, motorcycle, or pedestrian accident—or you&apos;re facing DUI charges—I fight tirelessly against insurance companies and prosecutors to protect your rights and maximize your recovery.
               </p>
             </ScrollReveal>
           </div>
@@ -76,17 +76,17 @@ export default function FirmOverview() {
             </ScrollReveal>
             <ScrollReveal delay={0.25}>
               <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-6">
-                We pride ourselves on our trial skills, which gives us leverage in every negotiation. Insurance companies know that we&apos;re prepared to take your case to court if they don&apos;t offer fair compensation — and that makes all the difference.
+                Real trial experience gives leverage in every negotiation. Insurance companies and prosecutors know I&apos;m prepared to take your case to court if they don&apos;t offer fair treatment — and that makes all the difference.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.35}>
               <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-6">
-                Most personal injury cases settle before trial, but having an attorney with courtroom experience ensures the insurance company takes your claim seriously. We know how to present evidence, question witnesses, and argue persuasively before a jury.
+                As a former prosecutor, I&apos;ve handled hundreds of cases and know how the state builds its case. This insider knowledge helps me find weaknesses others miss, whether we&apos;re negotiating a settlement or preparing for trial.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.45}>
               <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed">
-                We place a premium on communication with our clients. You&apos;ll always know the status of your case and understand your options. We work with you to make informed decisions about settlements and, when necessary, trial.
+                When you hire me, you work directly with me—not a case manager. I believe in clear communication, personal attention, and treating every client&apos;s case with the same care and urgency as if the roles were reversed.
               </p>
             </ScrollReveal>
           </div>
@@ -103,7 +103,7 @@ export default function FirmOverview() {
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
             <p className="text-base font-light text-[var(--footer-text)] opacity-80 mb-8">
-              If you or a loved one has been injured due to someone else&apos;s negligence, I invite you to contact my law firm for a free consultation. To get started, fill out my online contact form or call my office at <strong className="font-medium">(678) 362-3176</strong>.
+              If you or a loved one has been injured due to someone else&apos;s negligence, or if you&apos;re facing DUI charges, I invite you to contact my law firm for a free consultation. To get started, fill out my online contact form or call my office at <strong className="font-medium">(678) 522-6273</strong>.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={0.25}>

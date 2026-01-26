@@ -1,10 +1,10 @@
 export default function About() {
   const credentials = [
     "J.D., Georgia State University",
+    "Licensed Professional Engineer",
+    "Former Prosecutor",
     "Georgia State Bar",
-    "Million Dollar Advocates Forum",
-    "Super Lawyers Rising Star",
-    "AVVO 10.0 Rating",
+    "500+ Cases Handled",
     "Georgia Trial Lawyers Association",
   ];
 
@@ -12,7 +12,7 @@ export default function About() {
     <main className="flex-1">
       {/* Hero Section */}
       <section className="py-[var(--section-spacing)] px-[var(--side-padding)]">
-        <div className="grid md:grid-cols-[30%_70%] gap-12">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-[30%_70%] gap-12">
           <div>
             <span className="heading-serif">About</span>
           </div>
@@ -28,7 +28,7 @@ export default function About() {
 
       {/* Bio Section */}
       <section className="border-t border-[var(--border)] py-[var(--section-spacing)] px-[var(--side-padding)]">
-        <div className="grid md:grid-cols-[30%_70%] gap-12">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-[30%_70%] gap-12">
           <div>
             <span className="heading-serif">Background</span>
           </div>
@@ -45,23 +45,19 @@ export default function About() {
             {/* Bio Content */}
             <div className="space-y-8">
               <p className="text-lg font-light text-[var(--foreground)] leading-relaxed">
-                I&apos;m Arash Jafari, a personal injury attorney
-                dedicated to helping accident victims get the compensation
-                they deserve.
+                I&apos;m Arash Jafary, a personal injury attorney and DUI defense lawyer with a unique background: former prosecutor and licensed professional engineer.
               </p>
 
               <p className="text-base font-light text-[var(--foreground)] leading-relaxed opacity-80">
-                With over a decade of experience representing injured clients
-                throughout Georgia, I have recovered millions of dollars in
-                settlements and verdicts. I understand the physical, emotional,
-                and financial toll an injury takes on you and your family.
+                As a former prosecutor, I&apos;ve seen cases from both sides. I understand how the state builds cases, what evidence matters most, and where weaknesses lie. This perspective is invaluable whether I&apos;m defending you against DUI charges or fighting for your personal injury claim.
               </p>
 
               <p className="text-base font-light text-[var(--foreground)] leading-relaxed opacity-80">
-                I started my career working for insurance companies, so I know
-                exactly how they operate — the tactics they use to minimize
-                claims and deny coverage. Now I use that knowledge to fight
-                for my clients and hold insurers accountable.
+                My engineering background sets me apart when it comes to understanding crash evidence, analyzing accident scenes, and working with technical experts. I don&apos;t just take expert reports at face value—I can dig into the details and challenge flawed analysis.
+              </p>
+
+              <p className="text-base font-light text-[var(--foreground)] leading-relaxed opacity-80">
+                When you work with me, you work directly with me. I don&apos;t hand clients off to case managers. I believe in honesty, preparation, and accountability—I&apos;ll give you straight answers even when they&apos;re not what you want to hear.
               </p>
             </div>
           </div>
@@ -70,7 +66,7 @@ export default function About() {
 
       {/* Credentials Section */}
       <section className="border-t border-[var(--border)] py-[var(--section-spacing)] px-[var(--side-padding)]">
-        <div className="grid md:grid-cols-[30%_70%] gap-12">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-[30%_70%] gap-12">
           <div>
             <span className="heading-serif">Credentials</span>
           </div>
@@ -91,29 +87,29 @@ export default function About() {
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
                   <h3 className="text-[var(--primary)] text-sm uppercase tracking-wider mb-2">
-                    Car Accidents
+                    Personal Injury
                   </h3>
                   <p className="text-sm font-light text-[var(--foreground)] opacity-80">
-                    Extensive experience handling auto accident cases,
-                    from fender benders to catastrophic collisions.
+                    Car, truck, motorcycle, and pedestrian accidents.
+                    Engineering expertise for crash analysis.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-[var(--primary)] text-sm uppercase tracking-wider mb-2">
-                    Medical Malpractice
+                    DUI Defense
                   </h3>
                   <p className="text-sm font-light text-[var(--foreground)] opacity-80">
-                    Holding healthcare providers accountable for negligence
-                    that causes patient harm.
+                    Former prosecutor perspective. I know how the state
+                    builds cases and where to find weaknesses.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-[var(--primary)] text-sm uppercase tracking-wider mb-2">
-                    Wrongful Death
+                    Trial Experience
                   </h3>
                   <p className="text-sm font-light text-[var(--foreground)] opacity-80">
-                    Compassionate representation for families who have lost
-                    loved ones due to negligence.
+                    Real courtroom experience that gives leverage in every
+                    negotiation. Insurance companies know I&apos;ll take cases to trial.
                   </p>
                 </div>
               </div>

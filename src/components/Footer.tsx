@@ -7,10 +7,8 @@ export default function Footer() {
     { href: "/practice-areas/car-accidents", label: "Car Accidents" },
     { href: "/practice-areas/truck-accidents", label: "Truck Accidents" },
     { href: "/practice-areas/motorcycle-accidents", label: "Motorcycle Accidents" },
-    { href: "/practice-areas/slip-and-fall", label: "Slip & Fall" },
-    { href: "/practice-areas/medical-malpractice", label: "Medical Malpractice" },
-    { href: "/practice-areas/wrongful-death", label: "Wrongful Death" },
-    { href: "/practice-areas/workers-compensation", label: "Workers' Comp" },
+    { href: "/practice-areas/pedestrian-accidents", label: "Pedestrian Accidents" },
+    { href: "/practice-areas/dui-defense", label: "DUI Defense" },
   ];
 
   const quickLinks = [
@@ -37,23 +35,22 @@ export default function Footer() {
             </h3>
             <div className="mb-6">
               <p className="text-[var(--footer-accent)] font-serif text-lg">
-                Arash Jafari
+                Arash Jafary
               </p>
               <p className="text-[var(--footer-text)] text-sm font-light opacity-80">
                 Attorney at Law
               </p>
             </div>
             <div className="space-y-2 text-[var(--footer-text)] text-sm font-light opacity-80">
-              <p>1190 Buckhead Crossing Suite D,</p>
-              <p>Woodstock, GA 30189</p>
-              <p className="pt-2">(678) 362-3176 – Phone</p>
-              <p>(678) 669-2604 – Fax</p>
+              <p>4575 Webb Bridge Road, #2361</p>
+              <p>Alpharetta, GA 30023</p>
+              <p className="pt-2">(678) 522-6273 – Phone</p>
               <p>
                 <a
-                  href="mailto:contact@arashjafarilaw.com"
+                  href="mailto:Info@assuredjusticefirm.com"
                   className="hover:opacity-100 transition-opacity duration-150"
                 >
-                  contact@arashjafarilaw.com
+                  Info@assuredjusticefirm.com
                 </a>
               </p>
             </div>
@@ -154,7 +151,7 @@ export default function Footer() {
         <div className="mt-16 pt-8 border-t border-[var(--footer-accent)] border-opacity-30">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-[var(--footer-text)] text-xs font-light opacity-60">
-              &copy; {currentYear} Arash Jafari, Attorney at Law. All rights reserved.
+              &copy; {currentYear} Assured Justice Firm. All rights reserved.
             </p>
             <div className="flex gap-4 text-[var(--footer-text)] text-xs font-light opacity-60">
               <Link href="/disclaimer" className="hover:opacity-100 transition-opacity duration-150">
