@@ -4,11 +4,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const practiceAreas = [
+    { href: "/practice-areas/dui-defense", label: "DUI Defense" },
     { href: "/practice-areas/car-accidents", label: "Car Accidents" },
     { href: "/practice-areas/truck-accidents", label: "Truck Accidents" },
     { href: "/practice-areas/motorcycle-accidents", label: "Motorcycle Accidents" },
     { href: "/practice-areas/pedestrian-accidents", label: "Pedestrian Accidents" },
-    { href: "/practice-areas/dui-defense", label: "DUI Defense" },
   ];
 
   const quickLinks = [
@@ -28,10 +28,10 @@ export default function Footer() {
     <footer className="bg-[var(--footer-bg)] mt-auto py-16">
       <div className="px-[var(--side-padding)]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
-          {/* Get in Touch Column */}
+          {/* Call Now Column */}
           <div>
             <h3 className="text-[var(--footer-accent)] text-xs uppercase tracking-widest mb-6">
-              Get in Touch
+              Call Now
             </h3>
             <div className="mb-6">
               <p className="text-[var(--footer-accent)] font-serif text-lg">

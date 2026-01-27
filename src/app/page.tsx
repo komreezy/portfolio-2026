@@ -24,17 +24,12 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight mb-6">
-                Injured? We Fight for You
+                We Walk With You Through Your Hardest Moments
               </h1>
             </ScrollReveal>
             <ScrollReveal delay={0.15}>
-              <p className="text-xl md:text-2xl font-light text-white/80 mb-8">
-                Experienced Personal Injury Attorneys in Georgia
-              </p>
-            </ScrollReveal>
-            <ScrollReveal delay={0.25}>
               <Link href="/contact" className="btn-primary-light">
-                Get Your Free Case Review
+                Schedule Your Free Consultation Today
               </Link>
             </ScrollReveal>
           </div>
@@ -59,7 +54,7 @@ export default function Home() {
       <section className="py-[var(--section-spacing)] px-[var(--side-padding)]">
         <ScrollReveal>
           <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] text-center mb-12">
-            Personal Injury Attorney Serving Georgia
+            DUI Defense and Personal Injury Attorney Serving Georgia
           </h2>
         </ScrollReveal>
         <div className="grid md:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
@@ -103,36 +98,61 @@ export default function Home() {
       {/* Value Proposition Section */}
       <section className="py-[var(--section-spacing)] px-[var(--side-padding)]">
         <div className="max-w-5xl mx-auto">
-          <ScrollReveal>
-            <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] text-center mb-12">
-              Maximum Compensation for Your Injuries
-            </h2>
-          </ScrollReveal>
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <ScrollReveal delay={0.1}>
-                <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-4">
-                  After an accident, you&apos;re dealing with medical bills, lost wages, and pain that affects every aspect of your life. Insurance companies will try to settle your claim quickly and cheaply. You deserve an attorney who will fight for the full value of your case.
-                </p>
-              </ScrollReveal>
-              <ScrollReveal delay={0.2}>
-                <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed">
-                  I investigate every case thoroughly, working with medical experts, accident reconstructionists, and economists to build the strongest possible claim. Whether through negotiation or trial, I pursue every avenue to maximize your recovery.
-                </p>
-              </ScrollReveal>
-            </div>
-            <div>
-              <ScrollReveal delay={0.15}>
-                <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-4">
-                  You may be entitled to compensation for medical expenses, lost income, pain and suffering, and more. I help clients understand all of their options and fight to recover damages for both current and future needs.
-                </p>
-              </ScrollReveal>
-              <ScrollReveal delay={0.25}>
-                <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed">
-                  Don&apos;t let the insurance company take advantage of you. Whether you were injured in a car accident, slip and fall, or due to medical negligence, call my office today for a free consultation.
-                </p>
-              </ScrollReveal>
-            </div>
+          {/* Personal Injury Subsection */}
+          <div className="mb-16">
+            <ScrollReveal>
+              <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] mb-6">
+                Personal Injury
+              </h2>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-4">
+                When you&apos;ve been injured due to someone else&apos;s negligence, you deserve an advocate who understands both the legal system and the technical details of your case. As a former prosecutor and licensed engineer, I bring a unique perspective to accident investigation and evidence analysis.
+              </p>
+            </ScrollReveal>
+            <ScrollReveal delay={0.15}>
+              <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed">
+                I handle car accidents, truck accidents, motorcycle accidents, pedestrian accidents, and other personal injury matters throughout Georgia. My goal is to help you recover full compensation for your medical bills, lost wages, pain and suffering, and other damages.
+              </p>
+            </ScrollReveal>
+          </div>
+
+          {/* DUI Defense Subsection */}
+          <div className="mb-16">
+            <ScrollReveal>
+              <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] mb-6">
+                DUI Defense
+              </h2>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-4">
+                A DUI charge can threaten your license, your job, and your future. Having prosecuted these cases, I understand the system from the inside and know how to build an effective defense strategy tailored to your situation.
+              </p>
+            </ScrollReveal>
+            <ScrollReveal delay={0.15}>
+              <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed">
+                I provide honest assessments and aggressive representation, challenging evidence, questioning procedures, and fighting to protect your rights at every stage of the process.
+              </p>
+            </ScrollReveal>
+          </div>
+
+          {/* CTA Subsection */}
+          <div className="text-center">
+            <ScrollReveal>
+              <h3 className="font-display text-2xl md:text-3xl font-light text-[var(--foreground)] mb-6">
+                Get the Representation You Deserve
+              </h3>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
+              <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-8 max-w-2xl mx-auto">
+                Whether you&apos;re facing injuries from an accident or criminal charges, you don&apos;t have to face it alone. Contact my office today for a free consultation to discuss your case.
+              </p>
+            </ScrollReveal>
+            <ScrollReveal delay={0.15}>
+              <Link href="/contact" className="btn-primary">
+                Schedule Your Free Consultation
+              </Link>
+            </ScrollReveal>
           </div>
         </div>
       </section>
@@ -225,7 +245,7 @@ export default function Home() {
           </ScrollReveal>
           <ScrollReveal delay={0.18}>
             <Link href="/contact" className="btn-outlined-light">
-              Get in Touch
+              Call Now
             </Link>
           </ScrollReveal>
         </div>

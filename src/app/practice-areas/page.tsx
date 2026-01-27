@@ -4,6 +4,12 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 const practiceAreas = [
   {
+    title: "DUI Defense",
+    description:
+      "Facing DUI charges can be overwhelming and frightening, but you have rights. As a former prosecutor, I've handled hundreds of these cases and know how to build an effective defense. I provide honest assessments of your situation and fight to protect your license, your record, and your future.",
+    link: "/practice-areas/dui-defense",
+  },
+  {
     title: "Car Accidents",
     description:
       "Car accidents are the leading cause of personal injury claims in Georgia. As a licensed engineer and former prosecutor, I understand how to analyze crash evidence, investigate the scene, and build the strongest possible case to recover compensation for your medical bills, lost wages, and pain and suffering.",
@@ -26,12 +32,6 @@ const practiceAreas = [
     description:
       "Pedestrians have virtually no protection when struck by vehicles, often resulting in severe or catastrophic injuries. I work to hold negligent drivers accountable and recover full compensation for medical expenses, lost income, and the pain and suffering you've endured.",
     link: "/practice-areas/pedestrian-accidents",
-  },
-  {
-    title: "DUI Defense",
-    description:
-      "Facing DUI charges can be overwhelming and frightening, but you have rights. As a former prosecutor, I've handled hundreds of these cases and know how to build an effective defense. I provide honest assessments of your situation and fight to protect your license, your record, and your future.",
-    link: "/practice-areas/dui-defense",
   },
 ];
 

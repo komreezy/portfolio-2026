@@ -142,50 +142,76 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <nav className="lg:hidden mt-6 pb-4 flex flex-col gap-4 border-t border-[var(--border)] pt-6">
-            {navLinks.map((link) => (
-              <div key={link.label}>
-                {link.children ? (
-                  <div className="space-y-2">
-                    <span className="text-[var(--foreground)] text-sm font-light uppercase tracking-wider">
-                      {link.label}
-                    </span>
-                    <div className="pl-4 space-y-2">
-                      {link.children.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          className="block text-[var(--muted-foreground)] text-sm font-light hover:text-[var(--primary)] transition-colors duration-150"
-                          onClick={() => setIsMenuOpen(false)}
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                ) : (
-                  <Link
-                    href={link.href}
-                    className="text-[var(--foreground)] text-sm font-light uppercase tracking-wider hover:text-[var(--primary)] transition-colors duration-150"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
+      </div>
+
+      {/* Mobile Navigation Overlay */}
+      <div
+        className={`lg:hidden fixed inset-0 top-[var(--header-height)] bg-[var(--background)] z-40 transition-all duration-300 ease-in-out ${
+          isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
+      >
+        {/* Close Button */}
+        <button
+          className="absolute top-6 right-[var(--side-padding)] p-2"
+          onClick={() => setIsMenuOpen(false)}
+          aria-label="Close menu"
+        >
+          <svg
+            className="w-6 h-6 text-[var(--foreground)]"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={1.5}
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+
+        <nav className="px-[var(--side-padding)] pt-16 pb-8 flex flex-col gap-6 h-full overflow-y-auto">
+          {navLinks.map((link) => (
+            <div key={link.label}>
+              {link.children ? (
+                <div className="space-y-3">
+                  <span className="text-[var(--foreground)] text-lg font-light uppercase tracking-wider">
                     {link.label}
-                  </Link>
-                )}
-              </div>
-            ))}
-            {/* Mobile Phone CTA */}
-            <a
-              href={`tel:${phoneNumber.replace(/[^0-9]/g, "")}`}
-              className="mt-4 flex items-center justify-center gap-2 bg-[var(--primary)] text-white px-4 py-3 text-sm font-medium"
-            >
-              <span className="text-xs uppercase tracking-wider">Call or Text</span>
-              <span>{phoneNumber}</span>
-            </a>
-          </nav>
-        )}
+                  </span>
+                  <div className="pl-4 space-y-3">
+                    {link.children.map((child) => (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        className="block text-[var(--muted-foreground)] text-base font-light hover:text-[var(--primary)] transition-colors duration-150"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : (
+                <Link
+                  href={link.href}
+                  className="text-[var(--foreground)] text-lg font-light uppercase tracking-wider hover:text-[var(--primary)] transition-colors duration-150 block"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              )}
+            </div>
+          ))}
+          {/* Mobile Phone CTA */}
+          <a
+            href={`tel:${phoneNumber.replace(/[^0-9]/g, "")}`}
+            className="mt-auto flex items-center justify-center gap-2 bg-[var(--primary)] text-white px-4 py-4 text-sm font-medium"
+          >
+            <span className="text-xs uppercase tracking-wider">Call or Text</span>
+            <span>{phoneNumber}</span>
+          </a>
+        </nav>
       </div>
     </header>
   );

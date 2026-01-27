@@ -4,6 +4,11 @@ import { useState, useEffect, useRef } from "react";
 
 const services = [
   {
+    title: "DUI Defense",
+    description:
+      "Facing DUI charges can be overwhelming, but you have rights. As a former prosecutor, I've seen these cases from both sides and know how to build an effective defense. I provide honest assessments and fight to protect your license, your record, and your future.",
+  },
+  {
     title: "Car Accidents",
     description:
       "Car accidents are the leading cause of personal injury claims in Georgia. As a licensed engineer and former prosecutor, I understand how to analyze crash evidence and build the strongest possible case. I fight to get you compensation for medical bills, lost wages, and pain and suffering.",
@@ -22,11 +27,6 @@ const services = [
     title: "Pedestrian Accidents",
     description:
       "Pedestrians have virtually no protection when struck by vehicles. These accidents often result in severe injuries requiring extensive medical treatment. I work to hold negligent drivers accountable and recover full compensation for your injuries and suffering.",
-  },
-  {
-    title: "DUI Defense",
-    description:
-      "Facing DUI charges can be overwhelming, but you have rights. As a former prosecutor, I've seen these cases from both sides and know how to build an effective defense. I provide honest assessments and fight to protect your license, your record, and your future.",
   },
 ];
 
