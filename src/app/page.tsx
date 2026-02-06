@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Marquee from "@/components/Marquee";
 import ServicesAccordion from "@/components/ServicesAccordion";
 import ScrollReveal from "@/components/ScrollReveal";
@@ -59,7 +60,14 @@ export default function Home() {
         </ScrollReveal>
         <div className="grid md:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
           <ScrollReveal delay={0.1} className="clip-reveal-wrapper">
-            <div className="image-placeholder aspect-[3/4] rounded-sm"></div>
+            <div className="aspect-[3/4] relative overflow-hidden rounded-sm">
+              <Image
+                src="/arash-jafary.png"
+                alt="Arash Jafary - Attorney at Law"
+                fill
+                className="object-cover object-top"
+              />
+            </div>
           </ScrollReveal>
           <div>
             <ScrollReveal delay={0.15}>
@@ -198,7 +206,13 @@ export default function Home() {
               </ScrollReveal>
             </div>
             <ScrollReveal delay={0.2} className="clip-reveal-wrapper">
-              <div className="image-placeholder rounded-sm"></div>
+              <Image
+                src="/gavel.jpg"
+                alt="Wooden gavel on marble surface"
+                width={600}
+                height={400}
+                className="w-full h-auto object-cover rounded-sm"
+              />
             </ScrollReveal>
           </div>
         </div>
@@ -207,7 +221,13 @@ export default function Home() {
         <div className="px-[var(--side-padding)]">
           <div className="grid md:grid-cols-[30%_70%] gap-10 items-center">
             <ScrollReveal delay={0.1} className="clip-reveal-wrapper">
-              <div className="image-placeholder rounded-sm"></div>
+              <Image
+                src="/consultation-meeting.jpg"
+                alt="Professional consultation meeting"
+                width={400}
+                height={500}
+                className="w-full h-auto object-cover rounded-sm"
+              />
             </ScrollReveal>
             <div>
               <ScrollReveal>
@@ -230,7 +250,7 @@ export default function Home() {
       </section>
 
       {/* Blog Preview Section */}
-      <BlogPreview />
+      {/* <BlogPreview /> */}
 
       {/* Contact Form Section */}
       <ContactForm />

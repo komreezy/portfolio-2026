@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
 
 interface NavItem {
@@ -23,7 +24,7 @@ export default function Header() {
       href: "#",
       label: "Resources",
       children: [
-        { href: "/blog", label: "Blog" },
+        // { href: "/blog", label: "Blog" },
         { href: "/testimonials", label: "Testimonials" },
         { href: "/faq", label: "FAQ" },
       ],
@@ -45,14 +46,18 @@ export default function Header() {
   const phoneNumber = "(678) 522-6273";
 
   return (
-    <header className="bg-[var(--background)] h-[var(--header-height)] flex items-center sticky top-0 z-50 border-b border-[var(--border)]">
+    <header className="bg-[#F9F5F0] h-[var(--header-height)] flex items-center sticky top-0 z-50 border-b border-[var(--border)]">
       <div className="w-full px-[var(--side-padding)]">
         <div className="flex items-center justify-between">
-          <Link
-            href="/"
-            className="text-[var(--foreground)] text-sm font-medium tracking-wide uppercase"
-          >
-            Assured Justice Firm
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo-header.png"
+              alt="Assured Justice"
+              width={130}
+              height={104}
+              className="h-14 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -179,7 +184,7 @@ export default function Header() {
                   <span className="text-[var(--foreground)] text-lg font-light uppercase tracking-wider">
                     {link.label}
                   </span>
-                  <div className="pl-4 space-y-3">
+                  <div className="pl-4 pt-2 space-y-3">
                     {link.children.map((child) => (
                       <Link
                         key={child.href}

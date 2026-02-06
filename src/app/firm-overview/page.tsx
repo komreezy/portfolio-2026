@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
 
@@ -52,7 +53,13 @@ export default function FirmOverview() {
             </ScrollReveal>
           </div>
           <ScrollReveal delay={0.2} className="clip-reveal-wrapper">
-            <div className="image-placeholder aspect-[4/3] rounded-sm"></div>
+            <Image
+              src="/firm-overview.avif"
+              alt="Professional law office"
+              width={800}
+              height={600}
+              className="w-full h-auto object-cover aspect-[4/3] rounded-sm"
+            />
           </ScrollReveal>
         </div>
       </section>
@@ -61,7 +68,13 @@ export default function FirmOverview() {
       <section className="py-[var(--section-spacing)] px-[var(--side-padding)] bg-[var(--card)]">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <ScrollReveal delay={0.1} className="clip-reveal-wrapper order-2 md:order-1">
-            <div className="image-placeholder aspect-[4/3] rounded-sm"></div>
+            <Image
+              src="/fountain-pen.jpg"
+              alt="Fountain pen writing on paper"
+              width={800}
+              height={600}
+              className="w-full h-auto object-cover aspect-[4/3] rounded-sm"
+            />
           </ScrollReveal>
           <div className="order-1 md:order-2">
             <ScrollReveal>

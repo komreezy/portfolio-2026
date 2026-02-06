@@ -34,12 +34,13 @@ export default function About() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-16">
-            {/* Photo Placeholder */}
+            {/* Photo */}
             <div>
-              <div className="aspect-[4/5] bg-[var(--secondary)] opacity-40"></div>
-              <p className="text-xs text-[var(--muted-foreground)] mt-4 uppercase tracking-wider">
-                Your photo here
-              </p>
+              <img
+                src="/arash-portrait.png"
+                alt="Arash Jafary"
+                className="aspect-[4/5] w-full object-cover object-top rounded-sm"
+              />
             </div>
 
             {/* Bio Content */}
