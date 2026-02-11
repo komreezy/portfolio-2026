@@ -15,16 +15,57 @@ export default function Contact() {
 
   const maxChars = 600;
 
+  const formatPhoneNumber = (value: string) => {
+    const digits = value.replace(/\D/g, "");
+    if (digits.length > 10) return digits;
+    if (digits.length <= 3) return digits;
+    if (digits.length <= 6) return `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+    return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6, 10)}`;
+  };
+
+  const isValidEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
 
-    // Simulate form submission - replace with actual submission logic
+    if (!isValidEmail(formData.email)) {
+      setSubmitStatus("error");
+      return;
+    }
+
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+
     try {
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      console.log("Form submitted:", formData);
-      setSubmitStatus("success");
-      setFormData({ firstName: "", lastName: "", phone: "", email: "", message: "" });
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
+          subject: "New Contact Form Submission - Assured Justice Firm",
+          from_name: `${formData.firstName} ${formData.lastName}`,
+          name: `${formData.firstName} ${formData.lastName}`,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          submitted_at: new Date().toLocaleString("en-US", { timeZone: "America/New_York" }) + " EST",
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitStatus("success");
+        setFormData({ firstName: "", lastName: "", phone: "", email: "", message: "" });
+      } else {
+        setSubmitStatus("error");
+      }
     } catch {
       setSubmitStatus("error");
     } finally {
@@ -35,7 +76,11 @@ export default function Contact() {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     if (name === "message" && value.length > maxChars) return;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+    if (name === "phone") {
+      setFormData((prev) => ({ ...prev, phone: formatPhoneNumber(value) }));
+    } else {
+      setFormData((prev) => ({ ...prev, [name]: value }));
+    }
     setSubmitStatus("idle");
   };
 
@@ -73,10 +118,10 @@ export default function Contact() {
             {/* Contact Form */}
             <div>
               {submitStatus === "success" ? (
-                <div className="bg-green-50 border border-green-200 p-6 text-center">
-                  <p className="text-green-800 font-medium mb-2">Message Sent!</p>
-                  <p className="text-green-700 text-sm">
-                    Thank you for reaching out. I&apos;ll respond within one business day.
+                <div className="bg-[var(--primary)]/5 border border-[var(--primary)]/20 p-6 text-center">
+                  <p className="text-[var(--primary)] font-medium mb-2">Message Sent!</p>
+                  <p className="text-[var(--foreground)] opacity-80 text-sm">
+                    Thank you for reaching out. We&apos;ll respond to you as soon as possible.
                   </p>
                 </div>
               ) : (
@@ -101,7 +146,8 @@ export default function Contact() {
                         required
                         value={formData.firstName}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border font-light text-sm bg-transparent border-[var(--border-solid)] text-[var(--foreground)] focus:outline-none focus:border-[var(--primary)]"
+                        disabled={isSubmitting}
+                        className="w-full px-4 py-3 border font-light text-sm bg-transparent border-[var(--border-solid)] text-[var(--foreground)] focus:outline-none focus:border-[var(--primary)] disabled:opacity-50"
                         placeholder="First"
                       />
                     </div>
@@ -119,7 +165,8 @@ export default function Contact() {
                         required
                         value={formData.lastName}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 border font-light text-sm bg-transparent border-[var(--border-solid)] text-[var(--foreground)] focus:outline-none focus:border-[var(--primary)]"
+                        disabled={isSubmitting}
+                        className="w-full px-4 py-3 border font-light text-sm bg-transparent border-[var(--border-solid)] text-[var(--foreground)] focus:outline-none focus:border-[var(--primary)] disabled:opacity-50"
                         placeholder="Last"
                       />
                     </div>
@@ -140,7 +187,8 @@ export default function Contact() {
                       required
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border font-light text-sm bg-transparent border-[var(--border-solid)] text-[var(--foreground)] focus:outline-none focus:border-[var(--primary)]"
+                      disabled={isSubmitting}
+                      className="w-full px-4 py-3 border font-light text-sm bg-transparent border-[var(--border-solid)] text-[var(--foreground)] focus:outline-none focus:border-[var(--primary)] disabled:opacity-50"
                       placeholder="(555) 555-5555"
                     />
                   </div>
@@ -160,7 +208,8 @@ export default function Contact() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border font-light text-sm bg-transparent border-[var(--border-solid)] text-[var(--foreground)] focus:outline-none focus:border-[var(--primary)]"
+                      disabled={isSubmitting}
+                      className="w-full px-4 py-3 border font-light text-sm bg-transparent border-[var(--border-solid)] text-[var(--foreground)] focus:outline-none focus:border-[var(--primary)] disabled:opacity-50"
                       placeholder="you@example.com"
                     />
                   </div>
@@ -180,7 +229,8 @@ export default function Contact() {
                       rows={4}
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border font-light text-sm resize-none bg-transparent border-[var(--border-solid)] text-[var(--foreground)] focus:outline-none focus:border-[var(--primary)]"
+                      disabled={isSubmitting}
+                      className="w-full px-4 py-3 border font-light text-sm resize-none bg-transparent border-[var(--border-solid)] text-[var(--foreground)] focus:outline-none focus:border-[var(--primary)] disabled:opacity-50"
                       placeholder="Tell us about your situation..."
                     />
                     <p className="text-xs mt-1 text-[var(--muted-foreground)]">
