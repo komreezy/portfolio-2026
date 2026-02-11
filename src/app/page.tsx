@@ -206,13 +206,16 @@ export default function Home() {
               </ScrollReveal>
             </div>
             <ScrollReveal delay={0.2} className="clip-reveal-wrapper">
-              <Image
-                src="/gavel.jpg"
-                alt="Wooden gavel on marble surface"
-                width={600}
-                height={400}
-                className="w-full h-auto object-cover rounded-sm"
-              />
+              <div className="relative rounded-sm overflow-hidden">
+                <Image
+                  src="/gavel.jpg"
+                  alt="Wooden gavel on marble surface"
+                  width={600}
+                  height={400}
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-[var(--primary)]/20 to-transparent pointer-events-none" />
+              </div>
             </ScrollReveal>
           </div>
         </div>
@@ -221,13 +224,16 @@ export default function Home() {
         <div className="px-[var(--side-padding)]">
           <div className="grid md:grid-cols-[30%_70%] gap-10 items-center">
             <ScrollReveal delay={0.1} className="clip-reveal-wrapper">
-              <Image
-                src="/consultation-meeting.jpg"
-                alt="Professional consultation meeting"
-                width={400}
-                height={500}
-                className="w-full h-auto object-cover rounded-sm"
-              />
+              <div className="relative rounded-sm overflow-hidden">
+                <Image
+                  src="/consultation-meeting.jpg"
+                  alt="Professional consultation meeting"
+                  width={400}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tl from-[var(--primary)]/20 to-transparent pointer-events-none" />
+              </div>
             </ScrollReveal>
             <div>
               <ScrollReveal>
