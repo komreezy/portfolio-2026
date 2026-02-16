@@ -256,7 +256,7 @@ export default function Home() {
       </section>
 
       {/* Blog Preview Section */}
-      {/* <BlogPreview /> */}
+      <BlogPreview />
 
       {/* Contact Form Section */}
       <ContactForm />

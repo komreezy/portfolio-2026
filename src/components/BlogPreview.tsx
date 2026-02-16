@@ -1,28 +1,15 @@
 import Link from "next/link";
+import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
+import { getLatestPosts, urlFor } from "@/lib/sanity";
 
-const blogPosts = [
-  {
-    title: "What to Do After a Car Accident in Georgia",
-    excerpt:
-      "The moments after a car accident can be overwhelming. Learn the essential steps you should take to protect yourself, your health, and your legal rights...",
-    slug: "what-to-do-after-car-accident-georgia",
-  },
-  {
-    title: "How Insurance Companies Try to Minimize Your Claim",
-    excerpt:
-      "Insurance adjusters may seem friendly, but their goal is to pay as little as possible. Learn the tactics they use and how to protect yourself...",
-    slug: "insurance-company-tactics",
-  },
-  {
-    title: "Types of Damages You Can Recover",
-    excerpt:
-      "From medical expenses and lost wages to pain and suffering, there are many types of compensation available in a personal injury case...",
-    slug: "types-of-damages-personal-injury",
-  },
-];
+export default async function BlogPreview() {
+  const posts = await getLatestPosts(3);
 
-export default function BlogPreview() {
+  if (posts.length === 0) {
+    return null;
+  }
+
   return (
     <section className="py-[var(--section-spacing)] px-[var(--side-padding)]">
       <ScrollReveal>
@@ -32,12 +19,23 @@ export default function BlogPreview() {
       </ScrollReveal>
 
       <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {blogPosts.map((post, index) => (
-          <ScrollReveal key={post.slug} delay={0.15 * index}>
+        {posts.map((post, index) => (
+          <ScrollReveal key={post._id} delay={0.15 * index}>
             <article className="group">
-              {/* Image Placeholder */}
+              {/* Image */}
               <Link href={`/blog/${post.slug}`}>
-                <div className="aspect-[16/10] bg-[var(--secondary)] opacity-40 mb-4 group-hover:opacity-60 transition-opacity duration-300"></div>
+                {post.mainImage ? (
+                  <div className="aspect-[16/10] relative mb-4 overflow-hidden">
+                    <Image
+                      src={urlFor(post.mainImage).width(600).height(375).url()}
+                      alt={post.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                ) : (
+                  <div className="aspect-[16/10] bg-[var(--secondary)] opacity-40 mb-4 group-hover:opacity-60 transition-opacity duration-300"></div>
+                )}
               </Link>
 
               {/* Title */}
