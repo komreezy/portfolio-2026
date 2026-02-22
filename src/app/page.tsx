@@ -140,9 +140,9 @@ export default function Home() {
             </ScrollReveal>
 
             {/* Arrow 1 */}
-            <div className="hidden md:flex items-center justify-center px-2 text-[var(--border-solid)]">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M9 6l6 6-6 6" />
+            <div className="hidden md:flex items-center justify-center px-3 text-[var(--muted-foreground)] opacity-40">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M9 5l7 7-7 7" />
               </svg>
             </div>
 
@@ -158,9 +158,9 @@ export default function Home() {
             </ScrollReveal>
 
             {/* Arrow 2 */}
-            <div className="hidden md:flex items-center justify-center px-2 text-[var(--border-solid)]">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M9 6l6 6-6 6" />
+            <div className="hidden md:flex items-center justify-center px-3 text-[var(--muted-foreground)] opacity-40">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M9 5l7 7-7 7" />
               </svg>
             </div>
 
@@ -176,9 +176,9 @@ export default function Home() {
             </ScrollReveal>
 
             {/* Arrow 3 */}
-            <div className="hidden md:flex items-center justify-center px-2 text-[var(--border-solid)]">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <path d="M9 6l6 6-6 6" />
+            <div className="hidden md:flex items-center justify-center px-3 text-[var(--muted-foreground)] opacity-40">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M9 5l7 7-7 7" />
               </svg>
             </div>
 
