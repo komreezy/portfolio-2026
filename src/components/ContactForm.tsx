@@ -125,10 +125,10 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
         <div className="max-w-3xl mx-auto">
           {/* Trust Badge Header */}
           <div
-            className="rounded-xl p-6 md:p-8 mb-12"
+            className="rounded-2xl p-6 md:p-8 mb-12"
             style={{
               backgroundColor: isDark ? '#1A1918' : '#FFFFFF',
-              border: '3px solid #D5A021'
+              border: '2px solid #D4C4A0'
             }}
           >
             <div className="flex flex-col md:flex-row items-center md:items-center gap-6 md:gap-8">
@@ -143,7 +143,7 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
                 />
               </div>
               {/* Content - all text left aligned */}
-              <div className="flex flex-col items-center md:items-start">
+              <div className="text-center md:text-left">
                 <h2 className={`font-display text-2xl md:text-3xl font-light mb-3 ${isDark ? "text-[var(--footer-text)]" : "text-[var(--foreground)]"}`}>
                   Contact Us About Your Case
                 </h2>
