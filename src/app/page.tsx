@@ -140,8 +140,8 @@ export default function Home() {
             </ScrollReveal>
 
             {/* Arrow 1 */}
-            <div className="hidden md:flex items-center justify-center px-3 text-[var(--muted-foreground)] opacity-40">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <div className="hidden md:flex items-center justify-center w-8 shrink-0">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="text-[var(--primary)]" stroke="currentColor" strokeWidth="2.5">
                 <path d="M9 5l7 7-7 7" />
               </svg>
             </div>
@@ -158,8 +158,8 @@ export default function Home() {
             </ScrollReveal>
 
             {/* Arrow 2 */}
-            <div className="hidden md:flex items-center justify-center px-3 text-[var(--muted-foreground)] opacity-40">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <div className="hidden md:flex items-center justify-center w-8 shrink-0">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="text-[var(--primary)]" stroke="currentColor" strokeWidth="2.5">
                 <path d="M9 5l7 7-7 7" />
               </svg>
             </div>
@@ -176,8 +176,8 @@ export default function Home() {
             </ScrollReveal>
 
             {/* Arrow 3 */}
-            <div className="hidden md:flex items-center justify-center px-3 text-[var(--muted-foreground)] opacity-40">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+            <div className="hidden md:flex items-center justify-center w-8 shrink-0">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" className="text-[var(--primary)]" stroke="currentColor" strokeWidth="2.5">
                 <path d="M9 5l7 7-7 7" />
               </svg>
             </div>
