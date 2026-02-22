@@ -53,7 +53,7 @@ export default function FirmOverview() {
             </ScrollReveal>
             {/* Testimonial */}
             <ScrollReveal delay={0.35}>
-              <div className="p-6 border-l-2 border-[var(--primary)] bg-white/50">
+              <div className="p-6 border-l-2 border-[var(--primary)]">
                 <h3 className="text-sm font-medium text-[var(--primary)] uppercase tracking-wider mb-4">
                   HIGHLY RECOMMENDED!
                 </h3>
