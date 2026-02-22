@@ -13,7 +13,17 @@ interface NavItem {
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [hasScrolled, setHasScrolled] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Track scroll position to show/hide mobile CTA
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 100);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks: NavItem[] = [
     { href: "/", label: "Home" },
@@ -120,7 +130,9 @@ export default function Header() {
           <div className="flex lg:hidden items-center gap-2">
             <Link
               href="/contact"
-              className="bg-[var(--primary)] text-white px-3 py-2 text-xs font-medium uppercase tracking-wider whitespace-nowrap"
+              className={`bg-[var(--primary)] text-white px-3 py-2 text-xs font-medium uppercase tracking-wider whitespace-nowrap transition-all duration-300 ${
+                hasScrolled ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4 pointer-events-none"
+              }`}
             >
               Contact Me
             </Link>
