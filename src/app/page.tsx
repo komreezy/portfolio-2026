@@ -24,14 +24,29 @@ export default function Home() {
         <div className="relative z-10 px-[var(--side-padding)] py-20 w-full text-center">
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
+              <p className="text-sm md:text-base uppercase tracking-[0.2em] text-[var(--primary)] font-medium mb-6">
+                Former Prosecutor · Licensed Engineer · Georgia Attorney
+              </p>
+            </ScrollReveal>
+            <ScrollReveal delay={0.1}>
               <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight mb-6">
                 We Walk With You Through Your Hardest Moments
               </h1>
             </ScrollReveal>
-            <ScrollReveal delay={0.15}>
-              <Link href="/contact" className="btn-primary-light">
-                Schedule Your Free Consultation Today
-              </Link>
+            <ScrollReveal delay={0.2}>
+              <p className="text-lg md:text-xl font-light text-white/80 max-w-2xl mx-auto mb-10">
+                Personal Injury and DUI Defense throughout Georgia. You get insider knowledge from a former prosecutor, proven courtroom strategy, and direct access to your attorney every step of the way.
+              </p>
+            </ScrollReveal>
+            <ScrollReveal delay={0.3}>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/contact" className="btn-primary-light">
+                  Schedule Free Consultation
+                </Link>
+                <a href="tel:+16785226273" className="btn-secondary-light">
+                  Call (678) 522-6273
+                </a>
+              </div>
             </ScrollReveal>
           </div>
         </div>
@@ -62,7 +77,7 @@ export default function Home() {
           <ScrollReveal delay={0.1} className="clip-reveal-wrapper">
             <div className="aspect-[3/4] relative overflow-hidden rounded-sm">
               <Image
-                src="/arash-jafary.png"
+                src="/arash-jafary-2.jpg"
                 alt="Arash Jafary - Attorney at Law"
                 fill
                 className="object-cover object-top"
