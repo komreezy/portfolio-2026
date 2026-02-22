@@ -124,18 +124,12 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
       <div className="px-[var(--side-padding)]">
         <div className="max-w-3xl mx-auto">
           {/* Trust Badge Header */}
-          <div
-            className="rounded-2xl p-6 md:p-8 mb-12"
-            style={{
-              backgroundColor: isDark ? '#1A1918' : '#FFFFFF',
-              border: '2px solid #D4C4A0'
-            }}
-          >
-            <div className="flex flex-col md:flex-row items-center md:items-center gap-6 md:gap-8">
+          <div className="bg-[#F6F5EF] rounded-sm p-6 md:p-8 mb-12 border border-[var(--border)] max-w-xl mx-auto">
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8">
               {/* Logo */}
               <div className="shrink-0">
                 <Image
-                  src="/logo-aj-white.png"
+                  src="/logo-aj.png"
                   alt="Assured Justice"
                   width={120}
                   height={120}
@@ -143,14 +137,12 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
                 />
               </div>
               {/* Content - all text left aligned */}
-              <div className="text-center md:text-left">
-                <h2 className={`font-display text-2xl md:text-3xl font-light mb-3 ${isDark ? "text-[var(--footer-text)]" : "text-[var(--foreground)]"}`}>
+              <div className="flex-1">
+                <h2 className="font-display text-2xl md:text-3xl font-light mb-3 text-left text-[var(--foreground)]">
                   Contact Us About Your Case
                 </h2>
-                <p className={`text-sm mb-2 ${isDark ? "text-[var(--footer-text)] opacity-70" : "text-[var(--muted-foreground)]"}`}>
-                  Free consultation · Responds within 24 hours · Confidential
-                </p>
-                <p className={`text-sm font-light ${isDark ? "text-[var(--footer-text)] opacity-80" : "text-[var(--muted-foreground)]"}`}>
+                <p className="text-sm mb-2 text-left text-[var(--muted-foreground)]">Free consultation · Responds within 24 hours · Confidential</p>
+                <p className="text-sm font-light text-left text-[var(--muted-foreground)]">
                   <span className="font-medium">Call or Text - {phoneNumber}</span> - OR - Fill in the form below
                 </p>
               </div>
