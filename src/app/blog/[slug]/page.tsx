@@ -66,7 +66,7 @@ export default async function BlogPost({
     <main className="flex-1">
       {/* Hero Section */}
       <section className="py-[var(--section-spacing)] px-[var(--side-padding)] bg-[var(--card)]">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto text-center">
           <ScrollReveal>
             {post.category && (
               <Link

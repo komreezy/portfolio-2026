@@ -281,7 +281,7 @@ export default function Home() {
         <div className="flex flex-col items-center justify-center text-center px-[var(--side-padding)]">
           <ScrollReveal>
             <h2 className="font-display text-4xl md:text-5xl font-light text-[var(--footer-text)] mb-8">
-              Schedule a consultation
+              Schedule a FREE Consultation
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.18}>
