@@ -118,63 +118,58 @@ export default function Home() {
       {/* Services Accordion Section */}
       <ServicesAccordion />
 
-      {/* Value Proposition Section */}
-      <section className="py-[var(--section-spacing)] px-[var(--side-padding)]">
+      {/* What Happens When You Call Section */}
+      <section className="py-[var(--section-spacing)] px-[var(--side-padding)] bg-[var(--card)]">
         <div className="max-w-5xl mx-auto">
-          {/* Personal Injury Subsection */}
-          <div className="mb-16">
-            <ScrollReveal>
-              <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] mb-6">
-                Personal Injury
-              </h2>
-            </ScrollReveal>
-            <ScrollReveal delay={0.1}>
-              <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-4">
-                When you&apos;ve been injured due to someone else&apos;s negligence, you deserve an advocate who understands both the legal system and the technical details of your case. As a former prosecutor and licensed engineer, I bring a unique perspective to accident investigation and evidence analysis.
-              </p>
-            </ScrollReveal>
-            <ScrollReveal delay={0.15}>
-              <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed">
-                I handle car accidents, truck accidents, motorcycle accidents, pedestrian accidents, and other personal injury matters throughout Georgia. My goal is to help you recover full compensation for your medical bills, lost wages, pain and suffering, and other damages.
-              </p>
-            </ScrollReveal>
-          </div>
+          <ScrollReveal>
+            <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] text-center mb-12">
+              What Happens When You Call
+            </h2>
+          </ScrollReveal>
 
-          {/* DUI Defense Subsection */}
-          <div className="mb-16">
-            <ScrollReveal>
-              <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] mb-6">
-                DUI Defense
-              </h2>
-            </ScrollReveal>
+          <div className="grid md:grid-cols-4 gap-6">
+            {/* Step 1 */}
             <ScrollReveal delay={0.1}>
-              <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-4">
-                A DUI charge can threaten your license, your job, and your future. Having prosecuted these cases, I understand the system from the inside and know how to build an effective defense strategy tailored to your situation.
-              </p>
+              <div className="bg-[var(--background)] p-6 rounded-sm shadow-sm border border-[var(--border)] text-center h-full">
+                <span className="font-display text-lg text-[var(--primary)] italic">1</span>
+                <h3 className="font-medium text-[var(--foreground)] mt-2 mb-3">Free Consultation</h3>
+                <p className="text-sm font-light text-[var(--muted-foreground)] leading-relaxed">
+                  Call, text, or fill out the form. We respond within 24 hours, often same-day.
+                </p>
+              </div>
             </ScrollReveal>
-            <ScrollReveal delay={0.15}>
-              <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed">
-                I provide honest assessments and aggressive representation, challenging evidence, questioning procedures, and fighting to protect your rights at every stage of the process.
-              </p>
-            </ScrollReveal>
-          </div>
 
-          {/* CTA Subsection */}
-          <div className="text-center">
-            <ScrollReveal>
-              <h3 className="font-display text-2xl md:text-3xl font-light text-[var(--foreground)] mb-6">
-                Get the Representation You Deserve
-              </h3>
+            {/* Step 2 */}
+            <ScrollReveal delay={0.2}>
+              <div className="bg-[var(--background)] p-6 rounded-sm shadow-sm border border-[var(--border)] text-center h-full">
+                <span className="font-display text-lg text-[var(--primary)] italic">2</span>
+                <h3 className="font-medium text-[var(--foreground)] mt-2 mb-3">Case Evaluation</h3>
+                <p className="text-sm font-light text-[var(--muted-foreground)] leading-relaxed">
+                  Arash personally reviews your situation and explains your options — no obligation.
+                </p>
+              </div>
             </ScrollReveal>
-            <ScrollReveal delay={0.1}>
-              <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-8 max-w-2xl mx-auto">
-                Whether you&apos;re facing injuries from an accident or criminal charges, you don&apos;t have to face it alone. Contact my office today for a free consultation to discuss your case.
-              </p>
+
+            {/* Step 3 */}
+            <ScrollReveal delay={0.3}>
+              <div className="bg-[var(--background)] p-6 rounded-sm shadow-sm border border-[var(--border)] text-center h-full">
+                <span className="font-display text-lg text-[var(--primary)] italic">3</span>
+                <h3 className="font-medium text-[var(--foreground)] mt-2 mb-3">Strategy Session</h3>
+                <p className="text-sm font-light text-[var(--muted-foreground)] leading-relaxed">
+                  We build a tailored legal strategy using trial experience and technical expertise.
+                </p>
+              </div>
             </ScrollReveal>
-            <ScrollReveal delay={0.15}>
-              <Link href="/contact" className="btn-primary">
-                Schedule Your Free Consultation
-              </Link>
+
+            {/* Step 4 */}
+            <ScrollReveal delay={0.4}>
+              <div className="bg-[var(--background)] p-6 rounded-sm shadow-sm border border-[var(--border)] text-center h-full">
+                <span className="font-display text-lg text-[var(--primary)] italic">4</span>
+                <h3 className="font-medium text-[var(--foreground)] mt-2 mb-3">Fight For You</h3>
+                <p className="text-sm font-light text-[var(--muted-foreground)] leading-relaxed">
+                  We negotiate hard and go to trial if needed. You have a real trial lawyer in your corner.
+                </p>
+              </div>
             </ScrollReveal>
           </div>
         </div>

@@ -111,7 +111,7 @@ export default async function BlogPost({
 
       {/* Article Content */}
       <article className="py-[var(--section-spacing)] px-[var(--side-padding)]">
-        <div className="max-w-3xl mx-auto prose-custom text-center">
+        <div className="max-w-xl mx-auto prose-custom">
           <ScrollReveal>
             {post.body ? (
               <PortableText value={post.body} components={components} />
