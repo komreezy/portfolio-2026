@@ -215,6 +215,11 @@ export default function Home() {
       {/* Credentials Section */}
       <section className="py-[var(--section-spacing)] px-[var(--side-padding)]">
         <div className="max-w-6xl mx-auto">
+          <ScrollReveal>
+            <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] text-center mb-12">
+              Credentials
+            </h2>
+          </ScrollReveal>
           <div className="grid md:grid-cols-3 gap-6">
             {/* Former Prosecutor */}
             <ScrollReveal delay={0.1}>
