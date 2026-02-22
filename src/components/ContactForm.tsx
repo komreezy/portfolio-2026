@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 interface ContactFormProps {
   variant?: "default" | "dark";
@@ -122,13 +123,32 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
     <section className={`py-[var(--section-spacing)] ${isDark ? "bg-[var(--primary-dark)]" : ""}`}>
       <div className="px-[var(--side-padding)]">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className={`font-display text-3xl md:text-4xl font-light mb-4 ${isDark ? "text-[var(--footer-text)]" : "text-[var(--foreground)]"}`}>
-              Contact Us About Your Case
-            </h2>
-            <p className={`text-base font-light ${isDark ? "text-[var(--footer-text)] opacity-80" : "text-[var(--muted-foreground)]"}`}>
-              <span className="font-medium">Call or Text - {phoneNumber}</span> - OR - Fill in the form below.
-            </p>
+          {/* Trust Badge Header */}
+          <div className={`border-2 rounded-lg p-6 md:p-8 mb-12 ${isDark ? "border-[var(--primary)] bg-[var(--primary-dark)]" : "border-[var(--primary)] bg-[var(--card)]"}`}>
+            <div className="flex flex-col md:flex-row items-center gap-5 md:gap-8">
+              {/* Logo */}
+              <div className="shrink-0">
+                <Image
+                  src="/logo-aj-white.png"
+                  alt="Assured Justice"
+                  width={70}
+                  height={56}
+                  className="h-14 w-auto"
+                />
+              </div>
+              {/* Content */}
+              <div className="text-center md:text-left">
+                <h2 className={`font-display text-2xl md:text-3xl font-light mb-2 ${isDark ? "text-[var(--footer-text)]" : "text-[var(--foreground)]"}`}>
+                  Contact Us About Your Case
+                </h2>
+                <p className={`text-sm mb-2 ${isDark ? "text-[var(--footer-text)] opacity-70" : "text-[var(--muted-foreground)]"}`}>
+                  Free consultation · Responds within 24 hours · Confidential
+                </p>
+                <p className={`text-sm font-light ${isDark ? "text-[var(--footer-text)] opacity-80" : "text-[var(--muted-foreground)]"}`}>
+                  <span className="font-medium">Call or Text - {phoneNumber}</span> - OR - Fill in the form below
+                </p>
+              </div>
+            </div>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
