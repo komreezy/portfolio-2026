@@ -124,21 +124,21 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
       <div className="px-[var(--side-padding)]">
         <div className="max-w-3xl mx-auto">
           {/* Trust Badge Header */}
-          <div className={`border-2 rounded-lg p-6 md:p-8 mb-12 ${isDark ? "border-[var(--primary)] bg-[var(--primary-dark)]" : "border-[var(--primary)] bg-[var(--card)]"}`}>
-            <div className="flex flex-col md:flex-row items-center gap-5 md:gap-8">
+          <div className={`border-[3px] border-[var(--primary)] rounded-xl p-6 md:p-8 mb-12 ${isDark ? "bg-[var(--primary-dark)]" : "bg-white"}`}>
+            <div className="flex flex-col md:flex-row items-center md:items-start gap-5 md:gap-8">
               {/* Logo */}
               <div className="shrink-0">
                 <Image
                   src="/logo-aj-white.png"
                   alt="Assured Justice"
-                  width={70}
-                  height={56}
-                  className="h-14 w-auto"
+                  width={100}
+                  height={100}
+                  className="h-24 w-auto"
                 />
               </div>
               {/* Content */}
               <div className="text-center md:text-left">
-                <h2 className={`font-display text-2xl md:text-3xl font-light mb-2 ${isDark ? "text-[var(--footer-text)]" : "text-[var(--foreground)]"}`}>
+                <h2 className={`font-display text-2xl md:text-3xl font-light mb-3 ${isDark ? "text-[var(--footer-text)]" : "text-[var(--foreground)]"}`}>
                   Contact Us About Your Case
                 </h2>
                 <p className={`text-sm mb-2 ${isDark ? "text-[var(--footer-text)] opacity-70" : "text-[var(--muted-foreground)]"}`}>
