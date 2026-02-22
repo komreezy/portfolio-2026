@@ -47,9 +47,23 @@ export default function FirmOverview() {
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.25}>
-              <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed">
+              <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-8">
                 Whether you were injured in a car, truck, motorcycle, or pedestrian accident—or you&apos;re facing DUI charges—I fight tirelessly against insurance companies and prosecutors to protect your rights and maximize your recovery.
               </p>
+            </ScrollReveal>
+            {/* Testimonial */}
+            <ScrollReveal delay={0.35}>
+              <div className="p-6 border-l-2 border-[var(--primary)] bg-white/50">
+                <h3 className="text-sm font-medium text-[var(--primary)] uppercase tracking-wider mb-4">
+                  HIGHLY RECOMMENDED!
+                </h3>
+                <p className="text-sm font-light text-[var(--foreground)] leading-relaxed mb-4">
+                  &ldquo;Arash is someone who makes sure to get all facts and analyzes them well. He is responsive, thorough, and genuinely cares about his clients. I highly recommend him for anyone seeking legal representation.&rdquo;
+                </p>
+                <p className="text-xs font-medium text-[var(--muted-foreground)]">
+                  Babak K.
+                </p>
+              </div>
             </ScrollReveal>
           </div>
           <ScrollReveal delay={0.2} className="clip-reveal-wrapper">
@@ -98,9 +112,23 @@ export default function FirmOverview() {
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.45}>
-              <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed">
+              <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-8">
                 When you hire me, you work directly with me—not a case manager. I believe in clear communication, personal attention, and treating every client&apos;s case with the same care and urgency as if the roles were reversed.
               </p>
+            </ScrollReveal>
+            {/* Testimonial */}
+            <ScrollReveal delay={0.55}>
+              <div className="p-6 border-l-2 border-[var(--primary)] bg-white/50">
+                <h3 className="text-sm font-medium text-[var(--primary)] uppercase tracking-wider mb-4">
+                  HONEST & DIRECT!
+                </h3>
+                <p className="text-sm font-light text-[var(--foreground)] leading-relaxed mb-4">
+                  &ldquo;What I appreciated most was Arash&apos;s honesty. He gave me straight answers about my case, explained everything in plain language, and always returned my calls. You work with him directly, not a case manager.&rdquo;
+                </p>
+                <p className="text-xs font-medium text-[var(--muted-foreground)]">
+                  Sarah M.
+                </p>
+              </div>
             </ScrollReveal>
           </div>
         </div>
