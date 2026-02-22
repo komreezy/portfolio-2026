@@ -289,6 +289,35 @@ export default function Home() {
       {/* Blog Preview Section */}
       <BlogPreview />
 
+      {/* Trust Badge Section */}
+      <section className="py-12 px-[var(--side-padding)]">
+        <ScrollReveal>
+          <div className="max-w-3xl mx-auto border-2 border-[var(--primary)] rounded-sm bg-[var(--card)] p-8 md:p-10">
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-8">
+              {/* Logo */}
+              <div className="shrink-0">
+                <Image
+                  src="/logo-header.png"
+                  alt="Assured Justice"
+                  width={80}
+                  height={64}
+                  className="h-16 w-auto opacity-80"
+                />
+              </div>
+              {/* Content */}
+              <div className="text-center md:text-left">
+                <h3 className="font-display text-2xl md:text-3xl font-light text-[var(--foreground)] mb-3">
+                  Contact Us About Your Case
+                </h3>
+                <p className="text-sm text-[var(--muted-foreground)] tracking-wide">
+                  Free consultation · Responds within 24 hours · Confidential
+                </p>
+              </div>
+            </div>
+          </div>
+        </ScrollReveal>
+      </section>
+
       {/* Contact Form Section */}
       <ContactForm />
 
