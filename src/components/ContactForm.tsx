@@ -124,7 +124,7 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
       <div className="px-[var(--side-padding)]">
         <div className="max-w-3xl mx-auto">
           {/* Trust Badge Header */}
-          <div className="bg-[#F6F5EF] rounded-sm p-6 md:p-8 mb-12 border border-[var(--border)] max-w-xl mx-auto">
+          <div className="bg-[#F6F5EF] rounded-sm p-6 md:p-8 mb-12 border border-[var(--border)] max-w-2xl mx-auto">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8">
               {/* Logo */}
               <div className="shrink-0">

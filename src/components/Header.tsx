@@ -61,7 +61,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center">
             <Image
-              src="/logo-header.png"
+              src="/logo-aj.png"
               alt="Assured Justice"
               width={130}
               height={104}
