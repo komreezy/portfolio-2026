@@ -285,9 +285,9 @@ export default function Home() {
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.18}>
-            <Link href="/contact" className="btn-outlined-light">
-              Call Now
-            </Link>
+            <a href="tel:+16785226273" className="btn-outlined-light">
+              Call (678) 522-6273
+            </a>
           </ScrollReveal>
         </div>
       </section>
