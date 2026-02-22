@@ -103,6 +103,12 @@ export default function Contact() {
               needs and explore how I can help. Whether you&apos;re facing an
               immediate challenge or planning ahead, I&apos;m here to assist.
             </p>
+            <a
+              href="tel:+16785226273"
+              className="mt-6 inline-flex items-center gap-2 bg-[var(--primary)] text-white px-6 py-3 text-sm font-medium uppercase tracking-wider hover:bg-[var(--primary-dark)] transition-colors duration-150"
+            >
+              Call Now
+            </a>
           </div>
         </div>
       </section>

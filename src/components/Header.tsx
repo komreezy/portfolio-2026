@@ -24,7 +24,7 @@ export default function Header() {
       href: "#",
       label: "Resources",
       children: [
-        // { href: "/blog", label: "Blog" },
+        { href: "/blog", label: "Blog" },
         { href: "/testimonials", label: "Testimonials" },
         { href: "/faq", label: "FAQ" },
       ],
@@ -116,35 +116,43 @@ export default function Header() {
             <span>{phoneNumber}</span>
           </a>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="lg:hidden p-2"
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            <svg
-              className="w-5 h-5 text-[var(--foreground)]"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          {/* Mobile CTA + Menu Button */}
+          <div className="flex lg:hidden items-center gap-2">
+            <Link
+              href="/contact"
+              className="bg-[var(--primary)] text-white px-3 py-2 text-xs font-medium uppercase tracking-wider whitespace-nowrap"
             >
-              {isMenuOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1.5}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1.5}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
-          </button>
+              Contact Me
+            </Link>
+            <button
+              className="p-2 flex-shrink-0"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              <svg
+                className="w-5 h-5 text-[var(--foreground)]"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {isMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
+          </div>
         </div>
 
       </div>
@@ -155,28 +163,7 @@ export default function Header() {
           isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
         }`}
       >
-        {/* Close Button */}
-        <button
-          className="absolute top-6 right-[var(--side-padding)] p-2"
-          onClick={() => setIsMenuOpen(false)}
-          aria-label="Close menu"
-        >
-          <svg
-            className="w-6 h-6 text-[var(--foreground)]"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1.5}
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        </button>
-
-        <nav className="px-[var(--side-padding)] pt-16 pb-8 flex flex-col gap-6 h-full overflow-y-auto">
+        <nav className="px-[var(--side-padding)] pt-8 pb-8 flex flex-col gap-6 h-full overflow-y-auto">
           {navLinks.map((link) => (
             <div key={link.label}>
               {link.children ? (
