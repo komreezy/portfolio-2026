@@ -120,52 +120,73 @@ export default function Home() {
 
       {/* What Happens When You Call Section */}
       <section className="py-[var(--section-spacing)] px-[var(--side-padding)] bg-[var(--card)]">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] text-center mb-12">
+            <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] text-center mb-16">
               What Happens When You Call
             </h2>
           </ScrollReveal>
 
-          <div className="grid md:grid-cols-4 gap-6">
+          <div className="flex flex-col md:flex-row md:items-stretch gap-4 md:gap-0">
             {/* Step 1 */}
-            <ScrollReveal delay={0.1}>
+            <ScrollReveal delay={0.1} className="flex-1">
               <div className="bg-[var(--background)] p-6 rounded-sm shadow-sm border border-[var(--border)] text-center h-full">
-                <span className="font-display text-lg text-[var(--primary)] italic">1</span>
-                <h3 className="font-medium text-[var(--foreground)] mt-2 mb-3">Free Consultation</h3>
+                <span className="font-display text-xl text-[var(--primary)] italic">1</span>
+                <h3 className="font-medium text-[var(--foreground)] mt-3 mb-3">Free Consultation</h3>
                 <p className="text-sm font-light text-[var(--muted-foreground)] leading-relaxed">
                   Call, text, or fill out the form. We respond within 24 hours, often same-day.
                 </p>
               </div>
             </ScrollReveal>
 
+            {/* Arrow 1 */}
+            <div className="hidden md:flex items-center justify-center px-2 text-[var(--border-solid)]">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M9 6l6 6-6 6" />
+              </svg>
+            </div>
+
             {/* Step 2 */}
-            <ScrollReveal delay={0.2}>
+            <ScrollReveal delay={0.2} className="flex-1">
               <div className="bg-[var(--background)] p-6 rounded-sm shadow-sm border border-[var(--border)] text-center h-full">
-                <span className="font-display text-lg text-[var(--primary)] italic">2</span>
-                <h3 className="font-medium text-[var(--foreground)] mt-2 mb-3">Case Evaluation</h3>
+                <span className="font-display text-xl text-[var(--primary)] italic">2</span>
+                <h3 className="font-medium text-[var(--foreground)] mt-3 mb-3">Case Evaluation</h3>
                 <p className="text-sm font-light text-[var(--muted-foreground)] leading-relaxed">
                   Arash personally reviews your situation and explains your options — no obligation.
                 </p>
               </div>
             </ScrollReveal>
 
+            {/* Arrow 2 */}
+            <div className="hidden md:flex items-center justify-center px-2 text-[var(--border-solid)]">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M9 6l6 6-6 6" />
+              </svg>
+            </div>
+
             {/* Step 3 */}
-            <ScrollReveal delay={0.3}>
+            <ScrollReveal delay={0.3} className="flex-1">
               <div className="bg-[var(--background)] p-6 rounded-sm shadow-sm border border-[var(--border)] text-center h-full">
-                <span className="font-display text-lg text-[var(--primary)] italic">3</span>
-                <h3 className="font-medium text-[var(--foreground)] mt-2 mb-3">Strategy Session</h3>
+                <span className="font-display text-xl text-[var(--primary)] italic">3</span>
+                <h3 className="font-medium text-[var(--foreground)] mt-3 mb-3">Strategy Session</h3>
                 <p className="text-sm font-light text-[var(--muted-foreground)] leading-relaxed">
                   We build a tailored legal strategy using trial experience and technical expertise.
                 </p>
               </div>
             </ScrollReveal>
 
+            {/* Arrow 3 */}
+            <div className="hidden md:flex items-center justify-center px-2 text-[var(--border-solid)]">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <path d="M9 6l6 6-6 6" />
+              </svg>
+            </div>
+
             {/* Step 4 */}
-            <ScrollReveal delay={0.4}>
+            <ScrollReveal delay={0.4} className="flex-1">
               <div className="bg-[var(--background)] p-6 rounded-sm shadow-sm border border-[var(--border)] text-center h-full">
-                <span className="font-display text-lg text-[var(--primary)] italic">4</span>
-                <h3 className="font-medium text-[var(--foreground)] mt-2 mb-3">Fight For You</h3>
+                <span className="font-display text-xl text-[var(--primary)] italic">4</span>
+                <h3 className="font-medium text-[var(--foreground)] mt-3 mb-3">Fight For You</h3>
                 <p className="text-sm font-light text-[var(--muted-foreground)] leading-relaxed">
                   We negotiate hard and go to trial if needed. You have a real trial lawyer in your corner.
                 </p>
