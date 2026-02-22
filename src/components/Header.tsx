@@ -13,17 +13,7 @@ interface NavItem {
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
-  const [hasScrolled, setHasScrolled] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-
-  // Track scroll position to show/hide mobile CTA
-  useEffect(() => {
-    const handleScroll = () => {
-      setHasScrolled(window.scrollY > 100);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const navLinks: NavItem[] = [
     { href: "/", label: "Home" },
@@ -126,45 +116,35 @@ export default function Header() {
             <span>{phoneNumber}</span>
           </a>
 
-          {/* Mobile CTA + Menu Button */}
-          <div className="flex lg:hidden items-center gap-2">
-            <Link
-              href="/contact"
-              className={`bg-[var(--primary)] text-white px-3 py-2 text-xs font-medium uppercase tracking-wider whitespace-nowrap transition-all duration-300 ${
-                hasScrolled ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4 pointer-events-none"
-              }`}
+          {/* Mobile Menu Button */}
+          <button
+            className="lg:hidden p-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            <svg
+              className="w-5 h-5 text-[var(--foreground)]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
             >
-              Contact Me
-            </Link>
-            <button
-              className="p-2 flex-shrink-0"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              <svg
-                className="w-5 h-5 text-[var(--foreground)]"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                {isMenuOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                )}
-              </svg>
-            </button>
-          </div>
+              {isMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={1.5}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              )}
+            </svg>
+          </button>
         </div>
 
       </div>
