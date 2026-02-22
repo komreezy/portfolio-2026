@@ -124,20 +124,26 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
       <div className="px-[var(--side-padding)]">
         <div className="max-w-3xl mx-auto">
           {/* Trust Badge Header */}
-          <div className={`border-[3px] border-[var(--primary)] rounded-xl p-6 md:p-8 mb-12 ${isDark ? "bg-[var(--primary-dark)]" : "bg-white"}`}>
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-5 md:gap-8">
+          <div
+            className="rounded-xl p-6 md:p-8 mb-12"
+            style={{
+              backgroundColor: isDark ? '#1A1918' : '#FFFFFF',
+              border: '3px solid #D5A021'
+            }}
+          >
+            <div className="flex flex-col md:flex-row items-center md:items-center gap-6 md:gap-8">
               {/* Logo */}
               <div className="shrink-0">
                 <Image
                   src="/logo-aj-white.png"
                   alt="Assured Justice"
-                  width={100}
-                  height={100}
-                  className="h-24 w-auto"
+                  width={120}
+                  height={120}
+                  className="w-28 h-auto"
                 />
               </div>
-              {/* Content */}
-              <div className="text-center md:text-left">
+              {/* Content - all text left aligned */}
+              <div className="flex flex-col items-center md:items-start">
                 <h2 className={`font-display text-2xl md:text-3xl font-light mb-3 ${isDark ? "text-[var(--footer-text)]" : "text-[var(--foreground)]"}`}>
                   Contact Us About Your Case
                 </h2>
