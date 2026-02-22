@@ -13,8 +13,18 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
     lastName: "",
     phone: "",
     email: "",
+    category: "General Inquiry",
     message: "",
   });
+
+  const categories = [
+    { value: "General Inquiry", label: "General Inquiry" },
+    { value: "DUI Defense", label: "DUI Defense" },
+    { value: "Car Accident", label: "Car Accident" },
+    { value: "Truck Accident", label: "Truck Accident" },
+    { value: "Motorcycle Accident", label: "Motorcycle Accident" },
+    { value: "Pedestrian Accident", label: "Pedestrian Accident" },
+  ];
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
@@ -41,11 +51,12 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
         },
         body: JSON.stringify({
           access_key: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,
-          subject: "New Contact Form Submission - Assured Justice Firm",
+          subject: `New Contact Form Submission - ${formData.category} - Assured Justice Firm`,
           from_name: `${formData.firstName} ${formData.lastName}`,
           name: `${formData.firstName} ${formData.lastName}`,
           email: formData.email,
           phone: formData.phone,
+          category: formData.category,
           message: formData.message,
           submitted_at: new Date().toLocaleString("en-US", { timeZone: "America/New_York" }) + " EST",
         }),
@@ -55,7 +66,7 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
 
       if (result.success) {
         setSubmitStatus("success");
-        setFormData({ firstName: "", lastName: "", phone: "", email: "", message: "" });
+        setFormData({ firstName: "", lastName: "", phone: "", email: "", category: "General Inquiry", message: "" });
       } else {
         setSubmitStatus("error");
       }
@@ -79,7 +90,7 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
     return emailRegex.test(email);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     if (name === "message" && value.length > maxChars) return;
     if (name === "phone") {
@@ -252,6 +263,37 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
                 } focus:outline-none focus:border-[var(--primary)] disabled:opacity-50`}
                 placeholder="you@example.com"
               />
+            </div>
+
+            {/* Category */}
+            <div>
+              <label
+                htmlFor="category"
+                className={`block text-sm font-light mb-2 ${isDark ? "text-[var(--footer-text)]" : "text-[var(--foreground)]"}`}
+              >
+                Category
+              </label>
+              <select
+                id="category"
+                name="category"
+                value={formData.category}
+                onChange={handleChange}
+                disabled={isSubmitting}
+                className={`w-full pl-4 pr-10 py-3 border font-light text-sm appearance-none bg-no-repeat bg-[length:16px] bg-[right_1rem_center] ${
+                  isDark
+                    ? "bg-transparent border-[var(--footer-text)] border-opacity-30 text-[var(--footer-text)]"
+                    : "bg-transparent border-[var(--border-solid)] text-[var(--foreground)]"
+                } focus:outline-none focus:border-[var(--primary)] disabled:opacity-50`}
+                style={{
+                  backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23666'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E")`
+                }}
+              >
+                {categories.map((cat) => (
+                  <option key={cat.value} value={cat.value}>
+                    {cat.label}
+                  </option>
+                ))}
+              </select>
             </div>
 
             {/* Message */}
