@@ -112,7 +112,7 @@ export default function Header() {
             href={`tel:${phoneNumber.replace(/[^0-9]/g, "")}`}
             className="hidden lg:flex items-center gap-2 bg-[var(--primary)] text-white px-4 py-2 text-sm font-medium hover:bg-[var(--primary-dark)] transition-colors duration-150"
           >
-            <span className="text-xs uppercase tracking-wider">Call or Text</span>
+            <span>Call or Text</span>
             <span>{phoneNumber}</span>
           </a>
 

@@ -17,10 +17,8 @@ export default function About() {
             <span className="heading-serif">About</span>
           </div>
           <div>
-            <h1 className="font-display text-4xl md:text-5xl font-light text-[var(--primary)] leading-tight">
-              Fighting for the
-              <br />
-              injured
+            <h1 className="font-display text-4xl md:text-5xl font-light text-[var(--primary)] leading-tight whitespace-nowrap">
+              Fighting for the Injured
             </h1>
           </div>
         </div>
@@ -37,7 +35,7 @@ export default function About() {
             {/* Photo */}
             <div>
               <img
-                src="/arash-portrait.png"
+                src="/arash-jafary-2.jpg"
                 alt="Arash Jafary"
                 className="aspect-[4/5] w-full object-cover object-top rounded-sm"
               />
