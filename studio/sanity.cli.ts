@@ -5,4 +5,5 @@ export default defineCliConfig({
     projectId: 'hks5h5nr',
     dataset: 'production',
   },
+  studioHost: 'jafary-law',
 });

@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { PortableText } from "@portabletext/react";
-import ScrollReveal from "@/components/ScrollReveal";
+import DOMPurify from "isomorphic-dompurify";
 import ContactForm from "@/components/ContactForm";
 import { getPostBySlug, getAllSlugs, urlFor } from "@/lib/sanity";
 
@@ -62,74 +62,82 @@ export default async function BlogPost({
     notFound();
   }
 
+  // Format date
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    return date.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+  };
+
   return (
     <main className="flex-1">
-      {/* Hero Section */}
-      <section className="py-[var(--section-spacing)] px-[var(--side-padding)] bg-[var(--card)]">
-        <div className="max-w-3xl mx-auto text-center">
-          <ScrollReveal>
-            {post.category && (
-              <Link
-                href={`/blog/category/${post.category.toLowerCase().replace(/\s/g, "-")}`}
-                className="text-sm uppercase tracking-wider text-[var(--primary)] hover:underline"
-              >
-                {post.category}
-              </Link>
-            )}
-          </ScrollReveal>
-          <ScrollReveal delay={0.1}>
-            <h1 className="font-display text-3xl md:text-4xl lg:text-5xl font-light text-[var(--foreground)] leading-tight mt-4 mb-6">
-              {post.title}
-            </h1>
-          </ScrollReveal>
-          <ScrollReveal delay={0.2}>
-            <p className="text-lg font-light text-[var(--muted-foreground)]">
-              {post.excerpt}
-            </p>
-          </ScrollReveal>
-        </div>
+      {/* Hero Section - Navy/Gold Theme */}
+      <section className="blog-hero">
+        {post.category && (
+          <Link
+            href={`/blog/category/${post.category.toLowerCase().replace(/\s/g, "-")}`}
+            className="blog-hero-eyebrow"
+          >
+            {post.category}
+          </Link>
+        )}
+        <h1>
+          {post.title}
+        </h1>
+        <p className="blog-hero-meta">
+          By <strong>Arash Jafary, Esq.</strong> &nbsp;·&nbsp; Assured Justice Law Firm &nbsp;·&nbsp; {formatDate(post.publishedAt)}
+        </p>
       </section>
 
       {/* Featured Image */}
       {post.mainImage && (
-        <section className="px-[var(--side-padding)]">
-          <div className="max-w-4xl mx-auto -mt-8">
-            <ScrollReveal>
-              <div className="aspect-[16/9] relative overflow-hidden rounded-sm">
-                <Image
-                  src={urlFor(post.mainImage).width(1200).height(675).url()}
-                  alt={post.title}
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
-            </ScrollReveal>
+        <section className="px-6 md:px-8 bg-[#faf8f3] pt-12">
+          <div className="max-w-[800px] mx-auto">
+            <div className="aspect-[16/9] relative overflow-hidden rounded-sm shadow-lg">
+              <Image
+                src={urlFor(post.mainImage).width(1200).height(675).url()}
+                alt={post.title}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
           </div>
         </section>
       )}
 
       {/* Article Content */}
-      <article className="py-[var(--section-spacing)] px-[var(--side-padding)]">
-        <div className="max-w-lg mx-auto prose-custom">
-          <ScrollReveal>
-            {post.body ? (
+      <article className="py-16 px-6 md:px-8 bg-[#faf8f3]">
+        <div className="max-w-[800px] mx-auto">
+          {post.htmlContent ? (
+            <div
+              className="prose-blog"
+              dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize(post.htmlContent)
+              }}
+            />
+          ) : post.body ? (
+            <div className="prose-custom">
               <PortableText value={post.body} components={components} />
-            ) : (
-              <p className="text-base font-light text-[var(--muted-foreground)]">
-                Full article content coming soon.
-              </p>
-            )}
-          </ScrollReveal>
+            </div>
+          ) : (
+            <p className="text-base font-light text-[var(--muted-foreground)]">
+              Full article content coming soon.
+            </p>
+          )}
         </div>
       </article>
 
       {/* Back to Blog */}
-      <section className="px-[var(--side-padding)] pb-[var(--section-spacing)]">
-        <div className="max-w-3xl mx-auto">
+      <section className="px-6 md:px-8 pb-16 bg-[#faf8f3]">
+        <div className="max-w-[800px] mx-auto">
           <Link
             href="/blog"
-            className="text-sm font-medium text-[var(--primary)] hover:underline inline-flex items-center gap-1"
+            className="text-sm font-medium text-[#1a3460] hover:text-[#c9a84c] inline-flex items-center gap-2 transition-colors"
+            style={{ textDecoration: 'underline', textDecorationColor: '#c9a84c', textUnderlineOffset: '3px' }}
           >
             <span>&larr;</span> Back to Blog
           </Link>
