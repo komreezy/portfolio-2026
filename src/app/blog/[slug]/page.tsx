@@ -6,6 +6,9 @@ import DOMPurify from "isomorphic-dompurify";
 import ContactForm from "@/components/ContactForm";
 import { getPostBySlug, getAllSlugs, urlFor } from "@/lib/sanity";
 
+// Revalidate every 60 seconds
+export const revalidate = 60;
+
 // Generate static paths for all blog posts
 export async function generateStaticParams() {
   const slugs = await getAllSlugs();

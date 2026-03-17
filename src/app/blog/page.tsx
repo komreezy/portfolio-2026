@@ -1,8 +1,18 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
 import { getPosts, urlFor } from "@/lib/sanity";
+
+export const metadata: Metadata = {
+  title: "Legal Blog | DUI Defense & Personal Injury Insights | Assured Justice Firm",
+  description: "Legal insights and resources from DUI defense and personal injury attorney Arash Jafary. Learn about Georgia law, your rights, and how to protect yourself.",
+  keywords: ["Georgia legal blog", "DUI defense articles", "personal injury resources", "car accident legal advice", "attorney blog"],
+};
+
+// Revalidate every 60 seconds
+export const revalidate = 60;
 
 export default async function Blog() {
   const posts = await getPosts();

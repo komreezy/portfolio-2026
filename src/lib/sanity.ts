@@ -8,7 +8,7 @@ export const client = createClient({
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET!,
   apiVersion: '2024-01-01',
-  useCdn: true,
+  useCdn: false, // Disable CDN for fresh data
 });
 
 const builder = createImageUrlBuilder(client);
@@ -25,6 +25,7 @@ export interface Post {
   excerpt: string;
   category: string;
   mainImage?: SanityImageSource;
+  htmlContent?: string;
   body?: PortableTextBlock[];
   publishedAt: string;
 }
@@ -32,7 +33,7 @@ export interface Post {
 // Queries
 export async function getPosts(): Promise<Post[]> {
   return client.fetch(`
-    *[_type == "post"] | order(publishedAt desc) {
+    *[_type == "post" && !(_id in path("drafts.**"))] | order(publishedAt desc) {
       _id,
       title,
       "slug": slug.current,
@@ -46,7 +47,7 @@ export async function getPosts(): Promise<Post[]> {
 
 export async function getLatestPosts(limit: number = 3): Promise<Post[]> {
   return client.fetch(`
-    *[_type == "post"] | order(publishedAt desc)[0...$limit] {
+    *[_type == "post" && !(_id in path("drafts.**"))] | order(publishedAt desc)[0...$limit] {
       _id,
       title,
       "slug": slug.current,
@@ -59,13 +60,14 @@ export async function getLatestPosts(limit: number = 3): Promise<Post[]> {
 
 export async function getPostBySlug(slug: string): Promise<Post | null> {
   return client.fetch(`
-    *[_type == "post" && slug.current == $slug][0] {
+    *[_type == "post" && slug.current == $slug && !(_id in path("drafts.**"))][0] {
       _id,
       title,
       "slug": slug.current,
       excerpt,
       category,
       mainImage,
+      htmlContent,
       body,
       publishedAt
     }
@@ -74,7 +76,7 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
 
 export async function getAllSlugs(): Promise<string[]> {
   const posts = await client.fetch(`
-    *[_type == "post"] {
+    *[_type == "post" && !(_id in path("drafts.**"))] {
       "slug": slug.current
     }
   `);
