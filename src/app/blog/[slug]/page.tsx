@@ -119,7 +119,11 @@ export default async function BlogPost({
             <div
               className="prose-blog"
               dangerouslySetInnerHTML={{
-                __html: DOMPurify.sanitize(post.htmlContent)
+                __html: DOMPurify.sanitize(post.htmlContent, {
+                  ALLOWED_TAGS: ['p', 'h2', 'h3', 'h4', 'h5', 'h6', 'strong', 'em', 'a', 'ul', 'ol', 'li', 'blockquote', 'div', 'span', 'br', 'hr', 'img', 'figure', 'figcaption', 'pre', 'code', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'cite'],
+                  ALLOWED_ATTR: ['href', 'class', 'target', 'rel', 'src', 'alt', 'title', 'width', 'height'],
+                  ALLOW_DATA_ATTR: false
+                })
               }}
             />
           ) : post.body ? (

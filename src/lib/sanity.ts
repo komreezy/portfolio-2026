@@ -39,7 +39,13 @@ export async function getPosts(): Promise<Post[]> {
       "slug": slug.current,
       excerpt,
       category,
-      mainImage,
+      mainImage {
+        asset-> {
+          _id,
+          url
+        },
+        alt
+      },
       publishedAt
     }
   `);
@@ -52,7 +58,13 @@ export async function getLatestPosts(limit: number = 3): Promise<Post[]> {
       title,
       "slug": slug.current,
       excerpt,
-      mainImage,
+      mainImage {
+        asset-> {
+          _id,
+          url
+        },
+        alt
+      },
       publishedAt
     }
   `, { limit: limit - 1 });
@@ -66,7 +78,13 @@ export async function getPostBySlug(slug: string): Promise<Post | null> {
       "slug": slug.current,
       excerpt,
       category,
-      mainImage,
+      mainImage {
+        asset-> {
+          _id,
+          url
+        },
+        alt
+      },
       htmlContent,
       body,
       publishedAt
