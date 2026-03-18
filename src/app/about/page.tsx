@@ -1,3 +1,11 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Arash Jafary | DUI Defense & Personal Injury Attorney | Assured Justice Firm",
+  description: "Meet Arash Jafary - former prosecutor at Fulton County DA's Office and Cobb County Solicitor General, licensed Engineer-in-Training. 500+ cases handled. Free consultation.",
+  keywords: ["Arash Jafary attorney", "former prosecutor Georgia", "personal injury lawyer Alpharetta", "DUI attorney Cobb County", "engineer attorney"],
+};
+
 export default function About() {
   const credentials = [
     "J.D., Georgia State University",
@@ -12,26 +20,20 @@ export default function About() {
     <main className="flex-1">
       {/* Hero Section */}
       <section className="py-[var(--section-spacing)] px-[var(--side-padding)]">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-[30%_70%] gap-12">
-          <div>
-            <span className="heading-serif">About</span>
-          </div>
-          <div>
-            <h1 className="font-display text-4xl md:text-5xl font-light text-[var(--primary)] leading-tight whitespace-nowrap">
-              Fighting for the Injured
-            </h1>
-          </div>
+        <div className="max-w-5xl mx-auto text-center">
+          <span className="heading-serif mb-6 inline-block">About</span>
+          <h1 className="font-display text-4xl md:text-5xl font-light text-[var(--primary)] leading-tight">
+            Fighting for the Injured
+          </h1>
         </div>
       </section>
 
       {/* Bio Section */}
       <section className="border-t border-[var(--border)] py-[var(--section-spacing)] px-[var(--side-padding)]">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-[30%_70%] gap-12">
-          <div>
-            <span className="heading-serif">Background</span>
-          </div>
+        <div className="max-w-6xl mx-auto">
+          <span className="heading-serif mb-12 inline-block">Background</span>
 
-          <div className="grid md:grid-cols-2 gap-16">
+          <div className="grid md:grid-cols-[40%_60%] gap-12 items-start">
             {/* Photo */}
             <div>
               <img
@@ -42,7 +44,7 @@ export default function About() {
             </div>
 
             {/* Bio Content */}
-            <div className="space-y-8">
+            <div className="space-y-6">
               <p className="text-lg font-light text-[var(--foreground)] leading-relaxed">
                 I&apos;m Arash Jafary, a personal injury attorney and DUI defense lawyer with a unique background: former prosecutor and licensed professional engineer.
               </p>
@@ -65,52 +67,48 @@ export default function About() {
 
       {/* Credentials Section */}
       <section className="border-t border-[var(--border)] py-[var(--section-spacing)] px-[var(--side-padding)]">
-        <div className="max-w-7xl mx-auto grid md:grid-cols-[30%_70%] gap-12">
-          <div>
-            <span className="heading-serif">Credentials</span>
+        <div className="max-w-6xl mx-auto">
+          <span className="heading-serif mb-12 inline-block">Credentials</span>
+
+          <div className="flex flex-wrap gap-3 mb-12">
+            {credentials.map((credential) => (
+              <span
+                key={credential}
+                className="border border-[var(--border-solid)] text-[var(--foreground)] px-4 py-2 text-sm font-light"
+              >
+                {credential}
+              </span>
+            ))}
           </div>
 
-          <div>
-            <div className="flex flex-wrap gap-3">
-              {credentials.map((credential) => (
-                <span
-                  key={credential}
-                  className="border border-[var(--border-solid)] text-[var(--foreground)] px-4 py-2 text-sm font-light"
-                >
-                  {credential}
-                </span>
-              ))}
-            </div>
-
-            <div className="mt-12 pt-12 border-t border-[var(--border)]">
-              <div className="grid md:grid-cols-3 gap-8">
-                <div>
-                  <h3 className="text-[var(--primary)] text-sm uppercase tracking-wider mb-2">
-                    Personal Injury
-                  </h3>
-                  <p className="text-sm font-light text-[var(--foreground)] opacity-80">
-                    Car, truck, motorcycle, and pedestrian accidents.
-                    Engineering expertise for crash analysis.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-[var(--primary)] text-sm uppercase tracking-wider mb-2">
-                    DUI Defense
-                  </h3>
-                  <p className="text-sm font-light text-[var(--foreground)] opacity-80">
-                    Former prosecutor perspective. I know how the state
-                    builds cases and where to find weaknesses.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-[var(--primary)] text-sm uppercase tracking-wider mb-2">
-                    Trial Experience
-                  </h3>
-                  <p className="text-sm font-light text-[var(--foreground)] opacity-80">
-                    Real courtroom experience that gives leverage in every
-                    negotiation. Insurance companies know I&apos;ll take cases to trial.
-                  </p>
-                </div>
+          <div className="pt-12 border-t border-[var(--border)]">
+            <div className="grid md:grid-cols-3 gap-8">
+              <div>
+                <h3 className="text-[var(--primary)] text-sm uppercase tracking-wider mb-2">
+                  Personal Injury
+                </h3>
+                <p className="text-sm font-light text-[var(--foreground)] opacity-80">
+                  Car, truck, motorcycle, and pedestrian accidents.
+                  Engineering expertise for crash analysis.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-[var(--primary)] text-sm uppercase tracking-wider mb-2">
+                  DUI Defense
+                </h3>
+                <p className="text-sm font-light text-[var(--foreground)] opacity-80">
+                  Former prosecutor perspective. I know how the state
+                  builds cases and where to find weaknesses.
+                </p>
+              </div>
+              <div>
+                <h3 className="text-[var(--primary)] text-sm uppercase tracking-wider mb-2">
+                  Trial Experience
+                </h3>
+                <p className="text-sm font-light text-[var(--foreground)] opacity-80">
+                  Real courtroom experience that gives leverage in every
+                  negotiation. Insurance companies know I&apos;ll take cases to trial.
+                </p>
               </div>
             </div>
           </div>
