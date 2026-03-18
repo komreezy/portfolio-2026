@@ -6,6 +6,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import BlogPreview from "@/components/BlogPreview";
 import ContactForm from "@/components/ContactForm";
+import TrustBar from "@/components/TrustBar";
 
 export default function Home() {
   return (
@@ -25,17 +26,17 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <ScrollReveal>
               <p className="text-sm md:text-base uppercase tracking-[0.2em] text-[var(--primary)] font-medium mb-6">
-                Former Prosecutor · Licensed Engineer · Georgia Attorney
+                DUI Defense & Personal Injury Attorney · Alpharetta, Fulton & Cobb County, GA
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
               <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-light text-white leading-tight mb-6">
-                We Walk With You Through Your Hardest Moments
+                Georgia&apos;s DUI Defense and Personal Injury Attorney Who Fights Like It&apos;s Personal
               </h1>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
               <p className="text-lg md:text-xl font-light text-white/80 max-w-2xl mx-auto mb-10">
-                Personal Injury and DUI Defense throughout Georgia. You get insider knowledge from a former prosecutor, proven courtroom strategy, and direct access to your attorney every step of the way.
+                Former prosecutor turned defense attorney serving all of Georgia. I know how the other side builds cases—and I use that knowledge to win yours.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.3}>
@@ -51,6 +52,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Trust Bar */}
+      <TrustBar />
 
       {/* Quote Section */}
       <section className="py-16 px-[var(--side-padding)] bg-[var(--card)]">
@@ -70,7 +74,7 @@ export default function Home() {
       <section className="py-[var(--section-spacing)] px-[var(--side-padding)]">
         <ScrollReveal>
           <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] text-center mb-12">
-            DUI Defense and Personal Injury Attorney Serving Georgia
+            DUI Defense and Personal Injury Attorney Serving Alpharetta, Cobb County, and All of Georgia
           </h2>
         </ScrollReveal>
         <div className="grid md:grid-cols-2 gap-16 items-center max-w-5xl mx-auto">
@@ -78,7 +82,7 @@ export default function Home() {
             <div className="aspect-[3/4] relative overflow-hidden rounded-sm">
               <Image
                 src="/arash-jafary-2.jpg"
-                alt="Arash Jafary - Attorney at Law"
+                alt="Arash Jafary - DUI Defense and Personal Injury Attorney in Alpharetta, Georgia"
                 fill
                 className="object-cover object-top"
               />
@@ -89,21 +93,21 @@ export default function Home() {
               <h3 className="font-display text-2xl font-light text-[var(--foreground)] mb-2">Arash Jafary</h3>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
-              <p className="text-sm uppercase tracking-wider text-[var(--primary)] mb-6">Attorney at Law • Former Prosecutor • Licensed Engineer</p>
+              <p className="text-sm uppercase tracking-wider text-[var(--primary)] mb-6">Attorney at Law • Former Prosecutor (Fulton & Cobb County) • Licensed Engineer-in-Training</p>
             </ScrollReveal>
             <ScrollReveal delay={0.25}>
               <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-4">
-                I bring a unique combination of skills to every case: experience as a former prosecutor understanding how cases are built and tried, and a background as a licensed engineer understanding crash evidence, investigations, and technical details that others miss.
+                I&apos;m a DUI defense and personal injury attorney serving Alpharetta, Cobb County, Fulton County, and clients throughout Georgia. As a former prosecutor at the Fulton County District Attorney&apos;s Office and Cobb County Solicitor General&apos;s Office, I know exactly how the state builds cases—and I use that insider knowledge to protect your rights and fight for the best outcome.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.3}>
               <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-4">
-                With over 500 cases handled, including a $250,000 car accident settlement, I know how to fight for maximum compensation. When you work with me, you work directly with me—not a case manager. I handle every aspect of your case personally.
+                As a licensed Engineer-in-Training, I bring technical expertise other attorneys lack—analyzing crash reconstruction data, vehicle black boxes, and engineering evidence that can make or break your case. With over 500 cases handled and results including a $250,000 car accident settlement, I know how to fight for maximum compensation.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.35}>
               <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-8">
-                I work on a contingency fee basis for personal injury cases, which means you pay nothing unless we win. Your focus should be on healing — let me handle the legal fight.
+                When you work with me, you work directly with me—not a case manager. I work on a contingency fee basis for personal injury cases, which means you pay nothing unless we win. Your focus should be on healing — let me handle the legal fight.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.4}>

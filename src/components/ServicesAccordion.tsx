@@ -19,6 +19,11 @@ const services = [
       "Accidents involving commercial trucks often result in catastrophic injuries. My engineering background gives me a unique ability to understand the technical aspects of these complex cases. I have experience taking on trucking companies and their insurers to secure maximum compensation.",
   },
   {
+    title: "Uber & Lyft Accidents",
+    description:
+      "Injured in an Uber or Lyft? Rideshare accidents involve complex insurance coverage that changes based on the driver's app status. I navigate these complicated claims to hold the right parties accountable—whether you're a passenger, driver, or were hit by a rideshare vehicle.",
+  },
+  {
     title: "Motorcycle Accidents",
     description:
       "Motorcycle riders face unique dangers on Georgia roads. When negligent drivers cause accidents, I help injured riders recover damages for their injuries, bike damage, and other losses. I fight to ensure riders aren't unfairly blamed for accidents they didn't cause.",
