@@ -19,14 +19,14 @@ export default function Home() {
           style={{ backgroundImage: "url('/hero-bg.jpg')" }}
         />
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/65" />
 
         {/* Content */}
         <div className="relative z-10 px-[var(--side-padding)] py-20 w-full text-center">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-5xl mx-auto">
             <ScrollReveal>
               <p className="text-sm md:text-base uppercase tracking-[0.2em] text-[var(--primary)] font-medium mb-6">
-                DUI Defense & Personal Injury Attorney · Alpharetta, Fulton & Cobb County, GA
+                DUI Defense & Personal Injury Attorney · Alpharetta, Fulton, Cobb County, GA
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
@@ -36,7 +36,7 @@ export default function Home() {
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
               <p className="text-lg md:text-xl font-light text-white/80 max-w-2xl mx-auto mb-10">
-                Former prosecutor turned defense attorney serving all of Georgia. I know how the other side builds cases and I use that knowledge to win yours.
+                Former prosecutor turned defense attorney serving all of Georgia. I know how the other side builds cases, and I use that knowledge to win yours.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.3}>
