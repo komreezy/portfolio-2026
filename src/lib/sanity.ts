@@ -53,7 +53,7 @@ export async function getPosts(): Promise<Post[]> {
 
 export async function getLatestPosts(limit: number = 3): Promise<Post[]> {
   return client.fetch(`
-    *[_type == "post" && !(_id in path("drafts.**"))] | order(publishedAt desc)[0...$limit] {
+    *[_type == "post" && !(_id in path("drafts.**"))] | order(publishedAt desc)[0...${limit}] {
       _id,
       title,
       "slug": slug.current,
@@ -67,7 +67,7 @@ export async function getLatestPosts(limit: number = 3): Promise<Post[]> {
       },
       publishedAt
     }
-  `, { limit: limit - 1 });
+  `);
 }
 
 export async function getPostBySlug(slug: string): Promise<Post | null> {
