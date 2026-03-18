@@ -1,5 +1,12 @@
+import { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
+
+export const metadata: Metadata = {
+  title: "Client Testimonials | Assured Justice Firm",
+  description: "Read what clients say about working with DUI defense and personal injury attorney Arash Jafary. 5-star reviews from clients throughout Georgia.",
+  keywords: ["attorney reviews Georgia", "lawyer testimonials Alpharetta", "DUI attorney reviews", "personal injury lawyer reviews"],
+};
 
 const testimonials = [
   {

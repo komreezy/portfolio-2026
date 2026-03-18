@@ -59,9 +59,17 @@ export default defineType({
       initialValue: () => new Date().toISOString(),
     }),
     defineField({
+      name: 'htmlContent',
+      title: 'HTML Content (from Claude)',
+      type: 'text',
+      rows: 20,
+      description: 'Paste the raw HTML output from Claude here. This will be rendered directly on the blog post page.',
+    }),
+    defineField({
       name: 'body',
-      title: 'Body',
+      title: 'Body (Legacy - use HTML Content instead)',
       type: 'array',
+      description: 'Legacy rich text editor. Prefer using HTML Content field above.',
       of: [
         {
           type: 'block',

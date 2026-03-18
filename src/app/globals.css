@@ -387,3 +387,449 @@ body {
   border-color: rgba(255, 255, 255, 0.6);
   transform: translateY(-2px);
 }
+
+/* Blog Hero Section - Navy/Gold Theme */
+section.blog-hero {
+  background-color: #0d1f3c !important;
+  background: #0d1f3c !important;
+  padding: 70px 40px 60px !important;
+  text-align: center !important;
+  position: relative !important;
+  overflow: hidden !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+section.blog-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: -webkit-radial-gradient(ellipse at 50% 120%, rgba(201,168,76,0.12) 0%, transparent 70%);
+  background: radial-gradient(ellipse at 50% 120%, rgba(201,168,76,0.12) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+section.blog-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.blog-hero-eyebrow,
+a.blog-hero-eyebrow {
+  display: inline-block !important;
+  font-family: var(--font-serif), 'Source Serif 4', Georgia, serif !important;
+  font-size: 0.78rem !important;
+  letter-spacing: 0.2em !important;
+  text-transform: uppercase !important;
+  color: #c9a84c !important;
+  border: 1px solid rgba(201,168,76,0.4) !important;
+  padding: 5px 18px !important;
+  margin-bottom: 28px !important;
+  text-decoration: none !important;
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.blog-hero-eyebrow:hover,
+a.blog-hero-eyebrow:hover {
+  background: rgba(201,168,76,0.15) !important;
+  background-color: rgba(201,168,76,0.15) !important;
+}
+
+section.blog-hero h1 {
+  font-family: var(--font-display), 'Playfair Display', Georgia, serif !important;
+  font-size: clamp(2.2rem, 5vw, 3.4rem) !important;
+  font-weight: 900 !important;
+  color: #ffffff !important;
+  line-height: 1.15 !important;
+  max-width: 820px !important;
+  margin: 0 auto 24px !important;
+}
+
+section.blog-hero h1 em {
+  font-style: italic !important;
+  color: #e4c97a !important;
+}
+
+.blog-hero-meta,
+p.blog-hero-meta {
+  font-size: 0.85rem !important;
+  color: rgba(255,255,255,0.5) !important;
+  letter-spacing: 0.05em !important;
+  font-family: var(--font-serif), 'Source Serif 4', Georgia, serif !important;
+}
+
+.blog-hero-meta strong,
+p.blog-hero-meta strong {
+  color: rgba(255,255,255,0.75) !important;
+  font-weight: 400 !important;
+}
+
+@media (max-width: 640px) {
+  section.blog-hero {
+    padding: 50px 20px 44px !important;
+  }
+}
+
+/* Blog prose styles for HTML content - Navy/Gold Law Firm Theme */
+.prose-blog {
+  --blog-navy: #0d1f3c;
+  --blog-navy-mid: #1a3460;
+  --blog-navy-light: #243d6e;
+  --blog-gold: #c9a84c;
+  --blog-gold-light: #e4c97a;
+  --blog-gold-pale: #f5eed8;
+  --blog-cream: #faf8f3;
+  --blog-text: #1c1c1c;
+  --blog-text-muted: #555;
+  --blog-rule: #d4c9a8;
+
+  font-family: var(--font-serif), Georgia, serif !important;
+  font-weight: 300 !important;
+  font-size: 18px !important;
+  line-height: 1.8 !important;
+  color: var(--blog-text) !important;
+}
+
+.prose-blog * {
+  font-family: inherit;
+}
+
+/* Typography */
+.prose-blog h2 {
+  font-family: var(--font-display), 'Playfair Display', serif !important;
+  font-size: 1.85rem !important;
+  font-weight: 700 !important;
+  color: var(--blog-navy) !important;
+  margin: 56px 0 18px !important;
+  line-height: 1.25 !important;
+}
+
+.prose-blog h2::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: var(--blog-gold);
+  margin-bottom: 16px;
+}
+
+.prose-blog h3 {
+  font-family: var(--font-display), 'Playfair Display', serif !important;
+  font-size: 1.25rem !important;
+  font-weight: 700 !important;
+  color: var(--blog-navy-mid) !important;
+  margin: 32px 0 10px !important;
+}
+
+.prose-blog p {
+  margin-bottom: 22px !important;
+  color: var(--blog-text) !important;
+}
+
+.prose-blog p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.prose-blog strong {
+  font-weight: 600 !important;
+  color: var(--blog-navy) !important;
+}
+
+.prose-blog em {
+  font-style: italic !important;
+}
+
+.prose-blog a {
+  color: var(--blog-navy-mid) !important;
+  text-decoration: underline !important;
+  text-decoration-color: var(--blog-gold) !important;
+  text-underline-offset: 3px !important;
+}
+
+.prose-blog a:hover {
+  color: var(--blog-navy) !important;
+}
+
+/* Intro Callout Box */
+.prose-blog .intro-box {
+  background: var(--blog-navy) !important;
+  color: #fff !important;
+  border-left: 4px solid var(--blog-gold) !important;
+  padding: 28px 32px !important;
+  margin-bottom: 52px !important;
+  font-size: 1.05rem !important;
+  line-height: 1.75 !important;
+  font-style: italic !important;
+}
+
+.prose-blog .intro-box strong {
+  color: var(--blog-gold-light) !important;
+  font-style: normal !important;
+}
+
+/* Defense Cards Grid */
+.prose-blog .defense-grid {
+  display: grid !important;
+  gap: 20px !important;
+  margin: 32px 0 48px !important;
+}
+
+.prose-blog .defense-card {
+  background: #fff !important;
+  border: 1px solid #e5ddc8 !important;
+  border-top: 3px solid var(--blog-gold) !important;
+  padding: 26px 28px !important;
+  box-shadow: 0 2px 12px rgba(13, 31, 60, 0.06) !important;
+  transition: box-shadow 0.25s, transform 0.25s !important;
+}
+
+.prose-blog .defense-card:hover {
+  box-shadow: 0 6px 24px rgba(13, 31, 60, 0.13) !important;
+  transform: translateY(-2px) !important;
+}
+
+.prose-blog .card-number {
+  font-family: var(--font-display), 'Playfair Display', serif !important;
+  font-size: 2.2rem !important;
+  font-weight: 900 !important;
+  color: var(--blog-gold-pale) !important;
+  line-height: 1 !important;
+  margin-bottom: 8px !important;
+}
+
+.prose-blog .card-title {
+  font-family: var(--font-display), 'Playfair Display', serif !important;
+  font-size: 1.15rem !important;
+  font-weight: 700 !important;
+  color: var(--blog-navy) !important;
+  margin-bottom: 10px !important;
+}
+
+.prose-blog .card-body {
+  font-size: 0.95rem !important;
+  color: var(--blog-text-muted) !important;
+  line-height: 1.7 !important;
+  margin: 0 !important;
+}
+
+/* Highlight Box */
+.prose-blog .highlight {
+  background: var(--blog-gold-pale) !important;
+  border: 1px solid #ddd0a8 !important;
+  padding: 26px 30px !important;
+  margin: 36px 0 !important;
+}
+
+.prose-blog .highlight-label {
+  font-family: var(--font-serif), serif !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  color: var(--blog-gold) !important;
+  font-weight: 600 !important;
+  margin-bottom: 10px !important;
+}
+
+.prose-blog .highlight p {
+  font-size: 0.97rem !important;
+  color: #3a3020 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Statute Box */
+.prose-blog .statute {
+  background: #fff !important;
+  border-left: 4px solid var(--blog-navy) !important;
+  padding: 18px 24px !important;
+  margin: 28px 0 !important;
+  font-size: 0.92rem !important;
+  color: var(--blog-text-muted) !important;
+  font-style: italic !important;
+}
+
+.prose-blog .statute strong {
+  font-style: normal !important;
+  font-size: 0.85rem !important;
+  letter-spacing: 0.05em !important;
+  color: var(--blog-navy) !important;
+}
+
+/* Checklist */
+.prose-blog .checklist {
+  list-style: none !important;
+  margin: 20px 0 28px !important;
+  padding: 0 !important;
+}
+
+.prose-blog .checklist li {
+  padding: 10px 0 10px 36px !important;
+  position: relative !important;
+  border-bottom: 1px solid #ece6d4 !important;
+  font-size: 0.97rem !important;
+}
+
+.prose-blog .checklist li:last-child {
+  border-bottom: none !important;
+}
+
+.prose-blog .checklist li::before {
+  content: '✦' !important;
+  position: absolute !important;
+  left: 0 !important;
+  color: var(--blog-gold) !important;
+  font-size: 0.8rem !important;
+  top: 13px !important;
+}
+
+/* Standard Lists */
+.prose-blog ul:not(.checklist),
+.prose-blog ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.prose-blog ul:not(.checklist) {
+  list-style-type: disc;
+}
+
+.prose-blog ol {
+  list-style-type: decimal;
+}
+
+.prose-blog ul:not(.checklist) li,
+.prose-blog ol li {
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+.prose-blog ul:not(.checklist) li::marker,
+.prose-blog ol li::marker {
+  color: var(--blog-gold);
+}
+
+/* Blockquote / Pullquote */
+.prose-blog blockquote {
+  margin: 48px 0 !important;
+  padding: 0 0 0 28px !important;
+  border-left: 5px solid var(--blog-gold) !important;
+  background: transparent !important;
+}
+
+.prose-blog blockquote p {
+  font-family: var(--font-display), 'Playfair Display', serif !important;
+  font-size: 1.4rem !important;
+  font-weight: 700 !important;
+  font-style: italic !important;
+  color: var(--blog-navy) !important;
+  line-height: 1.45 !important;
+  margin-bottom: 12px !important;
+}
+
+.prose-blog blockquote cite {
+  font-size: 0.82rem !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: var(--blog-text-muted) !important;
+  font-style: normal !important;
+}
+
+/* Horizontal Rule */
+.prose-blog hr {
+  border: none;
+  border-top: 1px solid var(--blog-rule);
+  margin: 48px 0;
+}
+
+/* Images */
+.prose-blog img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 2rem 0;
+}
+
+.prose-blog figure {
+  margin: 2rem 0;
+}
+
+.prose-blog figcaption {
+  font-size: 0.875rem;
+  color: var(--blog-text-muted);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+/* Code */
+.prose-blog pre {
+  background: var(--blog-navy);
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.prose-blog code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 0.875em;
+}
+
+.prose-blog :not(pre) > code {
+  background: rgba(0, 0, 0, 0.05);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+/* Tables */
+.prose-blog table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.prose-blog th,
+.prose-blog td {
+  border: 1px solid var(--blog-rule);
+  padding: 0.75rem 1rem;
+  text-align: left;
+}
+
+.prose-blog th {
+  background: var(--blog-gold-pale);
+  font-weight: 600;
+  color: var(--blog-navy);
+}
+
+.prose-blog tbody tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.02);
+}
+
+/* Mobile adjustments */
+@media (max-width: 640px) {
+  .prose-blog {
+    font-size: 16px;
+  }
+
+  .prose-blog .intro-box {
+    padding: 20px 24px;
+  }
+
+  .prose-blog .defense-card {
+    padding: 20px 22px;
+  }
+
+  .prose-blog .highlight {
+    padding: 20px 24px;
+  }
+
+  .prose-blog blockquote p {
+    font-size: 1.2rem;
+  }
+}

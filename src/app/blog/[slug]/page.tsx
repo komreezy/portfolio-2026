@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { notFound } from "next/navigation";
 import { PortableText } from "@portabletext/react";
 import DOMPurify from "isomorphic-dompurify";
@@ -99,13 +98,11 @@ export default async function BlogPost({
       {post.mainImage && (
         <section className="px-6 md:px-8 bg-[#faf8f3] pt-12">
           <div className="max-w-[800px] mx-auto">
-            <div className="aspect-[16/9] relative overflow-hidden rounded-sm shadow-lg">
-              <Image
-                src={urlFor(post.mainImage).width(1200).height(675).url()}
+            <div className="relative overflow-hidden rounded-sm shadow-lg">
+              <img
+                src={urlFor(post.mainImage).width(1200).url()}
                 alt={post.title}
-                fill
-                className="object-cover"
-                priority
+                className="w-full h-auto"
               />
             </div>
           </div>

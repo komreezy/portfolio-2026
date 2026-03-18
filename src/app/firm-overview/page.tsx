@@ -1,7 +1,14 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import ContactForm from "@/components/ContactForm";
 import ScrollReveal from "@/components/ScrollReveal";
+
+export const metadata: Metadata = {
+  title: "About Our Firm | DUI Defense & Personal Injury | Assured Justice Firm",
+  description: "Assured Justice Firm is led by Arash Jafary, a former prosecutor and licensed engineer serving Alpharetta, Cobb County, Fulton County, and all of Georgia. Learn why clients choose us.",
+  keywords: ["Assured Justice Firm", "Alpharetta attorney", "Cobb County lawyer", "former prosecutor Georgia", "personal injury firm"],
+};
 
 export default function FirmOverview() {
   return (
@@ -11,22 +18,22 @@ export default function FirmOverview() {
         <div className="max-w-4xl">
           <ScrollReveal>
             <h1 className="font-display text-4xl md:text-5xl font-light text-[var(--foreground)] leading-tight mb-4">
-              Local & Reliable Legal Guidance
+              A Different Kind of Law Firm
             </h1>
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
             <h3 className="text-xl font-medium text-[var(--primary)] mb-2">
-              Personal Injury Attorney in Georgia
+              DUI Defense & Personal Injury Attorney in Georgia
             </h3>
           </ScrollReveal>
           <ScrollReveal delay={0.25}>
             <p className="text-[var(--muted-foreground)] font-light mb-8">
-              Assured Justice Firm
+              Serving Alpharetta, Cobb County, Fulton County, and all of Georgia
             </p>
           </ScrollReveal>
           <ScrollReveal delay={0.35}>
             <Link href="/contact" className="btn-outlined">
-              Schedule a Consultation
+              Schedule a Free Consultation
             </Link>
           </ScrollReveal>
         </div>
@@ -38,17 +45,22 @@ export default function FirmOverview() {
           <div>
             <ScrollReveal>
               <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] mb-8">
-                Firm Overview
+                Our Promise
               </h2>
             </ScrollReveal>
             <ScrollReveal delay={0.15}>
               <p className="text-base font-light text-[var(--foreground)] leading-relaxed mb-6">
-                Assured Justice Firm is led by Arash Jafary, a former prosecutor and licensed engineer dedicated to personal injury and DUI defense throughout Georgia. This unique combination of backgrounds means a deeper understanding of both how cases are built and the technical evidence that can make or break them.
+                At Assured Justice Firm, we believe every client deserves more than just legal representation—they deserve an advocate who fights like it&apos;s personal. Founded by Arash Jafary, a former prosecutor at the Fulton County District Attorney&apos;s Office and Cobb County Solicitor General&apos;s Office, our firm brings insider knowledge and technical expertise to every DUI defense and personal injury case.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.25}>
+              <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-4">
+                We serve clients in Alpharetta, Cobb County, Fulton County, Roswell, Marietta, Johns Creek, and throughout Georgia. Whether you&apos;re facing DUI charges or recovering from a car, truck, motorcycle, or pedestrian accident, we fight tirelessly against insurance companies and prosecutors to protect your rights.
+              </p>
+            </ScrollReveal>
+            <ScrollReveal delay={0.3}>
               <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-8">
-                Whether you were injured in a car, truck, motorcycle, or pedestrian accident—or you&apos;re facing DUI charges—I fight tirelessly against insurance companies and prosecutors to protect your rights and maximize your recovery.
+                With over 500 cases handled and results including a $250,000 car accident settlement, we have the experience and track record to fight for maximum compensation.
               </p>
             </ScrollReveal>
             {/* Testimonial */}
@@ -128,6 +140,73 @@ export default function FirmOverview() {
                 <p className="text-xs font-medium text-[var(--muted-foreground)]">
                   Sarah M.
                 </p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-[var(--section-spacing)] px-[var(--side-padding)]">
+        <div className="max-w-4xl mx-auto">
+          <ScrollReveal>
+            <h2 className="font-display text-3xl md:text-4xl font-light text-[var(--foreground)] text-center mb-12">
+              Why Choose Assured Justice Firm?
+            </h2>
+          </ScrollReveal>
+          <div className="grid md:grid-cols-2 gap-8">
+            <ScrollReveal delay={0.1}>
+              <div className="p-6 border border-[var(--border)] rounded-sm">
+                <h3 className="font-medium text-[var(--foreground)] mb-3">Other Firms</h3>
+                <ul className="space-y-2 text-sm font-light text-[var(--muted-foreground)]">
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-500 mt-0.5">&#10007;</span>
+                    You talk to case managers and paralegals
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-500 mt-0.5">&#10007;</span>
+                    Cookie-cutter approach to every case
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-500 mt-0.5">&#10007;</span>
+                    Quick settlements without maximizing value
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-500 mt-0.5">&#10007;</span>
+                    No technical expertise for accident analysis
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-red-500 mt-0.5">&#10007;</span>
+                    Limited trial experience
+                  </li>
+                </ul>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+              <div className="p-6 border-2 border-[var(--primary)] rounded-sm bg-[var(--primary)]/5">
+                <h3 className="font-medium text-[var(--primary)] mb-3">Assured Justice Firm</h3>
+                <ul className="space-y-2 text-sm font-light text-[var(--foreground)]">
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 mt-0.5">&#10003;</span>
+                    Direct access to your attorney on every call
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 mt-0.5">&#10003;</span>
+                    Tailored strategy for your unique situation
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 mt-0.5">&#10003;</span>
+                    Fight for maximum compensation, not quick payouts
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 mt-0.5">&#10003;</span>
+                    Licensed Engineer-in-Training for crash analysis
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-green-600 mt-0.5">&#10003;</span>
+                    Former prosecutor with real trial experience
+                  </li>
+                </ul>
               </div>
             </ScrollReveal>
           </div>

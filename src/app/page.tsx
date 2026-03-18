@@ -36,7 +36,7 @@ export default function Home() {
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
               <p className="text-lg md:text-xl font-light text-white/80 max-w-2xl mx-auto mb-10">
-                Former prosecutor turned defense attorney serving all of Georgia. I know how the other side builds cases—and I use that knowledge to win yours.
+                Former prosecutor turned defense attorney serving all of Georgia. I know how the other side builds cases and I use that knowledge to win yours.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.3}>
