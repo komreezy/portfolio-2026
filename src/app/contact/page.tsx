@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import SocialMediaLinks from "@/components/SocialMediaLinks";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -369,6 +370,14 @@ export default function Contact() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Social Media Section */}
+      <section className="border-t border-[var(--border)] py-[var(--section-spacing)] px-[var(--side-padding)]">
+        <div className="max-w-6xl mx-auto text-center">
+          <span className="heading-serif mb-6 inline-block">Follow Us</span>
+          <SocialMediaLinks variant="light" className="justify-center" />
         </div>
       </section>
     </main>

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import SocialMediaLinks from "@/components/SocialMediaLinks";
 
 export const metadata: Metadata = {
   title: "About Arash Jafary | DUI Defense & Personal Injury Attorney | Assured Justice Firm",
@@ -112,6 +113,14 @@ export default function About() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Social Media Section */}
+      <section className="border-t border-[var(--border)] py-[var(--section-spacing)] px-[var(--side-padding)]">
+        <div className="max-w-6xl mx-auto text-center">
+          <span className="heading-serif mb-6 inline-block">Connect</span>
+          <SocialMediaLinks variant="light" className="justify-center" />
         </div>
       </section>
     </main>

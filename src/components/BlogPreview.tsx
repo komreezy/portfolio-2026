@@ -4,7 +4,15 @@ import ScrollReveal from "./ScrollReveal";
 import { getLatestPosts, urlFor } from "@/lib/sanity";
 
 export default async function BlogPreview() {
-  const posts = await getLatestPosts(3);
+  let posts = [];
+
+  try {
+    posts = await getLatestPosts(3);
+  } catch (error) {
+    // Sanity not configured, return null
+    console.log("Sanity CMS not configured:", error);
+    return null;
+  }
 
   if (posts.length === 0) {
     return null;

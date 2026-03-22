@@ -24,6 +24,7 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
     { value: "Truck Accident", label: "Truck Accident" },
     { value: "Motorcycle Accident", label: "Motorcycle Accident" },
     { value: "Pedestrian Accident", label: "Pedestrian Accident" },
+    { value: "Uber/Lyft Accident", label: "Uber/Lyft Accident" },
   ];
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");

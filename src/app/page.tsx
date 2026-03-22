@@ -102,7 +102,7 @@ export default function Home() {
             </ScrollReveal>
             <ScrollReveal delay={0.3}>
               <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-4">
-                As a licensed Engineer-in-Training, I bring technical expertise other attorneys lack—analyzing crash reconstruction data, vehicle black boxes, and engineering evidence that can make or break your case. With over 500 cases handled and results including a $250,000 car accident settlement, I know how to fight for maximum compensation.
+                As a licensed Engineer-in-Training, I bring technical expertise other attorneys lack—analyzing crash reconstruction data, vehicle black boxes, and engineering evidence that can make or break your case. With over 500 cases handled and results including a $1,000,000 car accident settlement, I know how to fight for maximum compensation.
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.35}>
