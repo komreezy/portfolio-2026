@@ -163,6 +163,70 @@ Target keyword: [MAIN SEARCH TERM]
 
 ---
 
+## CRITICAL: Common Mistakes That Break Your Article
+
+These mistakes will cause your article to show a **500 error** (blank/broken page) instead of your content. Please review carefully before publishing.
+
+### Mistake #1: Special Characters in the Slug
+
+**The slug is the URL for your article.** It can ONLY contain:
+- Lowercase letters (a-z)
+- Numbers (0-9)
+- Hyphens (-)
+
+**NEVER include:**
+- Question marks (?)
+- Exclamation points (!)
+- Apostrophes (')
+- Quotation marks (" ")
+- Ampersands (&)
+- Periods (.)
+- Commas (,)
+- Any other punctuation
+
+| Article Title | WRONG Slug | CORRECT Slug |
+|---------------|------------|--------------|
+| What Should I Do After a DUI? | `what-should-i-do-after-a-dui?` | `what-should-i-do-after-a-dui` |
+| Georgia's DUI Laws Explained | `georgia's-dui-laws-explained` | `georgias-dui-laws-explained` |
+| DUI & Drug Charges | `dui-&-drug-charges` | `dui-and-drug-charges` |
+
+### Mistake #2: Including Markdown Code Fences
+
+When Claude gives you HTML, it wraps it in code blocks that look like this:
+
+```
+```html
+<article>...</article>
+```                        <-- DO NOT COPY THESE LINES
+```
+
+**Only copy the actual HTML content.** Do NOT copy:
+- The ` ``` ` or ` ```html ` at the beginning
+- The ` ``` ` at the end
+- Any text Claude writes before or after the code block
+
+### Mistake #3: Using Unsupported HTML Tags
+
+The website only supports specific HTML tags. If you use unsupported tags, that content will disappear.
+
+**Supported tags:**
+`<p>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`, `<strong>`, `<em>`, `<a>`, `<ul>`, `<ol>`, `<li>`, `<blockquote>`, `<div>`, `<span>`, `<br>`, `<hr>`, `<img>`, `<figure>`, `<figcaption>`, `<pre>`, `<code>`, `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, `<td>`, `<cite>`, `<article>`
+
+**NOT supported (will be stripped):**
+`<main>`, `<section>`, `<header>`, `<footer>`, `<nav>`, `<aside>`, `<script>`, `<style>`, `<iframe>`
+
+### Pre-Publish Checklist
+
+Before clicking "Publish", verify:
+
+- [ ] **Slug has no special characters** - Only lowercase letters, numbers, and hyphens
+- [ ] **HTML starts with `<article`** - Not with ` ``` ` or any other text
+- [ ] **HTML ends with `</article>`** - Not with ` ``` ` or any other text
+- [ ] **No `<main>` or `<section>` tags** - Use `<div>` instead
+- [ ] **Image is uploaded** - Don't leave the main image empty
+
+---
+
 ## Step 2: Upload to Sanity
 
 1. Go to: **https://jafary-law.sanity.studio/**
@@ -183,7 +247,7 @@ Target keyword: [MAIN SEARCH TERM]
 ## Quick Tips
 
 **What goes in the "Slug" field?**
-The slug becomes the URL. For a post titled "How to Beat DUI Charges in Georgia", the slug would be: `how-to-beat-dui-charges-georgia`
+The slug becomes the URL. For a post titled "How to Beat DUI Charges in Georgia?", the slug would be: `how-to-beat-dui-charges-georgia` (no question mark!)
 
 **What size should images be?**
 1200 x 675 pixels (16:9 ratio). Keep file size under 500KB.
@@ -209,3 +273,20 @@ Just replace `[DESCRIBE YOUR TOPIC]` with:
 - "5 mistakes to avoid after a car accident in Georgia"
 - "Understanding pain and suffering damages in Georgia injury cases"
 - "DUI checkpoints in Georgia: know your rights"
+
+---
+
+## Troubleshooting
+
+**My article shows a blank page or "500 Error"**
+1. Check the slug - remove any special characters (?, !, ', ", &, etc.)
+2. Check the HTML content - make sure you didn't paste the ``` code fence markers
+3. Contact your developer if the issue persists
+
+**My article is missing content or looks broken**
+1. You may have used unsupported HTML tags (like `<main>` or `<section>`)
+2. Edit the article in Sanity and replace `<main>` with `<div>` and `<section>` with `<div>`
+3. Make sure all opening tags have matching closing tags
+
+**Changes aren't showing up on the website**
+The website caches content for performance. Changes may take up to 60 seconds to appear. If it's been longer, the site may need to be redeployed - contact your developer
