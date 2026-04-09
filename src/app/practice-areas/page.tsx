@@ -20,7 +20,7 @@ const practiceAreas = [
     title: "Car Accidents",
     slug: "car-accidents",
     description:
-      "Car accidents are the leading cause of personal injury claims in Georgia. As a licensed Engineer-in-Training and former prosecutor, I understand how to analyze crash evidence, investigate the scene, and build the strongest possible case. With results including a $250,000 settlement, I fight to recover maximum compensation for your injuries.",
+      "Car accidents are the leading cause of personal injury claims in Georgia. As a licensed Engineer-in-Training and former prosecutor, I understand how to analyze crash evidence, investigate the scene, and build the strongest possible case. With results including a $1 million settlement, I fight to recover maximum compensation for your injuries.",
   },
   {
     title: "Truck Accidents",

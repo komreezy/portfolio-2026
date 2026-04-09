@@ -60,7 +60,7 @@ export default function FirmOverview() {
             </ScrollReveal>
             <ScrollReveal delay={0.3}>
               <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-8">
-                With over 500 cases handled and results including a $250,000 car accident settlement, we have the experience and track record to fight for maximum compensation.
+                With over 500 cases handled and results including a $1 million car accident settlement, we have the experience and track record to fight for maximum compensation.
               </p>
             </ScrollReveal>
             {/* Testimonial */}

@@ -5,7 +5,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Car Accident Attorney in Alpharetta & Cobb County, GA | Assured Justice Firm",
-  description: "Injured in a car accident in Georgia? Former prosecutor and licensed engineer Arash Jafary fights for maximum compensation. $250K settlement won. Free consultation. Call (678) 522-6273.",
+  description: "Injured in a car accident in Georgia? Former prosecutor and licensed engineer Arash Jafary fights for maximum compensation. $1M settlement won. Free consultation. Call (678) 522-6273.",
   keywords: ["car accident attorney Alpharetta", "car accident lawyer Cobb County", "auto accident attorney Georgia", "car crash lawyer Fulton County", "vehicle accident lawyer"],
 };
 
@@ -56,7 +56,7 @@ export default function CarAccidents() {
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
             <p className="text-base font-light text-[var(--muted-foreground)] leading-relaxed mb-6">
-              As a licensed Engineer-in-Training and former prosecutor, I bring a unique combination of skills to every car accident case. I can analyze crash reconstruction data, vehicle black box information, and engineering evidence that other attorneys might overlook. This technical expertise has helped me secure results including a $250,000 car accident settlement.
+              As a licensed Engineer-in-Training and former prosecutor, I bring a unique combination of skills to every car accident case. I can analyze crash reconstruction data, vehicle black box information, and engineering evidence that other attorneys might overlook. This technical expertise has helped me secure results including a $1 million car accident settlement.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
