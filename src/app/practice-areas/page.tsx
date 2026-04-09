@@ -54,21 +54,15 @@ export default function PracticeAreas() {
       {/* Hero Section */}
       <section className="py-[var(--section-spacing)] px-[var(--side-padding)] bg-[var(--card)]">
         <div className="max-w-4xl">
-          <ScrollReveal>
-            <h1 className="font-display text-4xl md:text-5xl font-light text-[var(--foreground)] leading-tight mb-4">
-              Practice Areas
-            </h1>
-          </ScrollReveal>
-          <ScrollReveal delay={0.15}>
-            <p className="text-xl font-medium text-[var(--primary)] mb-2">
-              DUI Defense & Personal Injury Attorney in Georgia
-            </p>
-          </ScrollReveal>
-          <ScrollReveal delay={0.25}>
-            <p className="text-[var(--muted-foreground)] font-light">
-              Serving Alpharetta, Cobb County, Fulton County, and all of Georgia
-            </p>
-          </ScrollReveal>
+          <h1 className="font-display text-4xl md:text-5xl font-light text-[var(--foreground)] leading-tight mb-4">
+            Practice Areas
+          </h1>
+          <p className="text-xl font-medium text-[var(--primary)] mb-2">
+            DUI Defense & Personal Injury Attorney in Georgia
+          </p>
+          <p className="text-[var(--muted-foreground)] font-light">
+            Serving Alpharetta, Cobb County, Fulton County, and all of Georgia
+          </p>
         </div>
       </section>
 
