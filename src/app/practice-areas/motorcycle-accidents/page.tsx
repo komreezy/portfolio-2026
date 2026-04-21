@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Motorcycle Accident Attorney Georgia | Assured Justice Firm",
-  description: "Injured in a motorcycle accident in Georgia? Attorney Arash Jafary fights against bias and insurance companies to get riders the compensation they deserve. Free consultation. Call (678) 522-6273.",
+  description: "Injured in a motorcycle accident in Georgia? Attorney Arash Jafary fights against bias and insurance companies to get riders the compensation they deserve. Free consultation. Call 770-800-79AJ.",
   keywords: ["motorcycle accident attorney Georgia", "motorcycle crash lawyer", "biker accident attorney Alpharetta", "motorcycle injury lawyer Cobb County", "motorcycle wreck attorney"],
 };
 
@@ -25,8 +25,8 @@ export default function MotorcycleAccidents() {
             <Link href="/contact" className="btn-primary">
               Free Consultation
             </Link>
-            <a href="tel:+16785226273" className="btn-outlined">
-              Call (678) 522-6273
+            <a href="tel:+17708007925" className="btn-outlined">
+              Call 770-800-79AJ
             </a>
           </div>
         </div>
@@ -123,8 +123,8 @@ export default function MotorcycleAccidents() {
           <p className="text-base font-light text-[var(--footer-text)] opacity-80 mb-8">
             Don&apos;t let insurance companies blame you for an accident you didn&apos;t cause. Call now for a free consultation.
           </p>
-          <a href="tel:+16785226273" className="btn-outlined-light">
-            Call (678) 522-6273
+          <a href="tel:+17708007925" className="btn-outlined-light">
+            Call 770-800-79AJ
           </a>
         </div>
       </section>

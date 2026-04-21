@@ -44,8 +44,8 @@ export default function Home() {
                 <Link href="/contact" className="btn-primary-light">
                   Schedule Free Consultation
                 </Link>
-                <a href="tel:+16785226273" className="btn-secondary-light">
-                  Call (678) 522-6273
+                <a href="tel:+17708007925" className="btn-secondary-light">
+                  Call 770-800-79AJ
                 </a>
               </div>
             </ScrollReveal>
@@ -362,8 +362,8 @@ export default function Home() {
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.18}>
-            <a href="tel:+16785226273" className="btn-outlined-light">
-              Call (678) 522-6273
+            <a href="tel:+17708007925" className="btn-outlined-light">
+              Call 770-800-79AJ
             </a>
           </ScrollReveal>
         </div>

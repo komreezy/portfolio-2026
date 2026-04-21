@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Car Accident Attorney in Alpharetta & Cobb County, GA | Assured Justice Firm",
-  description: "Injured in a car accident in Georgia? Former prosecutor and licensed engineer Arash Jafary fights for maximum compensation. $1M settlement won. Free consultation. Call (678) 522-6273.",
+  description: "Injured in a car accident in Georgia? Former prosecutor and licensed engineer Arash Jafary fights for maximum compensation. $1M settlement won. Free consultation. Call 770-800-79AJ.",
   keywords: ["car accident attorney Alpharetta", "car accident lawyer Cobb County", "auto accident attorney Georgia", "car crash lawyer Fulton County", "vehicle accident lawyer"],
 };
 
@@ -25,8 +25,8 @@ export default function CarAccidents() {
             <Link href="/contact" className="btn-primary">
               Free Consultation
             </Link>
-            <a href="tel:+16785226273" className="btn-outlined">
-              Call (678) 522-6273
+            <a href="tel:+17708007925" className="btn-outlined">
+              Call 770-800-79AJ
             </a>
           </div>
         </div>
@@ -130,8 +130,8 @@ export default function CarAccidents() {
           <p className="text-base font-light text-[var(--footer-text)] opacity-80 mb-8">
             Don&apos;t let insurance companies minimize your claim. Call now for a free consultation—you pay nothing unless we win.
           </p>
-          <a href="tel:+16785226273" className="btn-outlined-light">
-            Call (678) 522-6273
+          <a href="tel:+17708007925" className="btn-outlined-light">
+            Call 770-800-79AJ
           </a>
         </div>
       </section>

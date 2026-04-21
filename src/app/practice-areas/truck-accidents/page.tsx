@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Truck Accident Lawyer in Georgia | Assured Justice Firm",
-  description: "Injured in a truck accident in Georgia? Engineer and former prosecutor Arash Jafary has the technical expertise to take on trucking companies. Free consultation. Call (678) 522-6273.",
+  description: "Injured in a truck accident in Georgia? Engineer and former prosecutor Arash Jafary has the technical expertise to take on trucking companies. Free consultation. Call 770-800-79AJ.",
   keywords: ["truck accident lawyer Georgia", "semi truck accident attorney", "18-wheeler accident lawyer", "commercial truck crash attorney", "trucking accident lawyer Alpharetta"],
 };
 
@@ -25,8 +25,8 @@ export default function TruckAccidents() {
             <Link href="/contact" className="btn-primary">
               Free Consultation
             </Link>
-            <a href="tel:+16785226273" className="btn-outlined">
-              Call (678) 522-6273
+            <a href="tel:+17708007925" className="btn-outlined">
+              Call 770-800-79AJ
             </a>
           </div>
         </div>
@@ -114,8 +114,8 @@ export default function TruckAccidents() {
           <p className="text-base font-light text-[var(--footer-text)] opacity-80 mb-8">
             Critical evidence can disappear quickly. Call now for a free consultation—I&apos;ll start preserving evidence and building your case immediately.
           </p>
-          <a href="tel:+16785226273" className="btn-outlined-light">
-            Call (678) 522-6273
+          <a href="tel:+17708007925" className="btn-outlined-light">
+            Call 770-800-79AJ
           </a>
         </div>
       </section>

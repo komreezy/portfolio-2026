@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Uber & Lyft Accident Attorney in Georgia | Rideshare Injury Lawyer",
-  description: "Injured in an Uber or Lyft accident in Georgia? Former prosecutor Arash Jafary navigates complex rideshare insurance claims. Free consultation. Call (678) 522-6273.",
+  description: "Injured in an Uber or Lyft accident in Georgia? Former prosecutor Arash Jafary navigates complex rideshare insurance claims. Free consultation. Call 770-800-79AJ.",
   keywords: ["Uber accident attorney Georgia", "Lyft accident lawyer Alpharetta", "rideshare accident attorney", "Uber crash lawyer Cobb County", "Lyft injury attorney Fulton County"],
 };
 
@@ -25,8 +25,8 @@ export default function RideshareAccidents() {
             <Link href="/contact" className="btn-primary">
               Free Consultation
             </Link>
-            <a href="tel:+16785226273" className="btn-outlined">
-              Call (678) 522-6273
+            <a href="tel:+17708007925" className="btn-outlined">
+              Call 770-800-79AJ
             </a>
           </div>
         </div>
@@ -165,8 +165,8 @@ export default function RideshareAccidents() {
           <p className="text-base font-light text-[var(--footer-text)] opacity-80 mb-8">
             Don&apos;t let rideshare companies minimize your claim. Call now for a free consultation—you pay nothing unless we win.
           </p>
-          <a href="tel:+16785226273" className="btn-outlined-light">
-            Call (678) 522-6273
+          <a href="tel:+17708007925" className="btn-outlined-light">
+            Call 770-800-79AJ
           </a>
         </div>
       </section>

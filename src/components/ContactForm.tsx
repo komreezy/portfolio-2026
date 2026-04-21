@@ -29,7 +29,7 @@ export default function ContactForm({ variant = "default" }: ContactFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const phoneNumber = "(678) 522-6273";
+  const phoneNumber = "770-800-79AJ";
   const maxChars = 600;
 
   const handleSubmit = async (e: React.FormEvent) => {

@@ -223,7 +223,7 @@ export default function FirmOverview() {
           </ScrollReveal>
           <ScrollReveal delay={0.15}>
             <p className="text-base font-light text-[var(--footer-text)] opacity-80 mb-8">
-              If you or a loved one has been injured due to someone else&apos;s negligence, or if you&apos;re facing DUI charges, I invite you to contact my law firm for a free consultation. To get started, fill out my online contact form or call my office at <strong className="font-medium">(678) 522-6273</strong>.
+              If you or a loved one has been injured due to someone else&apos;s negligence, or if you&apos;re facing DUI charges, I invite you to contact my law firm for a free consultation. To get started, fill out my online contact form or call my office at <strong className="font-medium">770-800-79AJ</strong>.
             </p>
           </ScrollReveal>
           <ScrollReveal delay={0.25}>

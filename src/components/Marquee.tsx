@@ -4,16 +4,16 @@ export default function Marquee() {
       <div className="marquee-content">
         {/* Duplicate text for seamless loop */}
         <span className="marquee-text">
-          Fighting for the injured — Maximum compensation —{" "}
+          Fighting for the injured, Maximum compensation,{" "}
         </span>
         <span className="marquee-text">
-          Fighting for the injured — Maximum compensation —{" "}
+          Fighting for the injured, Maximum compensation,{" "}
         </span>
         <span className="marquee-text">
-          Fighting for the injured — Maximum compensation —{" "}
+          Fighting for the injured, Maximum compensation,{" "}
         </span>
         <span className="marquee-text">
-          Fighting for the injured — Maximum compensation —{" "}
+          Fighting for the injured, Maximum compensation,{" "}
         </span>
       </div>
     </div>

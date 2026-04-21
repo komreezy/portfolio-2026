@@ -7,14 +7,14 @@ const localBusinessSchema = {
   "name": "Assured Justice Firm",
   "description": "DUI defense and personal injury law firm led by former prosecutor and licensed engineer Arash Jafary. Serving Alpharetta, Cobb County, Fulton County, and all of Georgia.",
   "url": "https://assuredjusticefirm.com",
-  "telephone": "(678) 522-6273",
+  "telephone": "770-800-79AJ",
   "email": "Info@assuredjusticefirm.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "4575 Webb Bridge Road, #2361",
+    "streetAddress": "13010 Morris Road, Building 1, Suite 600",
     "addressLocality": "Alpharetta",
     "addressRegion": "GA",
-    "postalCode": "30023",
+    "postalCode": "30004",
     "addressCountry": "US"
   },
   "geo": {

@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "DUI Defense Attorney in Alpharetta & Cobb County, GA | Assured Justice Firm",
-  description: "Facing DUI charges in Georgia? Former prosecutor Arash Jafary provides aggressive DUI defense in Alpharetta, Cobb County, and Fulton County. Free consultation. Call (678) 522-6273.",
+  description: "Facing DUI charges in Georgia? Former prosecutor Arash Jafary provides aggressive DUI defense in Alpharetta, Cobb County, and Fulton County. Free consultation. Call 770-800-79AJ.",
   keywords: ["DUI attorney Alpharetta", "DUI lawyer Cobb County", "DUI defense Georgia", "drunk driving lawyer Fulton County", "DUI charges Georgia"],
 };
 
@@ -48,8 +48,8 @@ export default function DUIDefense() {
             <Link href="/contact" className="btn-primary">
               Free Consultation
             </Link>
-            <a href="tel:+16785226273" className="btn-outlined">
-              Call (678) 522-6273
+            <a href="tel:+17708007925" className="btn-outlined">
+              Call 770-800-79AJ
             </a>
           </div>
         </div>
@@ -162,8 +162,8 @@ export default function DUIDefense() {
           <p className="text-base font-light text-[var(--footer-text)] opacity-80 mb-8">
             Call now for a free consultation. I&apos;ll review your case, explain your options, and start building your defense immediately.
           </p>
-          <a href="tel:+16785226273" className="btn-outlined-light">
-            Call (678) 522-6273
+          <a href="tel:+17708007925" className="btn-outlined-light">
+            Call 770-800-79AJ
           </a>
         </div>
       </section>

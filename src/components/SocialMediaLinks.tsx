@@ -14,7 +14,7 @@ export default function SocialMediaLinks({
   return (
     <div className={`flex gap-4 ${className}`}>
       <a
-        href="https://facebook.com"
+        href="https://www.facebook.com/assuredjustice"
         target="_blank"
         rel="noopener noreferrer"
         className={`${textColor} opacity-80 hover:opacity-100 transition-opacity duration-150`}
@@ -25,7 +25,7 @@ export default function SocialMediaLinks({
         </svg>
       </a>
       <a
-        href="https://instagram.com"
+        href="https://www.instagram.com/assuredjusticefirm/"
         target="_blank"
         rel="noopener noreferrer"
         className={`${textColor} opacity-80 hover:opacity-100 transition-opacity duration-150`}
@@ -36,14 +36,14 @@ export default function SocialMediaLinks({
         </svg>
       </a>
       <a
-        href="https://linkedin.com"
+        href="https://www.youtube.com/@Assuredjusticefirm"
         target="_blank"
         rel="noopener noreferrer"
         className={`${textColor} opacity-80 hover:opacity-100 transition-opacity duration-150`}
-        aria-label="LinkedIn"
+        aria-label="YouTube"
       >
         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M20.45,20.45H16.89V14.88c0-1.33,0-3-1.85-3s-2.14,1.45-2.14,2.94v5.62H9.34V9h3.42v1.56h.05a3.76,3.76,0,0,1,3.38-1.85c3.62,0,4.28,2.38,4.28,5.48v6.26ZM5.34,7.43A2.07,2.07,0,1,1,7.41,5.36,2.07,2.07,0,0,1,5.34,7.43Zm1.78,13H3.56V9H7.12ZM22.22,0H1.77A1.75,1.75,0,0,0,0,1.73V22.27A1.75,1.75,0,0,0,1.77,24H22.22A1.76,1.76,0,0,0,24,22.27V1.73A1.76,1.76,0,0,0,22.22,0Z"/>
+          <path d="M23.5,6.19a3.02,3.02,0,0,0-2.12-2.14C19.5,3.5,12,3.5,12,3.5s-7.5,0-9.38.55A3.02,3.02,0,0,0,.5,6.19,31.68,31.68,0,0,0,0,12a31.68,31.68,0,0,0,.5,5.81,3.02,3.02,0,0,0,2.12,2.14c1.88.55,9.38.55,9.38.55s7.5,0,9.38-.55a3.02,3.02,0,0,0,2.12-2.14A31.68,31.68,0,0,0,24,12,31.68,31.68,0,0,0,23.5,6.19ZM9.55,15.57V8.43L15.82,12Z"/>
         </svg>
       </a>
     </div>

@@ -116,7 +116,7 @@ export default function Contact() {
               immediate challenge or planning ahead, I&apos;m here to assist.
             </p>
             <a
-              href="tel:+16785226273"
+              href="tel:+17708007925"
               className="mt-6 inline-flex items-center gap-2 bg-[var(--primary)] text-white px-6 py-3 text-sm font-medium uppercase tracking-wider hover:bg-[var(--primary-dark)] transition-colors duration-150"
             >
               <svg
@@ -333,10 +333,10 @@ export default function Contact() {
                   Phone
                 </h3>
                 <a
-                  href="tel:+16785226273"
+                  href="tel:+17708007925"
                   className="text-[var(--foreground)] font-light hover:text-[var(--primary)] transition-colors duration-150"
                 >
-                  (678) 522-6273
+                  770-800-79AJ
                 </a>
               </div>
 
@@ -345,9 +345,11 @@ export default function Contact() {
                   Office
                 </h3>
                 <p className="text-[var(--foreground)] font-light">
-                  4575 Webb Bridge Road, #2361
+                  13010 Morris Road
                   <br />
-                  Alpharetta, GA 30023
+                  Building 1, Suite 600
+                  <br />
+                  Alpharetta, GA 30004
                 </p>
               </div>
 

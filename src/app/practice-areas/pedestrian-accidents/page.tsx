@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Pedestrian Accident Attorney Georgia | Assured Justice Firm",
-  description: "Injured as a pedestrian in Georgia? Attorney Arash Jafary fights to hold negligent drivers accountable and recover maximum compensation. Free consultation. Call (678) 522-6273.",
+  description: "Injured as a pedestrian in Georgia? Attorney Arash Jafary fights to hold negligent drivers accountable and recover maximum compensation. Free consultation. Call 770-800-79AJ.",
   keywords: ["pedestrian accident attorney Georgia", "hit by car lawyer", "pedestrian injury lawyer Alpharetta", "crosswalk accident attorney", "pedestrian crash lawyer Cobb County"],
 };
 
@@ -25,8 +25,8 @@ export default function PedestrianAccidents() {
             <Link href="/contact" className="btn-primary">
               Free Consultation
             </Link>
-            <a href="tel:+16785226273" className="btn-outlined">
-              Call (678) 522-6273
+            <a href="tel:+17708007925" className="btn-outlined">
+              Call 770-800-79AJ
             </a>
           </div>
         </div>
@@ -131,8 +131,8 @@ export default function PedestrianAccidents() {
           <p className="text-base font-light text-[var(--footer-text)] opacity-80 mb-8">
             I hold negligent drivers accountable and fight for the compensation you need to recover. Call now for a free consultation.
           </p>
-          <a href="tel:+16785226273" className="btn-outlined-light">
-            Call (678) 522-6273
+          <a href="tel:+17708007925" className="btn-outlined-light">
+            Call 770-800-79AJ
           </a>
         </div>
       </section>

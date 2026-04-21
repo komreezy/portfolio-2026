@@ -43,7 +43,8 @@ export default function Header() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  const phoneNumber = "(678) 522-6273";
+  const phoneNumber = "770-800-79AJ";
+  const phoneNumberTel = "+17708007925";
 
   return (
     <header className="bg-[#F9F5F0] h-[var(--header-height)] flex items-center sticky top-0 z-50 border-b border-[var(--border)]">
@@ -109,7 +110,7 @@ export default function Header() {
 
           {/* Phone CTA - Desktop */}
           <a
-            href={`tel:${phoneNumber.replace(/[^0-9]/g, "")}`}
+            href={`tel:${phoneNumberTel}`}
             className="hidden lg:flex items-center gap-2 bg-[var(--primary)] text-white px-4 py-2 text-sm font-medium hover:bg-[var(--primary-dark)] transition-colors duration-150"
           >
             <span>Call or Text</span>
@@ -189,7 +190,7 @@ export default function Header() {
           ))}
           {/* Mobile Phone CTA */}
           <a
-            href={`tel:${phoneNumber.replace(/[^0-9]/g, "")}`}
+            href={`tel:${phoneNumberTel}`}
             className="mt-auto flex items-center justify-center gap-2 bg-[var(--primary)] text-white px-4 py-4 text-sm font-medium"
           >
             <span className="text-xs uppercase tracking-wider">Call or Text</span>

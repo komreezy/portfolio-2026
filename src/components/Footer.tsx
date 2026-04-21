@@ -43,9 +43,10 @@ export default function Footer() {
               </p>
             </div>
             <div className="space-y-2 text-[var(--footer-text)] text-sm font-light opacity-80">
-              <p>4575 Webb Bridge Road, #2361</p>
-              <p>Alpharetta, GA 30023</p>
-              <p className="pt-2">(678) 522-6273 – Phone</p>
+              <p>13010 Morris Road</p>
+              <p>Building 1, Suite 600</p>
+              <p>Alpharetta, GA 30004</p>
+              <p className="pt-2">770-800-79AJ – Phone</p>
               <p>
                 <a
                   href="mailto:Info@assuredjusticefirm.com"
