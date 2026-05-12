@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PortableText } from "@portabletext/react";
-import DOMPurify from "isomorphic-dompurify";
+import sanitizeHtml from "sanitize-html";
 import ContactForm from "@/components/ContactForm";
 import { getPostBySlug, getAllSlugs, urlFor } from "@/lib/sanity";
 
@@ -116,10 +116,14 @@ export default async function BlogPost({
             <div
               className="prose-blog"
               dangerouslySetInnerHTML={{
-                __html: DOMPurify.sanitize(post.htmlContent, {
-                  ALLOWED_TAGS: ['p', 'h2', 'h3', 'h4', 'h5', 'h6', 'strong', 'em', 'a', 'ul', 'ol', 'li', 'blockquote', 'div', 'span', 'br', 'hr', 'img', 'figure', 'figcaption', 'pre', 'code', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'cite'],
-                  ALLOWED_ATTR: ['href', 'class', 'target', 'rel', 'src', 'alt', 'title', 'width', 'height'],
-                  ALLOW_DATA_ATTR: false
+                __html: sanitizeHtml(post.htmlContent, {
+                  allowedTags: ['p', 'h2', 'h3', 'h4', 'h5', 'h6', 'strong', 'em', 'a', 'ul', 'ol', 'li', 'blockquote', 'div', 'span', 'br', 'hr', 'img', 'figure', 'figcaption', 'pre', 'code', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'cite'],
+                  allowedAttributes: {
+                    'a': ['href', 'target', 'rel'],
+                    'img': ['src', 'alt', 'title', 'width', 'height'],
+                    '*': ['class']
+                  },
+                  allowedSchemes: ['http', 'https', 'mailto', 'tel']
                 })
               }}
             />
