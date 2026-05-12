@@ -278,51 +278,26 @@ Just replace `[DESCRIBE YOUR TOPIC]` with:
 
 ## Troubleshooting - Fix It Yourself with Claude
 
-If your blog post shows a 500 error, blank page, or broken formatting, paste this prompt into Claude along with your HTML content:
+If your blog post shows a 500 error, blank page, or broken formatting, paste this into Claude:
 
 ---
 
 ```
-My blog post isn't displaying correctly on my website. Help me fix the HTML content.
+My blog post is not rendering correctly. Please figure out what is going on and help me fix it.
 
-## What's Wrong
-[DESCRIBE THE PROBLEM: "500 error", "blank page", "styling looks wrong", etc.]
+[PASTE YOUR BLOG POST URL HERE]
 
-## My Current HTML Content
-[PASTE YOUR HTML FROM SANITY HERE]
-
-## Rules for Fixing
-1. Output ONLY the fixed HTML - no explanations before or after
-2. Do NOT wrap output in code fences (no ```)
-3. Must start with `<article class="article-wrap">` and end with `</article>`
-4. Replace these unsupported tags with `<div>`:
-   - `<main>` → `<div>`
-   - `<section>` → `<div>`
-   - `<header>` → `<div>`
-   - `<footer>` → `<div>`
-   - `<aside>` → `<div>`
-5. Remove completely: `<nav>`, `<script>`, `<style>`, `<iframe>`
-6. Make sure every opening tag has a closing tag
-7. Keep all CSS classes (like `class="intro-box"`) intact
-8. Do NOT add title, author, date, or contact sections
-
-## Allowed HTML Tags
-article, div, p, h2, h3, h4, h5, h6, strong, em, a, ul, ol, li, blockquote, span, br, hr, img, figure, figcaption, pre, code, table, thead, tbody, tr, th, td, cite
-
-## Allowed Attributes
-- Any tag: class
-- Links (a): href, target, rel
-- Images (img): src, alt, title, width, height
+Context: My website uses Sanity CMS (jafary-law.sanity.studio). Blog content is stored as HTML in the "HTML Content" field. If you need me to paste my HTML content from Sanity, just ask.
 ```
 
 ---
 
-**How to use:**
-1. Go to your blog post in Sanity Studio
-2. Copy all the HTML from the "HTML Content" field
-3. Paste the prompt above into Claude, replacing the bracketed sections
-4. Claude will output clean, fixed HTML
-5. Copy Claude's output and paste it back into Sanity (replacing the old HTML)
-6. Click Publish
+**Example:**
 
-**If the fix doesn't work**, the problem may be with the website code, not your content. Contact your developer with the blog URL.
+> My blog post is not rendering correctly. Please figure out what is going on and help me fix it.
+>
+> https://www.assuredjusticefirm.com/blog/can-you-refuse-breathalyzer-georgia
+>
+> Context: My website uses Sanity CMS (jafary-law.sanity.studio). Blog content is stored as HTML in the "HTML Content" field. If you need me to paste my HTML content from Sanity, just ask.
+
+Claude will fetch the page, diagnose the issue, and walk you through fixing it in Sanity.
