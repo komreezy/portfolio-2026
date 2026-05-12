@@ -276,62 +276,53 @@ Just replace `[DESCRIBE YOUR TOPIC]` with:
 
 ---
 
-## Troubleshooting - Ask Your Developer
+## Troubleshooting - Fix It Yourself with Claude
 
-If something isn't working with your blog, send this prompt to your developer (Komran) in Claude Code:
+If your blog post shows a 500 error, blank page, or broken formatting, paste this prompt into Claude along with your HTML content:
 
 ---
 
 ```
-My client's blog post is having issues. Please diagnose and fix it.
+My blog post isn't displaying correctly on my website. Help me fix the HTML content.
 
-**Problem URL:** [PASTE THE BROKEN BLOG URL HERE]
+## What's Wrong
+[DESCRIBE THE PROBLEM: "500 error", "blank page", "styling looks wrong", etc.]
 
-## Tech Stack Context
-- **Hosting:** Vercel (auto-deploys from GitHub)
-- **Framework:** Next.js (App Router)
-- **CMS:** Sanity (project: jafary-law)
-- **Domain:** assuredjusticefirm.com
-- **Repo:** github.com/komreezy/portfolio-2026
+## My Current HTML Content
+[PASTE YOUR HTML FROM SANITY HERE]
 
-## Blog Architecture
-- Blog list page: `src/app/blog/page.tsx`
-- Individual posts: `src/app/blog/[slug]/page.tsx`
-- Sanity queries: `src/lib/sanity.ts`
-- Post data comes from Sanity `post` document type
-- HTML content stored in `htmlContent` field, sanitized with `sanitize-html`
+## Rules for Fixing
+1. Output ONLY the fixed HTML - no explanations before or after
+2. Do NOT wrap output in code fences (no ```)
+3. Must start with `<article class="article-wrap">` and end with `</article>`
+4. Replace these unsupported tags with `<div>`:
+   - `<main>` → `<div>`
+   - `<section>` → `<div>`
+   - `<header>` → `<div>`
+   - `<footer>` → `<div>`
+   - `<aside>` → `<div>`
+5. Remove completely: `<nav>`, `<script>`, `<style>`, `<iframe>`
+6. Make sure every opening tag has a closing tag
+7. Keep all CSS classes (like `class="intro-box"`) intact
+8. Do NOT add title, author, date, or contact sections
 
-## Common Issues & Fixes
+## Allowed HTML Tags
+article, div, p, h2, h3, h4, h5, h6, strong, em, a, ul, ol, li, blockquote, span, br, hr, img, figure, figcaption, pre, code, table, thead, tbody, tr, th, td, cite
 
-### 500 Error on blog post
-1. **HTML sanitization failure** - Check if `sanitize-html` is properly installed and working in serverless environment
-2. **Malformed HTML in Sanity** - Content has unclosed tags or unsupported tags
-3. **Missing dependencies** - Check package.json for sanitize-html
-
-### Blank/missing content
-1. **Wrong field name** - Sanity uses `htmlContent` for HTML, `body` for Portable Text
-2. **Query not fetching field** - Check `getPostBySlug()` in `src/lib/sanity.ts`
-
-### Styling broken
-1. **CSS classes stripped** - Ensure `'*': ['class']` is in sanitize-html allowedAttributes
-2. **Missing prose-blog styles** - Check global CSS
-
-## Supported HTML Tags
-p, h2, h3, h4, h5, h6, strong, em, a, ul, ol, li, blockquote, div, span, br, hr, img, figure, figcaption, pre, code, table, thead, tbody, tr, th, td, cite, article
-
-## Diagnostic Steps
-1. Fetch the URL to see the error
-2. Check the blog page code for issues
-3. If code looks fine, the issue is likely in Sanity content
-4. Fix the code or provide instructions for fixing Sanity content
+## Allowed Attributes
+- Any tag: class
+- Links (a): href, target, rel
+- Images (img): src, alt, title, width, height
 ```
 
 ---
 
-**Example message to your developer:**
+**How to use:**
+1. Go to your blog post in Sanity Studio
+2. Copy all the HTML from the "HTML Content" field
+3. Paste the prompt above into Claude, replacing the bracketed sections
+4. Claude will output clean, fixed HTML
+5. Copy Claude's output and paste it back into Sanity (replacing the old HTML)
+6. Click Publish
 
-> My client's blog post is having issues. Please diagnose and fix it.
->
-> **Problem URL:** https://www.assuredjusticefirm.com/blog/can-you-refuse-breathalyzer-georgia
-
-That's all you need to send - the developer's AI assistant has all the context it needs to find and fix the problem.
+**If the fix doesn't work**, the problem may be with the website code, not your content. Contact your developer with the blog URL.
