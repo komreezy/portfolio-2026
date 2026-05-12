@@ -290,3 +290,40 @@ Just replace `[DESCRIBE YOUR TOPIC]` with:
 
 **Changes aren't showing up on the website**
 The website caches content for performance. Changes may take up to 60 seconds to appear. If it's been longer, the site may need to be redeployed - contact your developer
+
+---
+
+## Fix Broken Blog Post Prompt
+
+If your blog post isn't rendering correctly, copy your HTML content from Sanity and paste it into Claude with this prompt:
+
+---
+
+```
+I have an HTML blog post that isn't rendering correctly on my website. Please fix it.
+
+## Rules
+1. Output ONLY the fixed HTML - no explanations, no code fences (```), just the raw HTML
+2. Start with `<article class="article-wrap">` and end with `</article>`
+3. Replace unsupported tags:
+   - `<main>` → `<div>`
+   - `<section>` → `<div>`
+   - `<header>` → `<div>`
+   - `<footer>` → `<div>`
+   - `<nav>` → remove entirely
+   - `<aside>` → `<div>`
+4. Remove any `<script>`, `<style>`, or `<iframe>` tags
+5. Ensure all tags are properly closed
+6. Keep all the content and styling classes intact
+7. Do NOT add any title, author, date, or contact sections
+
+## Supported Tags
+p, h2, h3, h4, h5, h6, strong, em, a, ul, ol, li, blockquote, div, span, br, hr, img, figure, figcaption, pre, code, table, thead, tbody, tr, th, td, cite, article
+
+## My Current HTML
+[PASTE YOUR HTML CONTENT HERE]
+```
+
+---
+
+After Claude gives you the fixed HTML, copy it (without any ``` markers) and paste it back into Sanity to replace the broken content
