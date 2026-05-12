@@ -276,54 +276,62 @@ Just replace `[DESCRIBE YOUR TOPIC]` with:
 
 ---
 
-## Troubleshooting
+## Troubleshooting - Ask Your Developer
 
-**My article shows a blank page or "500 Error"**
-1. Check the slug - remove any special characters (?, !, ', ", &, etc.)
-2. Check the HTML content - make sure you didn't paste the ``` code fence markers
-3. Contact your developer if the issue persists
-
-**My article is missing content or looks broken**
-1. You may have used unsupported HTML tags (like `<main>` or `<section>`)
-2. Edit the article in Sanity and replace `<main>` with `<div>` and `<section>` with `<div>`
-3. Make sure all opening tags have matching closing tags
-
-**Changes aren't showing up on the website**
-The website caches content for performance. Changes may take up to 60 seconds to appear. If it's been longer, the site may need to be redeployed - contact your developer
-
----
-
-## Fix Broken Blog Post Prompt
-
-If your blog post isn't rendering correctly, copy your HTML content from Sanity and paste it into Claude with this prompt:
+If something isn't working with your blog, send this prompt to your developer (Komran) in Claude Code:
 
 ---
 
 ```
-I have an HTML blog post that isn't rendering correctly on my website. Please fix it.
+My client's blog post is having issues. Please diagnose and fix it.
 
-## Rules
-1. Output ONLY the fixed HTML - no explanations, no code fences (```), just the raw HTML
-2. Start with `<article class="article-wrap">` and end with `</article>`
-3. Replace unsupported tags:
-   - `<main>` → `<div>`
-   - `<section>` → `<div>`
-   - `<header>` → `<div>`
-   - `<footer>` → `<div>`
-   - `<nav>` → remove entirely
-   - `<aside>` → `<div>`
-4. Remove any `<script>`, `<style>`, or `<iframe>` tags
-5. Ensure all tags are properly closed
-6. Keep all the content and styling classes intact
-7. Do NOT add any title, author, date, or contact sections
+**Problem URL:** [PASTE THE BROKEN BLOG URL HERE]
 
-## Supported Tags
+## Tech Stack Context
+- **Hosting:** Vercel (auto-deploys from GitHub)
+- **Framework:** Next.js (App Router)
+- **CMS:** Sanity (project: jafary-law)
+- **Domain:** assuredjusticefirm.com
+- **Repo:** github.com/komreezy/portfolio-2026
+
+## Blog Architecture
+- Blog list page: `src/app/blog/page.tsx`
+- Individual posts: `src/app/blog/[slug]/page.tsx`
+- Sanity queries: `src/lib/sanity.ts`
+- Post data comes from Sanity `post` document type
+- HTML content stored in `htmlContent` field, sanitized with `sanitize-html`
+
+## Common Issues & Fixes
+
+### 500 Error on blog post
+1. **HTML sanitization failure** - Check if `sanitize-html` is properly installed and working in serverless environment
+2. **Malformed HTML in Sanity** - Content has unclosed tags or unsupported tags
+3. **Missing dependencies** - Check package.json for sanitize-html
+
+### Blank/missing content
+1. **Wrong field name** - Sanity uses `htmlContent` for HTML, `body` for Portable Text
+2. **Query not fetching field** - Check `getPostBySlug()` in `src/lib/sanity.ts`
+
+### Styling broken
+1. **CSS classes stripped** - Ensure `'*': ['class']` is in sanitize-html allowedAttributes
+2. **Missing prose-blog styles** - Check global CSS
+
+## Supported HTML Tags
 p, h2, h3, h4, h5, h6, strong, em, a, ul, ol, li, blockquote, div, span, br, hr, img, figure, figcaption, pre, code, table, thead, tbody, tr, th, td, cite, article
 
-## My Current HTML
-[PASTE YOUR HTML CONTENT HERE]
+## Diagnostic Steps
+1. Fetch the URL to see the error
+2. Check the blog page code for issues
+3. If code looks fine, the issue is likely in Sanity content
+4. Fix the code or provide instructions for fixing Sanity content
 ```
 
 ---
 
-After Claude gives you the fixed HTML, copy it (without any ``` markers) and paste it back into Sanity to replace the broken content
+**Example message to your developer:**
+
+> My client's blog post is having issues. Please diagnose and fix it.
+>
+> **Problem URL:** https://www.assuredjusticefirm.com/blog/can-you-refuse-breathalyzer-georgia
+
+That's all you need to send - the developer's AI assistant has all the context it needs to find and fix the problem.
