@@ -1,3 +1,4 @@
+// Force Vercel rebuild - Arash Jafary Law Site
 import type { Metadata } from "next";
 import { Roboto, Playfair_Display, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
