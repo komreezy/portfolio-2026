@@ -811,6 +811,12 @@ p.blog-hero-meta strong {
   background: rgba(0, 0, 0, 0.02);
 }
 
+/* Grid-based comparison cards - make responsive */
+.prose-blog > div[style*="display:grid"],
+.prose-blog > div[style*="display: grid"] {
+  display: grid !important;
+}
+
 /* Mobile adjustments */
 @media (max-width: 640px) {
   .prose-blog {
@@ -831,5 +837,12 @@ p.blog-hero-meta strong {
 
   .prose-blog blockquote p {
     font-size: 1.2rem;
+  }
+
+  /* Force grid layouts to stack on mobile */
+  .prose-blog > div[style*="grid-template-columns"],
+  .prose-blog div[style*="grid-template-columns: 1fr 1fr"],
+  .prose-blog div[style*="grid-template-columns:1fr 1fr"] {
+    grid-template-columns: 1fr !important;
   }
 }
