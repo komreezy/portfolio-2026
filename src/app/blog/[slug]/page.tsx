@@ -117,11 +117,21 @@ export default async function BlogPost({
               className="prose-blog"
               dangerouslySetInnerHTML={{
                 __html: sanitizeHtml(post.htmlContent, {
-                  allowedTags: ['p', 'h2', 'h3', 'h4', 'h5', 'h6', 'strong', 'em', 'a', 'ul', 'ol', 'li', 'blockquote', 'div', 'span', 'br', 'hr', 'img', 'figure', 'figcaption', 'pre', 'code', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'cite'],
+                  allowedTags: ['p', 'h2', 'h3', 'h4', 'h5', 'h6', 'strong', 'em', 'a', 'ul', 'ol', 'li', 'blockquote', 'div', 'span', 'br', 'hr', 'img', 'figure', 'figcaption', 'pre', 'code', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'cite', 'svg', 'path', 'rect', 'circle', 'line', 'polyline', 'polygon', 'text', 'g', 'defs', 'clipPath', 'use', 'symbol', 'ellipse'],
                   allowedAttributes: {
                     'a': ['href', 'target', 'rel'],
                     'img': ['src', 'alt', 'title', 'width', 'height'],
-                    '*': ['class']
+                    'svg': ['width', 'height', 'viewBox', 'fill', 'xmlns', 'style'],
+                    'path': ['d', 'fill', 'stroke', 'stroke-width', 'stroke-linecap', 'stroke-linejoin', 'fill-opacity', 'stroke-opacity'],
+                    'rect': ['x', 'y', 'width', 'height', 'rx', 'ry', 'fill', 'stroke', 'stroke-width', 'fill-opacity'],
+                    'circle': ['cx', 'cy', 'r', 'fill', 'stroke', 'stroke-width', 'fill-opacity'],
+                    'line': ['x1', 'y1', 'x2', 'y2', 'stroke', 'stroke-width', 'stroke-linecap'],
+                    'text': ['x', 'y', 'text-anchor', 'font-size', 'fill', 'font-weight', 'font-family'],
+                    'g': ['fill', 'stroke', 'transform'],
+                    'ellipse': ['cx', 'cy', 'rx', 'ry', 'fill', 'stroke'],
+                    'polyline': ['points', 'fill', 'stroke', 'stroke-width'],
+                    'polygon': ['points', 'fill', 'stroke'],
+                    '*': ['class', 'style']
                   },
                   allowedSchemes: ['http', 'https', 'mailto', 'tel']
                 })
