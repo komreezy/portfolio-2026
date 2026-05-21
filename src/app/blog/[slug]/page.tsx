@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { PortableText } from "@portabletext/react";
 import sanitizeHtml from "sanitize-html";
 import ContactForm from "@/components/ContactForm";
+import SVGFixer from "@/components/SVGFixer";
 import { getPostBySlug, getAllSlugs, urlFor } from "@/lib/sanity";
 
 // Revalidate every 60 seconds
@@ -113,9 +114,11 @@ export default async function BlogPost({
       <article className="py-16 px-6 md:px-8 bg-[#faf8f3]">
         <div className="max-w-[800px] mx-auto">
           {post.htmlContent ? (
-            <div
-              className="prose-blog"
-              dangerouslySetInnerHTML={{
+            <>
+              <SVGFixer />
+              <div
+                className="prose-blog"
+                dangerouslySetInnerHTML={{
                 __html: sanitizeHtml(post.htmlContent, {
                   allowedTags: ['p', 'h2', 'h3', 'h4', 'h5', 'h6', 'strong', 'em', 'a', 'ul', 'ol', 'li', 'blockquote', 'div', 'span', 'br', 'hr', 'img', 'figure', 'figcaption', 'pre', 'code', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'cite', 'svg', 'path', 'rect', 'circle', 'line', 'polyline', 'polygon', 'text', 'g', 'defs', 'clipPath', 'use', 'symbol', 'ellipse'],
                   allowedAttributes: {
@@ -137,6 +140,7 @@ export default async function BlogPost({
                 })
               }}
             />
+            </>
           ) : post.body ? (
             <div className="prose-custom">
               <PortableText value={post.body} components={components} />
