@@ -572,6 +572,22 @@ p.blog-hero-meta strong {
   font-style: normal !important;
 }
 
+/* Dark navy background boxes from Sanity HTML - force white text */
+.prose-blog div[style*="background:#0d1f3c"],
+.prose-blog div[style*="background: #0d1f3c"] {
+  color: #ffffff !important;
+}
+
+.prose-blog div[style*="background:#0d1f3c"] *,
+.prose-blog div[style*="background: #0d1f3c"] * {
+  color: #ffffff !important;
+}
+
+.prose-blog div[style*="background:#0d1f3c"] strong,
+.prose-blog div[style*="background: #0d1f3c"] strong {
+  color: #e4c97a !important;
+}
+
 /* Defense Cards Grid */
 .prose-blog .defense-grid {
   display: grid !important;
@@ -837,12 +853,18 @@ p.blog-hero-meta strong {
   height: auto !important;
 }
 
-/* Small SVG icons (like the circular icons with calendar, prohibition, card) - constrain size */
+/* Small SVG icons - constrain size but not for icons inside circular containers */
 .prose-blog svg:not([style*="width:100%"]):not([style*="width: 100%"]) {
   max-width: 48px;
   max-height: 48px;
-  display: block;
-  margin: 0 auto 12px;
+}
+
+/* Icons inside circular flex containers (timeline icons) - don't add margins */
+.prose-blog div[style*="border-radius:50%"] svg {
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  display: inline-block;
 }
 
 /* Mobile adjustments */
@@ -874,11 +896,31 @@ p.blog-hero-meta strong {
     grid-template-columns: 1fr !important;
   }
 
-  /* SVG banner/callout boxes - wrap in scrollable container on mobile */
+  /* SVG banner/callout boxes on mobile - ensure text scales properly */
   .prose-blog svg[style*="width:100%"],
   .prose-blog svg[style*="width: 100%"] {
-    /* Remove width constraint to let SVG scale naturally with viewBox */
     min-width: 0;
+  }
+
+  /* Fix wide SVG banners with text that overflows on mobile */
+  .prose-blog svg[viewBox*="740"] {
+    /* Scale down the viewBox content to fit mobile */
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible;
+  }
+
+  /* Scale down SVG text on mobile for better readability */
+  .prose-blog svg[viewBox*="740"] text {
+    font-size: 80% !important;
+  }
+
+  /* For SVG banners with long text lines, allow horizontal scroll if needed */
+  .prose-blog > svg[viewBox*="740"],
+  .prose-blog > div > svg[viewBox*="740"] {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   /* Cards and info boxes with inline styles - ensure they fit */
