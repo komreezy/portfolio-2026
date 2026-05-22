@@ -896,18 +896,21 @@ p.blog-hero-meta strong {
     grid-template-columns: 1fr !important;
   }
 
-  /* SVG banner/callout boxes on mobile */
-  .prose-blog svg[style*="width:100%"],
-  .prose-blog svg[style*="width: 100%"] {
-    min-width: 0;
+  /* Wide SVG banners on mobile - full width like desktop */
+  .prose-blog svg[viewBox] {
+    width: 100% !important;
+    height: auto !important;
+    max-width: none !important;
+    max-height: none !important;
   }
 
-  /* SVG scroll wrapper added by SVGFixer for wide banners */
-  .svg-scroll-wrapper {
-    margin-left: -20px;
-    margin-right: -20px;
-    padding-left: 20px;
-    padding-right: 20px;
+  /* Small icons inside circular containers - keep natural size */
+  .prose-blog div[style*="border-radius:50%"] svg,
+  .prose-blog div[style*="border-radius: 50%"] svg {
+    width: auto !important;
+    height: auto !important;
+    max-width: 28px !important;
+    max-height: 28px !important;
   }
 
   /* Cards and info boxes with inline styles - ensure they fit */
