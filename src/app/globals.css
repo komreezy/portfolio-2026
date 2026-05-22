@@ -896,31 +896,18 @@ p.blog-hero-meta strong {
     grid-template-columns: 1fr !important;
   }
 
-  /* SVG banner/callout boxes on mobile - ensure text scales properly */
+  /* SVG banner/callout boxes on mobile */
   .prose-blog svg[style*="width:100%"],
   .prose-blog svg[style*="width: 100%"] {
     min-width: 0;
   }
 
-  /* Fix wide SVG banners with text that overflows on mobile */
-  .prose-blog svg[viewBox*="740"] {
-    /* Scale down the viewBox content to fit mobile */
-    width: 100% !important;
-    height: auto !important;
-    overflow: visible;
-  }
-
-  /* Scale down SVG text on mobile for better readability */
-  .prose-blog svg[viewBox*="740"] text {
-    font-size: 80% !important;
-  }
-
-  /* For SVG banners with long text lines, allow horizontal scroll if needed */
-  .prose-blog > svg[viewBox*="740"],
-  .prose-blog > div > svg[viewBox*="740"] {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+  /* SVG scroll wrapper added by SVGFixer for wide banners */
+  .svg-scroll-wrapper {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   /* Cards and info boxes with inline styles - ensure they fit */

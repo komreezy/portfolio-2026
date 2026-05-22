@@ -23,50 +23,41 @@ export default function SVGFixer() {
       }
     });
 
-    // Fix wide SVG banners with text that might overflow on mobile
+    // Fix wide SVG banners - wrap in scrollable container on mobile
     const wideBanners = document.querySelectorAll('.prose-blog svg[viewBox]');
+    const isMobile = window.innerWidth < 640;
 
-    wideBanners.forEach((svg) => {
-      const viewBox = svg.getAttribute('viewBox');
-      if (!viewBox) return;
+    if (isMobile) {
+      wideBanners.forEach((svg) => {
+        const viewBox = svg.getAttribute('viewBox');
+        if (!viewBox) return;
 
-      const parts = viewBox.split(' ').map(Number);
-      if (parts.length !== 4) return;
+        const parts = viewBox.split(' ').map(Number);
+        if (parts.length !== 4) return;
 
-      const [, , vbWidth, vbHeight] = parts;
+        const [, , vbWidth] = parts;
 
-      // Only process wide banners (viewBox width > 600)
-      if (vbWidth <= 600) return;
+        // Only process wide banners (viewBox width > 600)
+        if (vbWidth <= 600) return;
 
-      // Check all text elements for overflow
-      const textElements = svg.querySelectorAll('text');
-      let maxTextRight = 0;
+        // Check if already wrapped
+        if (svg.parentElement?.classList.contains('svg-scroll-wrapper')) return;
 
-      textElements.forEach((text) => {
-        const x = parseFloat(text.getAttribute('x') || '0');
-        // Estimate text width based on character count and font size
-        const fontSize = parseFloat(text.getAttribute('font-size') || '14');
-        const textContent = text.textContent || '';
-        const estimatedWidth = textContent.length * fontSize * 0.55; // Rough estimate
-        const textRight = x + estimatedWidth;
+        // Wrap in scrollable container
+        const wrapper = document.createElement('div');
+        wrapper.className = 'svg-scroll-wrapper';
+        wrapper.style.cssText = 'overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -20px; padding: 0 20px;';
 
-        if (textRight > maxTextRight) {
-          maxTextRight = textRight;
-        }
+        // Set minimum width so text is readable
+        const svgElement = svg as SVGElement;
+        svgElement.style.minWidth = '500px';
+        svgElement.style.width = '500px';
+        svgElement.style.height = 'auto';
+
+        svg.parentNode?.insertBefore(wrapper, svg);
+        wrapper.appendChild(svg);
       });
-
-      // If text overflows the viewBox, expand the viewBox
-      if (maxTextRight > vbWidth) {
-        const newWidth = Math.ceil(maxTextRight + 20); // Add some padding
-        svg.setAttribute('viewBox', `0 0 ${newWidth} ${vbHeight}`);
-
-        // Also expand the background rect if it exists
-        const bgRect = svg.querySelector('rect');
-        if (bgRect && bgRect.getAttribute('width') === String(vbWidth)) {
-          bgRect.setAttribute('width', String(newWidth));
-        }
-      }
-    });
+    }
   }, []);
 
   return null;
