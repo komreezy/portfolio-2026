@@ -824,6 +824,27 @@ p.blog-hero-meta strong {
   overflow: visible;
 }
 
+/* Fix dark text on dark SVG backgrounds - make text white */
+.prose-blog svg text {
+  fill: #ffffff !important;
+}
+
+/* SVG banner boxes with navy backgrounds - ensure proper sizing */
+.prose-blog svg[style*="width:100%"],
+.prose-blog svg[style*="width: 100%"] {
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Small SVG icons (like the circular icons with calendar, prohibition, card) - constrain size */
+.prose-blog svg:not([style*="width:100%"]):not([style*="width: 100%"]) {
+  max-width: 48px;
+  max-height: 48px;
+  display: block;
+  margin: 0 auto 12px;
+}
+
 /* Mobile adjustments */
 @media (max-width: 640px) {
   .prose-blog {
